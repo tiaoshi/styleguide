@@ -790,6 +790,9 @@ md-slider.md-min .md-thumb:after {
 .ui-grid-icon-ok:before {
   content: "\f1d6" !important; }
 
+.ui-grid-all-selected.ui-grid-icon-ok:before {
+  content: "\f1da" !important; }
+
 .ui-grid-row-selected .ui-grid-icon-ok:before {
   content: "\f1da" !important; }
 
