@@ -50,6 +50,7 @@
 .wfm-datepicker-wrap {
   margin: 5px;
   display: inline-block;
+  background-color: #ffffff;
   min-height: 290px; }
 
 .wfm-datepicker table th {
@@ -153,6 +154,9 @@ body {
 
 .material-title {
   color: rgba(0, 0, 0, 0.54); }
+
+big-table-wrapper, .big-table-footer-actions {
+  background-color: #ffffff; }
 
 .layout-container {
   width: 100%;
@@ -426,6 +430,7 @@ md-option {
 
 .wfm-radio-list {
   display: table;
+  background-color: #ffffff;
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse; }
@@ -693,7 +698,8 @@ md-slider.md-min .md-thumb:after {
 .wfm-table td, .wfm-table th {
   border: 1px solid rgba(0, 0, 0, 0.06);
   color: rgba(0, 0, 0, 0.54);
-  padding: 5px; }
+  padding: 5px;
+  background-color: #ffffff; }
 
 .wfm-table th, .wfm-table-header, .ui-grid-header-cell {
   color: rgba(0, 0, 0, 0.87);
@@ -772,6 +778,9 @@ md-slider.md-min .md-thumb:after {
 
 .ui-grid-row-selected::before {
   color: rgba(0, 0, 0, 0.87); }
+
+.big-table-wrapper, .big-table-footer-actions {
+  background-color: #ffffff; }
 
 /*zebra stripe
 .ui-grid-row:nth-child(odd) > [ui-grid-row] > .ui-grid-cell{
@@ -931,6 +940,9 @@ md-slider.md-min .md-thumb:after {
 .wfm-slide-tabs .md-header {
   height: 30px !important;
   background-color: #66c2ff !important; }
+
+md-content.md-default-theme {
+  background-color: #ffffff !important; }
 
 .wfm-slide-tabs md-content {
   padding: 10px 5px !important; }
@@ -1159,18 +1171,17 @@ md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle, md-pro
 md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
   border-right-color: #ec38a3; }
 
-.c3-tooltip td, .c3-tooltip th {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.54) !important; }
-
-.c3-tooltip td > span {
-  margin-left: 10px;
-  margin-top: 5px;
-  border: 1px solid white; }
-
-.c3-brush .extent {
-  stroke: #0099FF !important;
-  fill: #0099FF !important; }
-
-g.tick line {
-  display: none; }
+.wfm-chart {
+  background-color: #ffffff; }
+  .wfm-chart .c3-tooltip td > span {
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 1px solid white; }
+  .wfm-chart .c3-tooltip td, .wfm-chart .c3-tooltip th {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.54) !important; }
+  .wfm-chart .c3-brush .extent {
+    stroke: #0099FF !important;
+    fill: #0099FF !important; }
+  .wfm-chart g.tick line {
+    display: none; }
