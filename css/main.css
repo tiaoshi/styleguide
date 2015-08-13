@@ -1157,6 +1157,9 @@ md-content.md-default-theme {
 .tile-footer {
   text-align: right; }
 
+.sidenav-toggle label {
+  padding: 5px 0px; }
+
 md-progress-linear.md-default-theme .md-bar {
   background-color: #ec38a3 !important; }
 
