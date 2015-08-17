@@ -764,9 +764,6 @@ md-slider.md-min .md-thumb:after {
 .ui-grid-menu .ui-grid-menu-inner ul li:hover, .ui-grid-menu .ui-grid-menu-inner ul li.ui-grid-menu-item-active {
   box-shadow: none; }
 
-.ui-grid-menu .ui-grid-menu-inner ul li {
-  padding: 5px; }
-
 .ui-grid-selection-row-header-buttons {
   opacity: 1;
   color: rgba(0, 0, 0, 0.87); }
