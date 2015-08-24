@@ -1188,3 +1188,45 @@ md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
     fill: #0099FF !important; }
   .wfm-chart g.tick line {
     display: none; }
+
+/*Overrides bootstrap*/
+.wfm-card-list {
+  width: 100%; }
+
+.wfm-card-list-container {
+  max-height: 450px; }
+
+.wfm-card-unselected {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 90%;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.wfm-card-selected {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  width: 95%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  transition-property: width, height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out; }
+
+.wfm-card-title {
+  min-height: 35px;
+  line-height: 35px;
+  padding: 0 16px;
+  background-color: #99d6ff; }
+
+.wfm-card-content {
+  padding: 10px 16px;
+  background-color: #ffffff; }
+
+wfm-card:first-child .wfm-card-selected {
+  margin-top: 10px; }
+
+wfm-card:last-child .wfm-card-selected {
+  margin-bottom: 10px; }

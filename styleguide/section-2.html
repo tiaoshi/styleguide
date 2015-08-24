@@ -32,7 +32,7 @@
 	<script src="../vendor/d3/d3.min.js"></script>
 	<script src="../vendor/c3/c3.min.js"></script>
 	<script src="../vendor/c3/c3-angular.min.js"></script>
-	
+	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
 	
 	<script src="../app.js"></script>
   
@@ -79,6 +79,12 @@
               <a href="section-2.html#kssref-2-3">
                 <span class="kss-nav__ref">2.3</span
                 ><span class="kss-nav__name">Line chart</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-4">
+                <span class="kss-nav__ref">2.4</span
+                ><span class="kss-nav__name">Card List</span>
               </a>
             </li>
         </ul>
@@ -293,9 +299,62 @@ zoom: {
       </div>
 
       </section>
+      <section id="kssref-2-4" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">2.4</span
+          >Card List
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>The Teleopti Card List is based on the card list displayed in google inbox.  Each card can be clicked on within the list and will expand to show detail.</br>
+ Only one card can be opened at a time.The header and content of each card is completely customizable and any html elements provided within the &lt;card-header&gt; and  &lt;card-body&gt; tags will be rendered appropriately.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <wfm-card-list>
+<wfm-card ng-repeat="item in items">
+	<card-header>
+		<span><i class="mdi" ng-class="item.title"></i></span>
+		<span style="float: right;"><i class="mdi mdi-chevron-right"></i></span>
+	</card-header>
+	<card-body>
+		<button class="wfm-fab info material-depth-1"><i class="mdi mdi-duck"></i></button>
+	</card-body>
+</wfm-card>
+<h1 ng-show="false">adsfasdf</h1>
+</wfm-card-list>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;wfm-card-list&gt;
+&lt;wfm-card ng-repeat=&quot;item in items&quot;&gt;
+	&lt;card-header&gt;
+		&lt;span&gt;&lt;i class=&quot;mdi&quot; ng-class=&quot;item.title&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span style=&quot;float: right;&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;/card-header&gt;
+	&lt;card-body&gt;
+		&lt;button class=&quot;wfm-fab info material-depth-1&quot;&gt;&lt;i class=&quot;mdi mdi-duck&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+	&lt;/card-body&gt;
+&lt;/wfm-card&gt;
+&lt;h1 ng-show=&quot;false&quot;&gt;adsfasdf&lt;/h1&gt;
+&lt;/wfm-card-list&gt;</code></pre>
+      </div>
+
+      </section>
 </article>
 
-<!-- SCRIPTS -->
 <script src="public/kss.js"></script>
 <script src="public/prettify.js"></script>
 
