@@ -1203,8 +1203,6 @@ md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
   width: 90%;
   margin-left: auto !important;
   margin-right: auto !important; }
-  .wfm-card-unselected md-content {
-    background-color: transparent !important; }
 
 .wfm-card-selected {
   margin-top: 25px;
@@ -1227,17 +1225,6 @@ md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
   background-color: #99d6ff; }
   .wfm-card-title .chevron {
     float: right; }
-
-.wfm-card-selected {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  cursor: pointer;
-  width: 95%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  transition-property: width, height;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out; }
 
 .wfm-card-content {
   padding: 10px 16px;
