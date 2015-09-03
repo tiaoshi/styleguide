@@ -1225,7 +1225,7 @@ md-content {
   transition-timing-function: ease-out; }
   .wfm-card-selected .chevron {
     transition: all 0.2s ease-in-out;
-    transform: rotate(180deg); }
+    transform: rotate(90deg); }
 
 wfm-card:first-child .wfm-card-selected {
   margin-top: 10px; }
