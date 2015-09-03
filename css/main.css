@@ -1174,6 +1174,9 @@ md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle, md-pro
 md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
   border-right-color: #ec38a3; }
 
+.mini-spinner {
+  transform: scale(0.4) !important; }
+
 .wfm-chart {
   background-color: #ffffff; }
   .wfm-chart .c3-tooltip td > span {
