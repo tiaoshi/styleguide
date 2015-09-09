@@ -806,12 +806,17 @@ Each tree line has a right align span child that could show an icon if the line 
 		<span class="wfm-radio-label">That</span>
 	</label>
 </div>
-<div class="wfm-radio">
-	<input type="radio" name="group1" id="radio3" />
-	<label for="radio3">
-		<span class="wfm-radio-toggle"></span>
-		<span class="wfm-radio-label">These</span>
-	</label>
+</form>
+<h6>Using ng-repeat:</h6>
+<form>
+<div ng-repeat="item in demos">
+	<div class="wfm-radio">
+		<label>
+			<input type="radio" name="radio" value="value">
+			<span class="wfm-radio-toggle"></span>
+			<span class="wfm-radio-label">Im looped out!</span>
+		</label>
+	</div>
 </div>
 </form>
         </div>
@@ -833,12 +838,17 @@ Each tree line has a right align span child that could show an icon if the line 
 		&lt;span class=&quot;wfm-radio-label&quot;&gt;That&lt;/span&gt;
 	&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;wfm-radio&quot;&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;group1&quot; id=&quot;radio3&quot; /&gt;
-	&lt;label for=&quot;radio3&quot;&gt;
-		&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;wfm-radio-label&quot;&gt;These&lt;/span&gt;
-	&lt;/label&gt;
+&lt;/form&gt;
+&lt;h6&gt;Using ng-repeat:&lt;/h6&gt;
+&lt;form&gt;
+&lt;div ng-repeat=&quot;item in demos&quot;&gt;
+	&lt;div class=&quot;wfm-radio&quot;&gt;
+		&lt;label&gt;
+			&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;value&quot;&gt;
+			&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
+			&lt;span class=&quot;wfm-radio-label&quot;&gt;Im looped out!&lt;/span&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 &lt;/form&gt;</code></pre>
       </div>
@@ -920,12 +930,17 @@ Each tree line has a right align span child that could show an icon if the line 
 		<span class="wfm-checkbox-label">Check </span>
 	</label>
 </div>
-<div class="wfm-checkbox">
-	<input type="checkbox" id="check3" />
-	<label for="check3">
-		<span class="wfm-checkbox-toggle"></span>
-		<span class="wfm-checkbox-label">Got it</span>
-	</label>
+</form>
+<h6>Using ng-repeat:</h6>
+<form>
+<div ng-repeat="item in demos">
+	<div class="wfm-checkbox">
+		<label>
+			<input type="checkbox" name="checkbox" value="value">
+			<span class="wfm-checkbox-toggle"></span>
+			<span class="wfm-checkbox-label">Im looped out!</span>
+		</label>
+	</div>
 </div>
 </form>
         </div>
@@ -947,12 +962,17 @@ Each tree line has a right align span child that could show an icon if the line 
 		&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Check &lt;/span&gt;
 	&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;wfm-checkbox&quot;&gt;
-	&lt;input type=&quot;checkbox&quot; id=&quot;check3&quot; /&gt;
-	&lt;label for=&quot;check3&quot;&gt;
-		&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Got it&lt;/span&gt;
-	&lt;/label&gt;
+&lt;/form&gt;
+&lt;h6&gt;Using ng-repeat:&lt;/h6&gt;
+&lt;form&gt;
+&lt;div ng-repeat=&quot;item in demos&quot;&gt;
+	&lt;div class=&quot;wfm-checkbox&quot;&gt;
+		&lt;label&gt;
+			&lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; value=&quot;value&quot;&gt;
+			&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
+			&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Im looped out!&lt;/span&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 &lt;/form&gt;</code></pre>
       </div>
@@ -1393,47 +1413,6 @@ By that logic there should normally only be one per screen.</p>
 	&lt;/md-fab-actions&gt;
 &lt;/md-fab-speed-dial&gt;
 &lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-6.5" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.6.5</span
-          >Back buttons
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>Back buttons can be variety as long as the back icon is included.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <button class="wfm-btn wfm-btn-invis-primary"><i class="mdi mdi-reply"></i>Back</button>
-<button class="wfm-btn wfm-btn-primary"><i class="mdi mdi-reply"></i>Back</button>
-<button class="wfm-fab info"><i class="mdi mdi-reply"></i></button>
-<md-tooltip>Back</md-tooltip>
-<button class="wfm-fab info mini"><i class="mdi mdi-reply"></i></button>
-<md-tooltip>Back</md-tooltip>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;&lt;i class=&quot;mdi mdi-reply&quot;&gt;&lt;/i&gt;Back&lt;/button&gt;
-&lt;button class=&quot;wfm-btn wfm-btn-primary&quot;&gt;&lt;i class=&quot;mdi mdi-reply&quot;&gt;&lt;/i&gt;Back&lt;/button&gt;
-&lt;button class=&quot;wfm-fab info&quot;&gt;&lt;i class=&quot;mdi mdi-reply&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;md-tooltip&gt;Back&lt;/md-tooltip&gt;
-&lt;button class=&quot;wfm-fab info mini&quot;&gt;&lt;i class=&quot;mdi mdi-reply&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;md-tooltip&gt;Back&lt;/md-tooltip&gt;</code></pre>
       </div>
 
       </section>

@@ -421,7 +421,7 @@ md-option {
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
   cursor: pointer; }
-.wfm-radio input[type=radio]:checked ~ label .wfm-radio-toggle {
+.wfm-radio input[type=radio]:checked ~ label .wfm-radio-toggle, .wfm-radio input[type=radio]:checked ~ .wfm-radio-toggle {
   background-color: #66c2ff; }
 .wfm-radio .wfm-radio-label {
   margin-left: 25px;
@@ -456,7 +456,7 @@ md-option {
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
   cursor: pointer; }
-.wfm-checkbox input[type=checkbox]:checked ~ label .wfm-checkbox-toggle:after {
+.wfm-checkbox input[type=checkbox]:checked ~ label .wfm-checkbox-toggle:after, .wfm-checkbox input[type=checkbox]:checked ~ .wfm-checkbox-toggle:after {
   background-color: #66c2ff;
   content: " ✓";
   text-align: center;
