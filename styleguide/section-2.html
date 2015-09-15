@@ -240,19 +240,22 @@
 <p><h5>Javascript example</h5>
 <code><pre>
 var chart = c3.generate({
-bindto: &#39;#myChart&#39;,
-data: {
-    columns: [
-        [&#39;data1&#39;, 30, 200, 100, 400, 150, 250],
+   bindto: &#39;#myChart&#39;,
+   data: {
+       columns: [
+           [&#39;data1&#39;, 30, 200, 100, 400, 150, 250],
         [&#39;data2&#39;, 20, 180, 240, 100, 190,0]
-    ]
-},
-subchart: {
-    show: true
-},
+     ],
+     selection: {
+       enabled: true
+     }
+   },
+   subchart: {
+       show: true
+   },
 zoom: {
-    enabled: true
-}
+       enabled: true
+   }
 });
 </pre></code></p>
 
