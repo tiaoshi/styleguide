@@ -80,6 +80,38 @@
 .wfm-datepicker .range > button {
   background-color: #c2e085; }
 
+.wfm-date-range-picker-wrap .wrong-sign {
+  display: none;
+  color: #ee8f7d; }
+.wfm-date-range-picker-wrap .right-sign {
+  display: none;
+  color: #c2e085; }
+.wfm-date-range-picker-wrap .error-msg-container {
+  display: none;
+  margin-top: 10px; }
+.wfm-date-range-picker-wrap .ng-valid .right-sign {
+  display: block; }
+.wfm-date-range-picker-wrap .ng-invalid.ng-invalid-order ~ .error-msg-container.ng-invalid-order {
+  display: block; }
+.wfm-date-range-picker-wrap .ng-invalid.ng-invalid-empty ~ .error-msg-container.ng-invalid-empty {
+  display: block; }
+.wfm-date-range-picker-wrap .ng-invalid .wrong-sign {
+  display: block; }
+.wfm-date-range-picker-wrap .wfm-datepicker-wrap td.in-date-range button {
+  background-color: #c2e085; }
+.wfm-date-range-picker-wrap .error-msg-container {
+  display: none; }
+.wfm-date-range-picker-wrap .wfm-date-picker-wrap {
+  display: inline-block; }
+.wfm-date-range-picker-wrap .datepickerfix {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 18px;
+  width: 18px; }
+.wfm-date-range-picker-wrap .sub-header {
+  position: relative; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px !important;
   margin-bottom: 10px !important; }
