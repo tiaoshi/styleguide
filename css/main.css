@@ -669,31 +669,31 @@ md-slider.md-min .md-thumb:after {
   text-transform: uppercase; }
 
 .wfm-btn-invis-default {
-  color: black;
+  color: black !important;
   background-color: transparent; }
   .wfm-btn-invis-default:hover {
     background-color: #ececec; }
 
 .wfm-btn-invis-primary {
-  color: #0099FF;
+  color: #0099FF !important;
   background-color: transparent; }
   .wfm-btn-invis-primary:hover {
     background-color: #ececec; }
 
 .wfm-btn-invis-disabled {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 0.26) !important;
   background-color: transparent; }
   .wfm-btn-invis-disabled:hover {
     cursor: not-allowed; }
 
 .wfm-btn-primary-disabled {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 0.26) !important;
   background-color: rgba(0, 0, 0, 0.06); }
   .wfm-btn-primary-disabled:hover {
     cursor: not-allowed; }
 
 .wfm-btn-default {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.87) !important;
   background-color: #ffffff; }
 
 .wfm-btn-primary {
