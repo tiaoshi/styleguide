@@ -740,6 +740,42 @@ md-slider.md-min .md-thumb:after {
 .wfm-fab.info {
   background-color: #0099FF; }
 
+.grow-out {
+  animation: grow 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  -webkit-animation: grow 0.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-play-state: running; }
+
+.shrink-in {
+  animation: shrink 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  -webkit-animation: shrink 0.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-play-state: running; }
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0); }
+
+  to {
+    transform: scale(1, 1); } }
+
+@keyframes shrink {
+  from {
+    transform: scale(1, 1); }
+
+  to {
+    transform: scale(0, 0);
+    display: none !important;
+    visibility: hidden !important; } }
+
 .wfm-table {
   width: 100%;
   text-align: left; }

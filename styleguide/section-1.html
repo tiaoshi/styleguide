@@ -1435,6 +1435,51 @@ By that logic there should normally only be one per screen.</p>
       </div>
 
       </section>
+      <section id="kssref-1-6.5" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.6.5</span
+          >Animated action button
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The action button can not be disabled, rather it should simply not be displayed if unavailable.
+It is possible to trigger the animations using ng-click and/or ng-class.</p>
+<p>These animations should only be applied to action buttons.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <button class="wfm-fab grow-out info"><i class="mdi mdi-plus" ></i>
+<md-tooltip>I appear when needed</md-tooltip>
+</button>
+<button class="wfm-fab info" ng-class="{'shrink-in':animateIn === 'trigger1'}" ng-click="animateIn = 'trigger1'">
+<i class="mdi mdi-close"></i>
+<md-tooltip>Click me and im gone</md-tooltip>
+</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-fab grow-out info&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot; &gt;&lt;/i&gt;
+&lt;md-tooltip&gt;I appear when needed&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab info&quot; ng-class=&quot;{&#x27;shrink-in&#x27;:animateIn === &#x27;trigger1&#x27;}&quot; ng-click=&quot;animateIn = &#x27;trigger1&#x27;&quot;&gt;
+&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt;
+&lt;md-tooltip&gt;Click me and im gone&lt;/md-tooltip&gt;
+&lt;/button&gt;</code></pre>
+      </div>
+
+      </section>
       <section id="kssref-1-7" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
