@@ -29,11 +29,12 @@ For example when a list is displayed : actions icons can be displayed only when 
 2. If an action takes time (ajax request...) => display a loading bar (or a spinner). See loading bar section.
 3. Tables, lists... etc should be sorted according to context (alphabetical order for example).
 4. Giving visual identity to objects (by icons and colors for example).
-5. In general, providing ways to filter, sort and export to excel on tables, lists, grid is good.
-6. Actions history must be available.
-7. If possible, provide undo/redo feature.
-8. Keyboard shortcuts must be available.
-9. Use nice material design animation to move from a state to another one or to display actions: http://www.google.com/design/spec/animation/meaningful-transitions.html
+5. Make it easy to find things using the top-right search (use Permissions as an example).
+6. In general, providing ways to filter, sort and export to excel on tables, lists, grid is good.
+7. Actions history must be available.
+8. If possible, provide undo/redo feature.
+9. Keyboard shortcuts must be available.
+10. Use nice material design animation to move from a state to another one or to display actions: http://www.google.com/design/spec/animation/meaningful-transitions.html
 
 Help
 ---
