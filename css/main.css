@@ -394,7 +394,7 @@ input[type='text'], [type='number'], input[type='password'], select {
   input[type='text']:focus, [type='number']:focus, input[type='password']:focus, select:focus {
     border: none;
     outline: none;
-    border-bottom: 1px solid #ec38a3; }
+    border-bottom: 1px solid #99d6ff; }
 
 .input-prepend {
   width: 100%;
@@ -426,6 +426,41 @@ input[type='text'], [type='number'], input[type='password'], select {
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: rgba(0, 0, 0, 0.26); }
+
+/*Form validation*/
+.styleguide-form {
+  width: 50%; }
+  .styleguide-form label {
+    cursor: pointer !important; }
+
+input {
+  width: 100%; }
+
+.form-input-message {
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out; }
+
+.formInvalidInput {
+  opacity: 1;
+  height: auto;
+  color: red !important; }
+
+.form-input-wrap {
+  padding: 10px 0; }
+
+.animate-input-message {
+  line-height: 20px;
+  height: auto;
+  opacity: 1; }
+
+.animate-input-message.ng-hide-add, .animate-input-message.ng-hide-remove {
+  transition: all 0.5s ease-in-out; }
+
+.animate-input-message.ng-hide {
+  line-height: 0;
+  height: 0;
+  opacity: 0; }
 
 select {
   cursor: pointer; }
