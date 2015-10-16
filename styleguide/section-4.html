@@ -251,6 +251,7 @@
      <label for="secretId">Password: <input type="password" ng-model="form.secret" name="Secret" required="" id="secretId"/></label>
      <div ng-cloak class="animate-input-message" ng-show="form.$submitted || form.Secret.$touched">
      <div class="form-input-message" ng-class="{formInvalidInput:form.Secret.$error.required}">Enter password</div>
+     <div class="form-input-message" ng-class="{formInvalidInput:form.Secret < 8}">Password must be 8 characters or more</div>
      </div>
    </div>
    <div class="form-input-wrap">
@@ -326,6 +327,7 @@
      &lt;label for=&quot;secretId&quot;&gt;Password: &lt;input type=&quot;password&quot; ng-model=&quot;form.secret&quot; name=&quot;Secret&quot; required=&quot;&quot; id=&quot;secretId&quot;/&gt;&lt;/label&gt;
      &lt;div ng-cloak class=&quot;animate-input-message&quot; ng-show=&quot;form.$submitted || form.Secret.$touched&quot;&gt;
      &lt;div class=&quot;form-input-message&quot; ng-class=&quot;{formInvalidInput:form.Secret.$error.required}&quot;&gt;Enter password&lt;/div&gt;
+     &lt;div class=&quot;form-input-message&quot; ng-class=&quot;{formInvalidInput:form.Secret &lt; 8}&quot;&gt;Password must be 8 characters or more&lt;/div&gt;
      &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&quot;form-input-wrap&quot;&gt;
