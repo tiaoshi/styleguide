@@ -432,40 +432,32 @@ input[type='text'], [type='number'], input[type='password'], select {
   width: 50%; }
   .styleguide-form label {
     cursor: pointer !important; }
-
-input, select {
-  width: auto;
-  max-width: 100%;
-  margin-right: 100%; }
-
-input > .ng-invalid {
-  border-bottom: 5px solid red !important; }
-
-.form-input-message {
-  opacity: 0;
-  height: 0;
-  transition: all 0.5s ease-in-out; }
-
-.formInvalidInput {
-  opacity: 1;
-  height: auto;
-  color: red !important; }
-
-.form-input-wrap {
-  padding: 10px 0; }
-
-.animate-input-message {
-  line-height: 20px;
-  height: auto;
-  opacity: 1; }
-
-.animate-input-message.ng-hide-add, .animate-input-message.ng-hide-remove {
-  transition: all 0.5s ease-in-out; }
-
-.animate-input-message.ng-hide {
-  line-height: 0;
-  height: 0;
-  opacity: 0; }
+  .styleguide-form input, .styleguide-form select {
+    width: auto;
+    max-width: 100%;
+    margin-right: 100%; }
+  .styleguide-form input > .ng-invalid {
+    border-bottom: 5px solid red !important; }
+  .styleguide-form .form-input-message {
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s ease-in-out; }
+  .styleguide-form .formInvalidInput {
+    opacity: 1;
+    height: auto;
+    color: red !important; }
+  .styleguide-form .form-input-wrap {
+    padding: 10px 0; }
+  .styleguide-form .animate-input-message {
+    line-height: 20px;
+    height: auto;
+    opacity: 1; }
+  .styleguide-form .animate-input-message.ng-hide-add, .styleguide-form .animate-input-message.ng-hide-remove {
+    transition: all 0.5s ease-in-out; }
+  .styleguide-form .animate-input-message.ng-hide {
+    line-height: 0;
+    height: 0;
+    opacity: 0; }
 
 select {
   cursor: pointer; }
