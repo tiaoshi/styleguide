@@ -222,6 +222,15 @@
 
       <div class="kss-description">
         <p>Forms are made up of individual inputs that can be validated on interaction and/or on a submit.</p>
+<p><code><pre>
+Reset validation errors:
+$scope.reset = function(form) {
+  if (form) {
+    form.$setPristine();
+    form.$setUntouched();
+  }
+};
+</pre></code></p>
 
       </div>
     </div>
