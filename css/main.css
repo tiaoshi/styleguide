@@ -429,7 +429,9 @@ input[type='text'], [type='number'], input[type='password'], select {
 
 /*Form validation*/
 .wfm-form label {
-  cursor: pointer !important; }
+  cursor: pointer !important;
+  font-weight: normal !important;
+  color: #616161; }
 .wfm-form input, .wfm-form select {
   width: auto;
   max-width: 100%;
@@ -439,6 +441,7 @@ input[type='text'], [type='number'], input[type='password'], select {
 .wfm-form .form-input-message {
   opacity: 0;
   height: 0;
+  font-size: 13px;
   transition: all 0.5s ease-in-out; }
 .wfm-form .formInvalidInput {
   opacity: 1;
@@ -1063,9 +1066,6 @@ md-slider.md-min .md-thumb:after {
 
 md-content.md-default-theme {
   background-color: #ffffff !important; }
-
-.wfm-slide-tabs md-content {
-  padding: 10px 5px !important; }
 
 .wfm-slide-tabs md-tabs.md-default-theme md-tab.active {
   color: rgba(0, 0, 0, 0.87) !important;
