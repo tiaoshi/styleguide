@@ -155,7 +155,16 @@ body {
   overflow-x: hidden;
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif !important; }
   body a:focus, body a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    outline: none !important;
+    outline: 0px auto -webkit-focus-ring-color !important;
+    outline-offset: 0px; }
+
+button, input, select {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif !important; }
+
+dd {
+  margin-left: 40px !important; }
 
 .material-depth-1, .wfm-datepicker-wrap, .layout-container .content, .wfm-radio-list, .wfm-btn-default, .wfm-btn-primary, .sidenav-toggle .sidenav-wrapper {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
@@ -431,13 +440,16 @@ input[type='text'], [type='number'], input[type='password'], select {
 .wfm-form label {
   cursor: pointer !important;
   font-weight: normal !important;
-  color: #616161; }
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 13px; }
 .wfm-form input, .wfm-form select {
   width: auto;
   max-width: 100%;
   margin-right: 100%; }
 .wfm-form input > .ng-invalid {
   border-bottom: 5px solid red !important; }
+.wfm-form input[type="text"], .wfm-form input[type="number"], .wfm-form input[type="password"], .wfm-form input[type="email"] {
+  padding-left: 7px; }
 .wfm-form .form-input-message {
   opacity: 0;
   height: 0;
