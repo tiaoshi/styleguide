@@ -1321,3 +1321,16 @@ wfm-card:last-child .wfm-card-selected {
 .wfm-card-content {
   padding: 10px 16px;
   background-color: #ffffff; }
+
+.wfm-pagination li {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white; }
+  .wfm-pagination li.disabled {
+    cursor: not-allowed; }
+    .wfm-pagination li.disabled a {
+      pointer-events: none;
+      color: rgba(0, 0, 0, 0.26); }
+  .wfm-pagination li.active {
+    background-color: rgba(0, 0, 0, 0.06); }
