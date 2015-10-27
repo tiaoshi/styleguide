@@ -1322,6 +1322,44 @@ wfm-card:last-child .wfm-card-selected {
   padding: 10px 16px;
   background-color: #ffffff; }
 
+.wfm-time-range-picker-wrap button, .wfm-time-range-picker-wrap input {
+  font-size: 15px !important; }
+.wfm-time-range-picker-wrap td {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+.wfm-time-range-picker-wrap .wfm-timepicker-wrap td {
+  padding: 0; }
+.wfm-time-range-picker-wrap .wfm-timepicker-wrap .md-button {
+  min-width: 48px;
+  width: 48px;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  line-height: 25px;
+  min-height: 25px; }
+.wfm-time-range-picker-wrap .wfm-timepicker-wrap input {
+  width: 50px;
+  text-align: center;
+  margin-left: 2px;
+  margin-right: 2px; }
+.wfm-time-range-picker-wrap .next-day-toggle .wfm-btn {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+.wfm-time-range-picker-wrap .has-error > input {
+  border: 2px solid #F44336; }
+.wfm-time-range-picker-wrap .error-msg-container {
+  display: none;
+  margin-top: 10px; }
+.wfm-time-range-picker-wrap .ng-invalid.ng-invalid-order ~ .error-msg-container.ng-invalid-order {
+  display: block; }
+.wfm-time-range-picker-wrap .ng-invalid.ng-invalid-empty ~ .error-msg-container.ng-invalid-empty {
+  display: block; }
+
 .wfm-pagination li {
   display: inline-block;
   padding: 10px;
