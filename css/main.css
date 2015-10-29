@@ -173,7 +173,7 @@ dd {
 .material-depth-1, .wfm-datepicker-wrap, .layout-container .content, .wfm-radio-list, .wfm-btn-default, .wfm-btn-primary, .sidenav-toggle .sidenav-wrapper {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
-.material-depth-2, .wfm-btn-default:hover, .wfm-btn-primary:hover, .wfm-fab:hover, .context-menu ul {
+.material-depth-2, .wfm-btn-default:hover, .wfm-btn-primary:hover, .wfm-fab:hover, .context-menu [class*="context-menu-"] {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
 
 .material-trench-1, .wfm-radio-list-item.selected, .wfm-radio-list-item:hover {
