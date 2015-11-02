@@ -1069,7 +1069,6 @@ md-slider.md-min .md-thumb:after {
 .wfm-slide-tabs .md-ripple-container {
   background-color: transparent !important; }
 .wfm-slide-tabs md-content {
-  padding: 10px 5px !important;
   color: rgba(0, 0, 0, 0.87); }
 .wfm-slide-tabs md-tabs.md-default-theme md-tab.active {
   color: rgba(0, 0, 0, 0.87) !important;
