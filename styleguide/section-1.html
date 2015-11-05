@@ -36,6 +36,7 @@
 	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
+	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
         <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
 	
@@ -156,12 +157,6 @@
               <a href="section-1.html#kssref-1-16">
                 <span class="kss-nav__ref">1.16</span
                 ><span class="kss-nav__name">Tabs</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-1.html#kssref-1-17">
-                <span class="kss-nav__ref">1.17</span
-                ><span class="kss-nav__name">Pagination</span>
               </a>
             </li>
         </ul>
@@ -2354,89 +2349,6 @@ Place me on the left
    &lt;/md-tabs&gt;
  &lt;/md-content&gt;
 &lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-17" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.17</span
-          >Pagination
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Pagination is an object which displays a list of availale pages and provides a set of functions to navigate to first page, previous page, next page and last page.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <ul class="wfm-pagination">
-  <li ng-class="{disabled: currentPage === 1 || pageCount === 0}">
-    <a ng-click="firstPage()">
-      <i class="mdi mdi-skip-previous"></i>
-    </a>
-  </li>
-  <li ng-class="{disabled: currentPage === 1 || pageCount === 0}">
-    <a ng-click="previousPage()">
-      <i class="mdi mdi-chevron-left"></i>
-    </a>
-  </li>
-  <li ng-repeat="page in getVisiblePages(pageCount)"
-    ng-class="{active: page === currentPage}"
-    ng-click="seekPage(page)">
-    <a ng-bind="page"></a>
-  </li>
-  <li ng-class="{disabled: currentPage === pageCount || pageCount === 0}">
-    <a ng-click="nextPage()">
-      <i class="mdi mdi-chevron-right"></i>
-    </a>
-  </li>
-  <li ng-class="{disabled: currentPage === pageCount || pageCount === 0}">
-    <a ng-click="lastPage()">
-      <i class="mdi mdi-skip-next"></i>
-    </a>
-  </li>
-</ul>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;wfm-pagination&quot;&gt;
-  &lt;li ng-class=&quot;{disabled: currentPage === 1 || pageCount === 0}&quot;&gt;
-    &lt;a ng-click=&quot;firstPage()&quot;&gt;
-      &lt;i class=&quot;mdi mdi-skip-previous&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li ng-class=&quot;{disabled: currentPage === 1 || pageCount === 0}&quot;&gt;
-    &lt;a ng-click=&quot;previousPage()&quot;&gt;
-      &lt;i class=&quot;mdi mdi-chevron-left&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li ng-repeat=&quot;page in getVisiblePages(pageCount)&quot;
-    ng-class=&quot;{active: page === currentPage}&quot;
-    ng-click=&quot;seekPage(page)&quot;&gt;
-    &lt;a ng-bind=&quot;page&quot;&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li ng-class=&quot;{disabled: currentPage === pageCount || pageCount === 0}&quot;&gt;
-    &lt;a ng-click=&quot;nextPage()&quot;&gt;
-      &lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li ng-class=&quot;{disabled: currentPage === pageCount || pageCount === 0}&quot;&gt;
-    &lt;a ng-click=&quot;lastPage()&quot;&gt;
-      &lt;i class=&quot;mdi mdi-skip-next&quot;&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</code></pre>
       </div>
 
       </section>

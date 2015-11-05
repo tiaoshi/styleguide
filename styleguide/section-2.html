@@ -36,6 +36,7 @@
 	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
+	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
         <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
 	
@@ -96,6 +97,12 @@
               <a href="section-2.html#kssref-2-5">
                 <span class="kss-nav__ref">2.5</span
                 ><span class="kss-nav__name">Time Range Picker</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-6">
+                <span class="kss-nav__ref">2.6</span
+                ><span class="kss-nav__name">Pagination</span>
               </a>
             </li>
         </ul>
@@ -400,6 +407,41 @@ In WFM, the timepicker is self-adjusted to the user&#39;s time-format setting, i
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;time-range-picker start-time=&quot;startTime&quot; end-time=&quot;endTime&quot; disable-next-day=&quot;disableNextDay&quot;&gt;&lt;/time-range-picker&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-6" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">2.6</span
+          >Pagination
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Pagination is a directive which displays a list of availale pages and provides the properties for outer scope to set the pagination options and get data for the given page number.</p>
+<table class="wfm-table">
+<tr><th>Attribute Name</th><th>Description</th><th>Required</th></tr>
+<tr><td>pagination-options</td><td>configurations about the pagination, it contains two properties. &quot;pageNumber&quot; is the current page number; &quot;totalPages&quot; is hwo many pages it sets.</td><td>true</td></tr>
+<tr><td>get-data-for-page-callback</td><td>this is the function which is used by the directive to call to get the data for a given page number.</td><td>true</td></tr>
+</table>
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <wfm-pagination pagination-options="paginationOptions" get-data-for-page-callback="getPageData"></wfm-pagination>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;wfm-pagination pagination-options=&quot;paginationOptions&quot; get-data-for-page-callback=&quot;getPageData&quot;&gt;&lt;/wfm-pagination&gt;</code></pre>
       </div>
 
       </section>

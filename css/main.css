@@ -1359,15 +1359,18 @@ wfm-card:last-child .wfm-card-selected {
 .wfm-time-range-picker-wrap .ng-invalid.ng-invalid-empty ~ .error-msg-container.ng-invalid-empty {
   display: block; }
 
-.wfm-pagination li {
+.pagination li {
   display: inline-block;
   padding: 10px;
   cursor: pointer;
   background-color: white; }
-  .wfm-pagination li.disabled {
+  .pagination li.disabled {
     cursor: not-allowed; }
-    .wfm-pagination li.disabled a {
+    .pagination li.disabled a {
       pointer-events: none;
       color: rgba(0, 0, 0, 0.26); }
-  .wfm-pagination li.active {
+  .pagination li.active {
     background-color: rgba(0, 0, 0, 0.06); }
+  .pagination li a {
+    color: #428bca;
+    text-decoration: none; }
