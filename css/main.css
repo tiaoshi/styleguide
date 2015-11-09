@@ -170,7 +170,7 @@ button, input, select {
 dd {
   margin-left: 40px !important; }
 
-.material-depth-1, .wfm-datepicker-wrap, .layout-container .content, .wfm-radio-list, .wfm-btn-default, .wfm-btn-primary, .sidenav-toggle .sidenav-wrapper {
+.material-depth-1, .wfm-datepicker-wrap, .layout-container .content, .wfm-radio-list, .wfm-btn-default, .wfm-btn-primary, .sidenav-toggle .sidenav-wrapper, .wfm-card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
 .material-depth-2, .wfm-btn-default:hover, .wfm-btn-primary:hover, .wfm-fab:hover, .context-menu [class*="context-menu-"] {
@@ -1270,6 +1270,31 @@ md-tooltip {
     fill: #0099FF !important; }
   .wfm-chart g.tick line {
     display: none; }
+
+.card-group {
+  display: inline-block;
+  width: 100%;
+  transition: 1s all ease-in-out; }
+
+.wfm-card {
+  display: block;
+  width: auto;
+  /*width:24%;*/
+  float: left;
+  min-width: 10rem;
+  min-height: 150px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s all ease-in-out; }
+  .wfm-card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2) !important; }
+
+.wfm-card-disabled {
+  background-color: gray; }
+  .wfm-card-disabled:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2) !important;
+    cursor: not-allowed; }
 
 /*Overrides bootstrap*/
 .wfm-card-list {
