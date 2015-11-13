@@ -646,11 +646,11 @@ md-slider.md-min .md-thumb:after {
   .navbar .brand {
     color: #ffffff !important;
     font-weight: bold;
+    font-size: 18px;
     cursor: pointer; }
   .navbar .content {
     height: 22px;
     padding: 15px;
-    font-size: 18px;
     line-height: 20px;
     width: 98%;
     box-sizing: content-box !important; }
