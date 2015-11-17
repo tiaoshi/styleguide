@@ -271,7 +271,7 @@
       </div>
 
       </section>
-      <section id="kssref-1-1%20.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-1-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -325,7 +325,7 @@ A long list should be contained so that it doesnt overflow the main view.</p>
 
 
       </section>
-      <section id="kssref-1-2.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-2-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -388,7 +388,7 @@ Optionally a list item can have a small, one sentence description attached to it
       </div>
 
       </section>
-      <section id="kssref-1-2.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-2-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -664,7 +664,7 @@ Each tree line has a right align span child that could show an icon if the line 
 
 
       </section>
-      <section id="kssref-1-4.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -703,7 +703,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -736,7 +736,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.4" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-4" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -789,7 +789,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.5" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-5" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -874,7 +874,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.6" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-6" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -913,7 +913,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.7" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-7" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -998,7 +998,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.8" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-8" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1041,7 +1041,7 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4.9" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-9" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1094,7 +1094,7 @@ With label
 
 
       </section>
-      <section id="kssref-1-5.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-5-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1120,20 +1120,76 @@ With label
           <div class="material-depth-1 navbar navbar-default">
 	<div class="navbar-header content">
 		<div class="navbar-left">
-			<span class="brand">Teleopti WFM</span>
-			<span class="breadbin">
-				<a >Gotham > Batcave</a>
-			</span>
+			<span class="brand" ui-sref="main">Teleopti WFM</span>
 		</div>
-		<div class="navbar-right">
+		<div class="navbar-right" >
 			<span>
 				<i class="mdi mdi-magnify"></i>
-				<input type="text" placeholder="Search ..." class="global-search" />
+				<input type="text" placeholder="search..." class="global-search" />
+				<div class="search-results material-depth-2">
+					<ul class="wfm-list">
+						<div>
+							<li class="wfm-search-li">
+								<button ng-if="gp == 'Permission' " class="wfm-fab mini result-icon"><i class="mdi mdi-account-check"></i></button>
+								<button ng-if="gp == 'Planning Period' " class="wfm-fab mini info result-icon"><i class="mdi mdi-calendar"></i></button>
+								Tile
+							</li>
+							<li class="animate-repeat">
+								<div>
+									item
+								</div>
+							</li>
+							<li class="animate-repeat"></li>
+						</div>
+					</ul>
+				</div>
 			</span>
-			<span><a><i class="mdi mdi-account"></i></a></span>
+			<button class="nav-context-menu">
+				<i class="mdi mdi-bell"><md-tooltip>Notifications</md-tooltip></i>
+				<div class="nav-context-menu-left">
+					<div class="arrow-up"></div>
+					<div class="context-content" >
+						<div class="notification-list">
+								<h4>Notifications</h4>
+								<div>
+									<ul class="notification-list">
+										<li><i class="mdi mdi-alert-circle"></i>1 forecast finished at 14:22</li>
+                    <li><i class="mdi mdi-alert-circle"></i>1 forecast finished at 13:22</li>
+                    <li><i class="mdi mdi-alert-circle"></i>1 forecast finished at 12:22</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</button>
+			<button class="nav-context-menu">
+			<i class="mdi mdi-help-circle"><md-tooltip>Help</md-tooltip></i>
+			<div class="nav-context-menu-left">
+				<div class="arrow-up"></div>
+				<div class="context-content">
+						<h4>
+							<a href="#"></a>
+							<span class="caps">Current view</span>
+            </h4>
+						<p class="description">
+              Here you would find some information about the view you are currently in.</br>
+            </p>
+					<footer>
+						<a href="#" class="wfm-btn wfm-btn-primary-invis">Go to wiki</a>
+					</footer>
+				</div>
+			</div>
+			</button>
+			<a href="#"><i class="mdi mdi-settings"></i>
+				<md-tooltip>Settings</md-tooltip>
+			</a>
+			<a href="#"><i class="mdi mdi-logout"></i>
+				<md-tooltip>Logout</md-tooltip>
+			</a>
 		</div>
 	</div>
 </div>
+
         </div>
       </div>
 
@@ -1141,24 +1197,80 @@ With label
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;material-depth-1 navbar navbar-default&quot;&gt;
 	&lt;div class=&quot;navbar-header content&quot;&gt;
 		&lt;div class=&quot;navbar-left&quot;&gt;
-			&lt;span class=&quot;brand&quot;&gt;Teleopti WFM&lt;/span&gt;
-			&lt;span class=&quot;breadbin&quot;&gt;
-				&lt;a &gt;Gotham &gt; Batcave&lt;/a&gt;
-			&lt;/span&gt;
+			&lt;span class=&quot;brand&quot; ui-sref=&quot;main&quot;&gt;Teleopti WFM&lt;/span&gt;
 		&lt;/div&gt;
-		&lt;div class=&quot;navbar-right&quot;&gt;
+		&lt;div class=&quot;navbar-right&quot; &gt;
 			&lt;span&gt;
 				&lt;i class=&quot;mdi mdi-magnify&quot;&gt;&lt;/i&gt;
-				&lt;input type=&quot;text&quot; placeholder=&quot;Search ...&quot; class=&quot;global-search&quot; /&gt;
+				&lt;input type=&quot;text&quot; placeholder=&quot;search...&quot; class=&quot;global-search&quot; /&gt;
+				&lt;div class=&quot;search-results material-depth-2&quot;&gt;
+					&lt;ul class=&quot;wfm-list&quot;&gt;
+						&lt;div&gt;
+							&lt;li class=&quot;wfm-search-li&quot;&gt;
+								&lt;button ng-if=&quot;gp == &#x27;Permission&#x27; &quot; class=&quot;wfm-fab mini result-icon&quot;&gt;&lt;i class=&quot;mdi mdi-account-check&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+								&lt;button ng-if=&quot;gp == &#x27;Planning Period&#x27; &quot; class=&quot;wfm-fab mini info result-icon&quot;&gt;&lt;i class=&quot;mdi mdi-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+								Tile
+							&lt;/li&gt;
+							&lt;li class=&quot;animate-repeat&quot;&gt;
+								&lt;div&gt;
+									item
+								&lt;/div&gt;
+							&lt;/li&gt;
+							&lt;li class=&quot;animate-repeat&quot;&gt;&lt;/li&gt;
+						&lt;/div&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
 			&lt;/span&gt;
-			&lt;span&gt;&lt;a&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;
+			&lt;button class=&quot;nav-context-menu&quot;&gt;
+				&lt;i class=&quot;mdi mdi-bell&quot;&gt;&lt;md-tooltip&gt;Notifications&lt;/md-tooltip&gt;&lt;/i&gt;
+				&lt;div class=&quot;nav-context-menu-left&quot;&gt;
+					&lt;div class=&quot;arrow-up&quot;&gt;&lt;/div&gt;
+					&lt;div class=&quot;context-content&quot; &gt;
+						&lt;div class=&quot;notification-list&quot;&gt;
+								&lt;h4&gt;Notifications&lt;/h4&gt;
+								&lt;div&gt;
+									&lt;ul class=&quot;notification-list&quot;&gt;
+										&lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;1 forecast finished at 14:22&lt;/li&gt;
+                    &lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;1 forecast finished at 13:22&lt;/li&gt;
+                    &lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;1 forecast finished at 12:22&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/button&gt;
+			&lt;button class=&quot;nav-context-menu&quot;&gt;
+			&lt;i class=&quot;mdi mdi-help-circle&quot;&gt;&lt;md-tooltip&gt;Help&lt;/md-tooltip&gt;&lt;/i&gt;
+			&lt;div class=&quot;nav-context-menu-left&quot;&gt;
+				&lt;div class=&quot;arrow-up&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;context-content&quot;&gt;
+						&lt;h4&gt;
+							&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+							&lt;span class=&quot;caps&quot;&gt;Current view&lt;/span&gt;
+            &lt;/h4&gt;
+						&lt;p class=&quot;description&quot;&gt;
+              Here you would find some information about the view you are currently in.&lt;/br&gt;
+            &lt;/p&gt;
+					&lt;footer&gt;
+						&lt;a href=&quot;#&quot; class=&quot;wfm-btn wfm-btn-primary-invis&quot;&gt;Go to wiki&lt;/a&gt;
+					&lt;/footer&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;/button&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-settings&quot;&gt;&lt;/i&gt;
+				&lt;md-tooltip&gt;Settings&lt;/md-tooltip&gt;
+			&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-logout&quot;&gt;&lt;/i&gt;
+				&lt;md-tooltip&gt;Logout&lt;/md-tooltip&gt;
+			&lt;/a&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-5.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-5-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1200,7 +1312,7 @@ Second header title
       </div>
 
       </section>
-      <section id="kssref-1-5.3" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-5-3" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1260,7 +1372,7 @@ By that logic there should normally only be one per screen.</p>
 
 
       </section>
-      <section id="kssref-1-6.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-6-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1295,7 +1407,7 @@ By that logic there should normally only be one per screen.</p>
       </div>
 
       </section>
-      <section id="kssref-1-6.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-6-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1330,7 +1442,7 @@ By that logic there should normally only be one per screen.</p>
       </div>
 
       </section>
-      <section id="kssref-1-6.3" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-6-3" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1395,7 +1507,7 @@ By that logic there should normally only be one per screen.</p>
       </div>
 
       </section>
-      <section id="kssref-1-6.4" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-6-4" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1455,7 +1567,7 @@ It is possible to trigger the animations using ng-click and/or ng-class.</p>
 
 
       </section>
-      <section id="kssref-1-7.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-7-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1494,7 +1606,7 @@ It is possible to trigger the animations using ng-click and/or ng-class.</p>
       </div>
 
       </section>
-      <section id="kssref-1-7.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-7-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1555,7 +1667,7 @@ It is possible to trigger the animations using ng-click and/or ng-class.</p>
       </div>
 
       </section>
-      <section id="kssref-1-7.3" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-7-3" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1618,7 +1730,7 @@ If you need to display bigger forms of data or need more complex actions such as
 
 
       </section>
-      <section id="kssref-1-8.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-8-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1655,7 +1767,7 @@ If you need to display bigger forms of data or need more complex actions such as
       </div>
 
       </section>
-      <section id="kssref-1-8.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-8-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1711,7 +1823,7 @@ If you need to display bigger forms of data or need more complex actions such as
 
 
       </section>
-      <section id="kssref-1-9.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-9-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1750,7 +1862,7 @@ If you need to display bigger forms of data or need more complex actions such as
       </div>
 
       </section>
-      <section id="kssref-1-9.2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-9-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
@@ -1944,7 +2056,7 @@ There are several different markers to make the type of notice easy to spot:</p>
       </div>
 
       </section>
-      <section id="kssref-1-12.1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-12-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
