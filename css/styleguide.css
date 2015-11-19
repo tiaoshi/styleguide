@@ -106,8 +106,23 @@
     position: absolute; }
 
 .panel-content {
-  padding: 5px;
-  background: #ffffff; }
+  flex-basis: 100%;
+  padding: 5px; }
+
+.demo-outline > .panel-content {
+  outline: 1px dashed rgba(0, 0, 0, 0.06); }
+
+@media screen and (min-width: 768px) {
+  .panel-content-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .panel-content {
+    flex: 1; }
+  ._25 {
+    flex: 2.5; }
+  ._5 {
+    flex: 5; } }
 
 hr {
   width: 100%;
