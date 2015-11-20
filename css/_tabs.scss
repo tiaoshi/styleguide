@@ -107,16 +107,21 @@
 	}
 }
 
+.wfm-slide-tabs md-ink-bar {
+    top: -3px!important;
+		height: 33px;
+		z-index: -1;
+		color:$blue-100;
+		background: $blue-100;
+}
+
+md-tabs .md-tab.md-active, md-tabs .md-tab.md-focused {
+		color:$gray087;
+}
 
 md-content.md-default-theme {
     background-color: $white!important;
 }
-
-//project tabs style
-/*
-md-tabs .md-tab.md-active, md-tabs .md-tab.md-focused {
-    color:red!important;
-}*/
 
 
 	.wfm-slide-tabs md-tabs .md-tab {
@@ -126,10 +131,6 @@ md-tabs .md-tab.md-active, md-tabs .md-tab.md-focused {
 
 	.wfm-slide-tabs md-tabs-wrapper {
 		height: 30px !important;
-	}
-
-	.wfm-slide-tabs md-ink-bar{
-	  top: 28px;
 	}
 
 	//modal
