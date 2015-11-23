@@ -105,34 +105,63 @@
     bottom: 0;
     position: absolute; }
 
-.panel-content {
+.panel {
+  margin-bottom: 10px;
+  background: #ffffff;
+  position: relative; }
+  .panel .panel-menu {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10; }
+  .panel hr {
+    width: 100%;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.06); }
+  .panel .panel-footer {
+    text-align: right;
+    padding: 10px 5px;
+    color: rgba(0, 0, 0, 0.87); }
+
+.con-flex {
   flex-basis: 100%;
   padding: 5px; }
 
-.demo-outline > .panel-content {
+.demo-outline > .con-flex {
   outline: 1px dashed rgba(0, 0, 0, 0.06); }
 
+.split-3-1 {
+  flex-basis: 50% !important; }
+
+.split-1-2 {
+  flex-basis: 25% !important; }
+
 @media screen and (min-width: 768px) {
-  .panel-content-group {
+  .con-row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-  .panel-content {
+  .con-flex {
     flex: 1; }
   ._25 {
     flex: 2.5; }
   ._5 {
     flex: 5; } }
 
-hr {
-  width: 100%;
-  border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.06); }
+.tabbed-panel md-content {
+  padding: 0; }
 
-.panel-footer {
-  text-align: right;
-  padding: 10px 5px;
-  color: rgba(0, 0, 0, 0.87); }
+.tabbed-panel md-tabs-wrapper {
+  padding-top: 5px; }
+
+.tabbed-panel .md-padding {
+  margin: 0 5px; }
+
+.tabbed-panel .head-actions {
+  margin-top: -8px; }
+
+.tabbed-panel-header .card-context {
+  margin-top: 15px; }
 
 .spacer {
   margin: 25px;
