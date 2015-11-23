@@ -124,6 +124,8 @@
 .con-flex {
   flex-basis: 100%;
   padding: 5px; }
+  .con-flex input, .con-flex select {
+    width: 100vw; }
 
 .demo-outline > .con-flex {
   outline: 1px dashed rgba(0, 0, 0, 0.06); }
@@ -163,6 +165,9 @@
 
 .tabbed-panel-header .card-context {
   margin-top: 15px; }
+
+.wfm-form label {
+  display: inline-block !important; }
 
 .spacer {
   margin: 25px;
