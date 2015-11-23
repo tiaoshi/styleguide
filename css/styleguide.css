@@ -151,7 +151,10 @@
   padding: 0; }
 
 .tabbed-panel md-tabs-wrapper {
-  padding-top: 5px; }
+  margin-top: 5px;
+  background: #66c2ff;
+  border-width: 0 !important;
+  border-style: none !important; }
 
 .tabbed-panel .md-padding {
   margin: 0 5px; }
