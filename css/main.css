@@ -444,6 +444,7 @@ input[type='text'], input[type='password'] {
 input[type='text'], [type='number'], input[type='password'], select {
   border: none;
   color: rgba(0, 0, 0, 0.87);
+  line-height: 1;
   border-bottom: 1px solid #E0E0E0; }
   input[type='text']:focus, [type='number']:focus, input[type='password']:focus, select:focus {
     border: none;
