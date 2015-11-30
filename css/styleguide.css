@@ -105,76 +105,15 @@
     bottom: 0;
     position: absolute; }
 
-.panel {
-  margin-bottom: 10px;
-  background: #ffffff;
-  position: relative; }
-  .panel .panel-menu {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    z-index: 10; }
-  .panel hr {
-    border: 1px solid;
-    border-color: rgba(0, 0, 0, 0.06); }
-  .panel .panel-footer {
-    text-align: right;
-    color: rgba(0, 0, 0, 0.87); }
-
-.con-flex {
-  flex-basis: 100%;
-  padding: 5px; }
-  .con-flex input, .con-flex select {
-    width: 100%; }
-
-.demo-outline > .con-flex {
-  outline: 1px dashed rgba(0, 0, 0, 0.06); }
-
-.split-3-1 {
-  flex-basis: 50% !important; }
-
-.split-1-2 {
-  flex-basis: 25% !important; }
-
-@media screen and (min-width: 768px) {
-  .con-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
-  .con-flex {
-    flex: 1; }
-  ._25 {
-    flex: 2.5; }
-  ._5 {
-    flex: 5; } }
-
-.tabbed-panel md-content {
-  padding: 0; }
-
-.tabbed-panel md-tabs-wrapper {
-  margin-top: 5px;
-  background: #66c2ff;
-  border-width: 0 !important;
-  border-style: none !important; }
-
-.tabbed-panel .md-padding {
-  margin: 0 5px; }
-
-.tabbed-panel .head-actions {
-  margin-top: -8px; }
-
-.tabbed-panel-header .card-context {
-  margin-top: 15px; }
-
-.wfm-form label {
-  display: inline-block !important; }
-
 .spacer {
   margin: 25px;
   padding: 15px;
   text-align: center;
   display: inline-block;
   background: white; }
+
+.demo-outline > .con-flex {
+  outline: 1px dashed rgba(0, 0, 0, 0.06); }
 
 /*template styles*/
 .kss-sidebar {
