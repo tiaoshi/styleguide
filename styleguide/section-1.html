@@ -14,7 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="../vendor/fonts.css" />
 	<link type="text/css" rel="stylesheet" href="./public/kss.css" />
 
-	<link type="text/css" rel="stylesheet" href="../vendor/angular-ui-tree.min.css"/>
+  <link rel="stylesheet" href="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.css">
 	<link type="text/css" rel="stylesheet" href="../vendor/mdi/css/materialdesignicons.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../vendor/ui-grid-stable.min.css"/>
@@ -23,6 +23,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/main.min.css"/>
 
 	<script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
 	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
 	<script src="../node_modules/angular-route/angular-route.min.js"></script>
 	<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
@@ -33,13 +34,14 @@
 	<script src="../vendor/d3/d3.min.js"></script>
 	<script src="../vendor/c3/c3.min.js"></script>
 	<script src="../vendor/c3/c3-angular.min.js"></script>
+  <script src="../vendor/angular-growl.js"></script>
 	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
 	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
-        <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
-	
+  <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
+
 	<script src="../app.js"></script>
   
 </head>
@@ -47,7 +49,8 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">Teleopti WFM<br>Style Guide</h1>
+    <img src="http://www.teleopti.com/system/images/teleopti_logo.png" alt="Teleopti logo" height="30px" style="vertical-align:bottom;">
+    <h1 class="kss-doc-title">Style Guide</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -60,7 +63,7 @@
       <li class="kss-nav__menu-item">
         <a href="section-1.html">
           <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Style Rules</span>
+          ><span class="kss-nav__name">Elements</span>
         </a>
         <ul class="kss-nav__menu-child">
             <li class="kss-nav__menu-item">
@@ -78,90 +81,102 @@
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-3">
                 <span class="kss-nav__ref">1.3</span
-                ><span class="kss-nav__name">Trees</span>
+                ><span class="kss-nav__name">Tree</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-4">
                 <span class="kss-nav__ref">1.4</span
-                ><span class="kss-nav__name">Forms</span>
+                ><span class="kss-nav__name">Inputs</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-5">
                 <span class="kss-nav__ref">1.5</span
-                ><span class="kss-nav__name">Navbars</span>
+                ><span class="kss-nav__name">Select</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-6">
                 <span class="kss-nav__ref">1.6</span
-                ><span class="kss-nav__name">Buttons</span>
+                ><span class="kss-nav__name">Radio buttons</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-7">
                 <span class="kss-nav__ref">1.7</span
-                ><span class="kss-nav__name">Text</span>
+                ><span class="kss-nav__name">Checkboxes</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-8">
                 <span class="kss-nav__ref">1.8</span
-                ><span class="kss-nav__name">Tables</span>
+                ><span class="kss-nav__name">Switch</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-9">
                 <span class="kss-nav__ref">1.9</span
-                ><span class="kss-nav__name">Loading</span>
+                ><span class="kss-nav__name">Buttons</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-10">
                 <span class="kss-nav__ref">1.10</span
-                ><span class="kss-nav__name">Notices</span>
+                ><span class="kss-nav__name">Slider</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-11">
                 <span class="kss-nav__ref">1.11</span
-                ><span class="kss-nav__name">Notifications</span>
+                ><span class="kss-nav__name">Typography</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-12">
                 <span class="kss-nav__ref">1.12</span
-                ><span class="kss-nav__name">Modals</span>
+                ><span class="kss-nav__name">Notifications</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-13">
                 <span class="kss-nav__ref">1.13</span
-                ><span class="kss-nav__name">Tooltips</span>
+                ><span class="kss-nav__name">Context menus</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-14">
                 <span class="kss-nav__ref">1.14</span
-                ><span class="kss-nav__name">Context menus</span>
+                ><span class="kss-nav__name">Navbars</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-15">
                 <span class="kss-nav__ref">1.15</span
-                ><span class="kss-nav__name">Accordions</span>
+                ><span class="kss-nav__name">Tables</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-16">
                 <span class="kss-nav__ref">1.16</span
-                ><span class="kss-nav__name">Tabs</span>
+                ><span class="kss-nav__name">Modal</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-1.html#kssref-1-17">
                 <span class="kss-nav__ref">1.17</span
+                ><span class="kss-nav__name">Loading</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-18">
+                <span class="kss-nav__ref">1.18</span
+                ><span class="kss-nav__name">Tooltips</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-19">
+                <span class="kss-nav__ref">1.19</span
                 ><span class="kss-nav__name">Cards</span>
               </a>
             </li>
@@ -182,19 +197,19 @@
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
           <span class="kss-nav__ref">4</span
-          ><span class="kss-nav__name">Layouts</span>
+          ><span class="kss-nav__name">Containers</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-5.html">
           <span class="kss-nav__ref">5</span
-          ><span class="kss-nav__name">Icons</span>
+          ><span class="kss-nav__name">Language</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-6.html">
           <span class="kss-nav__ref">6</span
-          ><span class="kss-nav__name">Scalability</span>
+          ><span class="kss-nav__name">Icons</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -214,13 +229,13 @@
       <h1 class="kss-title kss-title--level-1">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">1</span
-          >Style Rules
+          >Elements
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>Here are detailed all the style rules for the web application.</p>
+        <p>Elements are the individual parts that make up the application. Some (such as buttons and text) can be stand alone but genrally all elements are part of a container. By arranging elements in containers using layout, we can get a structured and consistent style.</p>
 
       </div>
     </div>
@@ -240,8 +255,9 @@
 
       <div class="kss-description">
         <p>Getting a deeper look into the styles of shadows and positioning. The first thing we need to understand is the concept of stacked material (see the <a href="http://www.google.com/design/spec/what-is-material/elevation-shadows.html#elevation-shadows-shadows">Google guidelines</a> ).</p>
-<p>Keep the number of stacked layers to a minimum and the total number of layer below 3 (including the background). If a raised element lives inside of another raised element it should have a higher material-depth number (i.e a panel with a depth of 1 can have one panel with a depth of 2 above (inside) it.)</p>
-<p>Elements floating above the main layout (such as context menus) should have the highest material-depth number possible (2).</p>
+<p>Keep the number of stacked layers to a minimum and the total number of layer below 3 (including the background). If a raised element lives inside of another raised element it should still have a material-depth number of one, unless it is floating.
+Floating elements live above the main layout (such as context menus) and should have the highest material-depth number possible (2).</p>
+<p>If the element does not have a raised wrapper (i.e panel) and is placed freely on the background it should have a depth value of 1.</p>
 <p>Note: the &#39;spacer&#39; class is for styleguide demo purpose only.</p>
 
       </div>
@@ -271,40 +287,6 @@
       </div>
 
       </section>
-      <section id="kssref-1-1-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.2.1</span
-          >Trench
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <div class="styleguide-break"><i class="mdi mdi-alert"></i><span>We only use it for user interaction on small details. </span></div>
-
-<p>The trench works much like the depth, however since it gives the illusion of a layer behind the current piece of material it should not be used on larger areas, as this will create raised &quot;frames&quot; around the trench.</p>
-<p>Note: the &#39;spacer&#39; class is for styleguide demo purpose only.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="spacer material-trench-1"> Layer 1 </div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;spacer material-trench-1&quot;&gt; Layer 1 &lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
       <section id="kssref-1-2" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
@@ -317,8 +299,7 @@
 
 
       <div class="kss-description">
-        <p>The lists is used to display long colections of similar information.
-A long list should be contained so that it doesnt overflow the main view.</p>
+        <p>The lists is used to display long collections of similar information. Keep in mind that a long list could push other things out of view.</p>
 
       </div>
     </div>
@@ -337,9 +318,9 @@ A long list should be contained so that it doesnt overflow the main view.</p>
 
 
       <div class="kss-description">
-        <p>For when you just want to display some data in a simple list without any actions.
-Note that clicking/selecting a list item is considered an action. In other words, if the user can do anything other than read the list, use a action list.
-Optionally a list item can have a small, one sentence description attached to it. If more information is needed about the items conceder using a modal or table.</p>
+        <p>For when you just want to display some data in a simple list without any actions.</p>
+<p>If you need actions (click or select), go to &quot;Actions list&quot;.</p>
+<p>Optionally a list item can have a small, one sentence description attached to it. If more information is needed about the items conceder using a modal or table.</p>
 
       </div>
     </div>
@@ -350,40 +331,40 @@ Optionally a list item can have a small, one sentence description attached to it
         </div>
         <div class="kss-modifier__example">
           <ul class="wfm-simple-list">
-<li>
-	Tea
-	<div class="subtext">Its hot</div>
-</li>
-<li>
-	Beer
-	<div class="subtext">Tasty but expensive</div>
-</li>
-<li>
-	Coffe
-</li>
-<li class="active">
-	Juice
-</li>
+	<li>
+		Tea
+		<div class="subtext">Its hot</div>
+	</li>
+	<li>
+		Beer
+		<div class="subtext">Tasty but expensive</div>
+	</li>
+	<li>
+		Coffe
+	</li>
+	<li class="active">
+		Juice
+	</li>
 </ul>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;wfm-simple-list&quot;&gt;
-&lt;li&gt;
-	Tea
-	&lt;div class=&quot;subtext&quot;&gt;Its hot&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-	Beer
-	&lt;div class=&quot;subtext&quot;&gt;Tasty but expensive&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-	Coffe
-&lt;/li&gt;
-&lt;li class=&quot;active&quot;&gt;
-	Juice
-&lt;/li&gt;
+	&lt;li&gt;
+		Tea
+		&lt;div class=&quot;subtext&quot;&gt;Its hot&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		Beer
+		&lt;div class=&quot;subtext&quot;&gt;Tasty but expensive&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		Coffe
+	&lt;/li&gt;
+	&lt;li class=&quot;active&quot;&gt;
+		Juice
+	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
       </div>
 
@@ -401,8 +382,7 @@ Optionally a list item can have a small, one sentence description attached to it
 
       <div class="kss-description">
         <p>Action lists are used for list where the user can perform actions. These can have several options attached to them in a so called  <a href="http://goo.gl/DMxAHS">leave-behind</a>, however, these options may only effect the list item they are a part of. Individual options can have a tooltip and an icon and they are displayed only if the item is hovered or clicked.</p>
-<p>If an item in the action list is not intractable in any way while others in the same list are
-If there are actions that affect the whole list (such as create new or delete all) they should be placed above or below the list.</p>
+<p>Broad actions on the list (such as creating a new item or removing all) should be placed in the panel actions (see <a href="section-4.html">containers</a>, chapter).</p>
 
       </div>
     </div>
@@ -413,84 +393,110 @@ If there are actions that affect the whole list (such as create new or delete al
         </div>
         <div class="kss-modifier__example">
           <ul class="wfm-list">
-<li>
-	<span class="list-item-container">
-		List Item with one action in leave-behind
-	</span>
-	<div class="wfm-leave-behind wfm-leave-behind-1">
-		<span>
-			<i class="mdi mdi-delete"></i>
+	<li ng-click="listSelected1 = !listSelected1">
+		<span class="list-item-container">
+			List item with one action in leave-behind
 		</span>
-	</div>
-</li>
-<li>
-	<span class="list-item-container">
-		List Item with two actions in leave-behind
-	</span>
-	<div class="wfm-leave-behind wfm-leave-behind-2">
-		<span>
-			<i class="mdi mdi-pencil"></i>
-			<i class="mdi mdi-delete"></i>
+		<span ng-cloak ng-show="listSelected1" class="list-dot grow-out"><b class="mdi mdi-check list-mark"></b></span>
+		<div class="wfm-leave-behind wfm-leave-behind-1">
+			<span>
+				<i class="mdi mdi-delete"></i>
+			</span>
+		</div>
+	</li>
+	<li ng-click="listSelected2 = !listSelected2">
+		<span class="list-item-container">
+			List item with two actions in leave-behind
 		</span>
-	</div>
-</li>
-<li class="active">
-	<span class="list-item-container">
-		List Item with three actions in leave-behind
-	</span>
-	<div class="wfm-leave-behind">
-		<span>
-			<i class="mdi mdi-content-copy"></i>
-			<i class="mdi mdi-pencil"></i>
-			<i class="mdi mdi-delete"></i>
+		<span ng-cloak ng-show="listSelected2" class="list-dot grow-out"><b class="mdi mdi-check list-mark"></b></span>
+		<div class="wfm-leave-behind wfm-leave-behind-2">
+			<span>
+				<i class="mdi mdi-pencil"></i>
+				<i class="mdi mdi-delete"></i>
+			</span>
+		</div>
+	</li>
+	<li ng-click="listSelected3 = !listSelected3">
+		<span class="list-item-container">
+			List item with three actions in leave-behind
 		</span>
-	</div>
-</li>
-<li>
-	<i class="mdi mdi-alert"></i> List Item with icon and no leave-behind
-</li>
+		<span ng-cloak ng-show="listSelected3" class="list-dot grow-out"><b class="mdi mdi-check list-mark"></b></span>
+		<div class="wfm-leave-behind">
+			<span>
+				<i class="mdi mdi-content-copy"></i>
+				<i class="mdi mdi-pencil"></i>
+				<i class="mdi mdi-delete"></i>
+			</span>
+		</div>
+	</li>
+	<li ng-click="listSelected4 = !listSelected4" class="disabled">
+		<span class="list-item-container">
+			List item with three actions in leave-behind
+		</span>
+		<span ng-cloak ng-show="listSelected4" class="list-dot grow-out"><b class="mdi mdi-check list-mark"></b></span>
+		<div class="wfm-leave-behind">
+			<span>
+				<i class="mdi mdi-content-copy"></i>
+				<i class="mdi mdi-pencil"></i>
+				<i class="mdi mdi-delete"></i>
+			</span>
+		</div>
+	</li>
 </ul>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;wfm-list&quot;&gt;
-&lt;li&gt;
-	&lt;span class=&quot;list-item-container&quot;&gt;
-		List Item with one action in leave-behind
-	&lt;/span&gt;
-	&lt;div class=&quot;wfm-leave-behind wfm-leave-behind-1&quot;&gt;
-		&lt;span&gt;
-			&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+	&lt;li ng-click=&quot;listSelected1 = !listSelected1&quot;&gt;
+		&lt;span class=&quot;list-item-container&quot;&gt;
+			List item with one action in leave-behind
 		&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-	&lt;span class=&quot;list-item-container&quot;&gt;
-		List Item with two actions in leave-behind
-	&lt;/span&gt;
-	&lt;div class=&quot;wfm-leave-behind wfm-leave-behind-2&quot;&gt;
-		&lt;span&gt;
-			&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;
-			&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+		&lt;span ng-cloak ng-show=&quot;listSelected1&quot; class=&quot;list-dot grow-out&quot;&gt;&lt;b class=&quot;mdi mdi-check list-mark&quot;&gt;&lt;/b&gt;&lt;/span&gt;
+		&lt;div class=&quot;wfm-leave-behind wfm-leave-behind-1&quot;&gt;
+			&lt;span&gt;
+				&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li ng-click=&quot;listSelected2 = !listSelected2&quot;&gt;
+		&lt;span class=&quot;list-item-container&quot;&gt;
+			List item with two actions in leave-behind
 		&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/li&gt;
-&lt;li class=&quot;active&quot;&gt;
-	&lt;span class=&quot;list-item-container&quot;&gt;
-		List Item with three actions in leave-behind
-	&lt;/span&gt;
-	&lt;div class=&quot;wfm-leave-behind&quot;&gt;
-		&lt;span&gt;
-			&lt;i class=&quot;mdi mdi-content-copy&quot;&gt;&lt;/i&gt;
-			&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;
-			&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+		&lt;span ng-cloak ng-show=&quot;listSelected2&quot; class=&quot;list-dot grow-out&quot;&gt;&lt;b class=&quot;mdi mdi-check list-mark&quot;&gt;&lt;/b&gt;&lt;/span&gt;
+		&lt;div class=&quot;wfm-leave-behind wfm-leave-behind-2&quot;&gt;
+			&lt;span&gt;
+				&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li ng-click=&quot;listSelected3 = !listSelected3&quot;&gt;
+		&lt;span class=&quot;list-item-container&quot;&gt;
+			List item with three actions in leave-behind
 		&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-	&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt; List Item with icon and no leave-behind
-&lt;/li&gt;
+		&lt;span ng-cloak ng-show=&quot;listSelected3&quot; class=&quot;list-dot grow-out&quot;&gt;&lt;b class=&quot;mdi mdi-check list-mark&quot;&gt;&lt;/b&gt;&lt;/span&gt;
+		&lt;div class=&quot;wfm-leave-behind&quot;&gt;
+			&lt;span&gt;
+				&lt;i class=&quot;mdi mdi-content-copy&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li ng-click=&quot;listSelected4 = !listSelected4&quot; class=&quot;disabled&quot;&gt;
+		&lt;span class=&quot;list-item-container&quot;&gt;
+			List item with three actions in leave-behind
+		&lt;/span&gt;
+		&lt;span ng-cloak ng-show=&quot;listSelected4&quot; class=&quot;list-dot grow-out&quot;&gt;&lt;b class=&quot;mdi mdi-check list-mark&quot;&gt;&lt;/b&gt;&lt;/span&gt;
+		&lt;div class=&quot;wfm-leave-behind&quot;&gt;
+			&lt;span&gt;
+				&lt;i class=&quot;mdi mdi-content-copy&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
       </div>
 
@@ -501,17 +507,25 @@ If there are actions that affect the whole list (such as create new or delete al
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">1.3</span
-          >Trees
+          >Tree
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <div class="styleguide-break angular-req"><i class="mdi mdi-alert-circle"></i><span>For example dynamic data. </span></div>
-
-<p>A tree structure is used to show relations between different items. Selected items are marked with a checkmark and a background along with a left side border.
-Each tree line has a right align span child that could show an icon if the line is selected.</p>
-
+        <p>A tree structure is used to show relations between different items. Selected items are marked with a checkmark and a background along with a left side border. Each tree line has a right align span child that could show an icon if the line is selected.
+Please note thet the &quot;ng-bind&quot; span should be replaced with the normal angular binding.</p>
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+$scope.treeDemos =   [
+    {categories: [{name: &#39;item 1&#39;}, {name: &#39;item 2&#39;}, {name: &#39;item 3&#39;}, {name: &#39;item 2&#39;}], name: &#39;First Group&#39;,},
+    {categories: [{name: &#39;item 1&#39;}, {name: &#39;item 3&#39;}], name: &#39;Second Group&#39;}, {categories: [], name: &#39;Third Group&#39;}
+];
+    </pre></code>
+</div>
+</div>
       </div>
     </div>
 
@@ -520,128 +534,74 @@ Each tree line has a right align span child that could show an icon if the line 
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="tree">
-<div class="angular-ui-tree">
-<ol id="tree-root" class="tree-line angular-ui-tree-nodes">
-	<li class="angular-ui-tree-node">
-		<div class="tree-toggle-group">
-			<div class="toggle-handle open"><i class="mdi mdi-chevron-right"></i></div>
-			<div class="angular-ui-tree-handle selected">
-				Super parent
-				<span><i class="mdi mdi-check"></i></span>
-			</div>
+          <div class="wfm-block">
+	<label for="treeFilterId" class="input-prepend">
+	<i class="mdi mdi-filter-outline">
+	<md-tooltip>Filter tree</md-tooltip></i>
+	<input type="text" ng-model="treeFilter" id="treeFilterId" placeholder="Tree filter"/>
+	</label>
+</div>
+
+<div class="tree">
+	<div ui-tree data-drag-enabled="false">
+		<ol ui-tree-nodes="" ng-model="treeDemos" class="tree-line" toggle-focus>
+			<li ng-repeat="item in treeDemos | filter:treeFilter" ui-tree-node ng-include=" 'item_renderer.html' "></li>
+		</ol>
+	</div>
+</div>
+
+<script type="text/ng-template" id="item_renderer.html">
+	<div class="tree-toggle-group">
+		<div class="toggle-handle" ng-class="{open: item.show}" ng-click="item.show = !item.show"><i ng-show="item.categories.length > 0" class="mdi mdi-chevron-right"></i></div>
+		<div ui-tree-handle ng-class="{selected: item.selected}" ng-click="item.selected=!item.selected">
+			<span ng-bind="item.name"></span>
+			<span class="tree-line-right"><i class="mdi mdi-check"></i></span>
 		</div>
-		<ol class="angular-ui-tree-nodes">
-			<li class="angular-ui-tree-node">
-				<div class="tree-toggle-group">
-					<div class="toggle-handle open"><i class="mdi mdi-chevron-right"></i></div>
-					<div class="angular-ui-tree-handle">
-						Parent
-						<span><i class="mdi mdi-check"></i></span>
-					</div>
-				</div>
-				<ol class="angular-ui-tree-nodes">
-					<li class="angular-ui-tree-node">
-						<div class="tree-toggle-group">
-							<div class="toggle-handle"></i></div>
-							<div class="angular-ui-tree-handle selected">
-								Child
-								<span><i class="mdi mdi-check"></i></span>
-							</div>
-						</div>
-					</li>
-				</ol>
-			</li>
-		</ol>
-		<ol class="angular-ui-tree-nodes">
-			<li class="angular-ui-tree-node">
-				<div class="tree-toggle-group">
-					<div class="toggle-handle open"><i class="mdi mdi-chevron-right"></i></div>
-					<div class="angular-ui-tree-handle">
-						Parent
-						<span><i class="mdi mdi-check"></i></span>
-					</div>
-				</div>
-				<ol class="angular-ui-tree-nodes">
-					<li class="angular-ui-tree-node">
-						<div class="tree-toggle-group">
-							<div class="toggle-handle"></i></div>
-							<div class="angular-ui-tree-handle">
-								Child
-								<span>90%</span>
-							</div>
-						</div>
-					</li>
-				</ol>
-			</li>
-		</ol>
-	</li>
-</ol>
-</div>
-</div>
+	</div>
+
+	<ol ui-tree-nodes="" ng-model="item.categories" ng-show="item.show">
+		<li  ng-repeat="item in item.categories | filter:treeFilter" ui-tree-node ng-include=" 'item_renderer.html' ">
+			test
+		</li>
+	</ol>
+</script>
+
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;tree&quot;&gt;
-&lt;div class=&quot;angular-ui-tree&quot;&gt;
-&lt;ol id=&quot;tree-root&quot; class=&quot;tree-line angular-ui-tree-nodes&quot;&gt;
-	&lt;li class=&quot;angular-ui-tree-node&quot;&gt;
-		&lt;div class=&quot;tree-toggle-group&quot;&gt;
-			&lt;div class=&quot;toggle-handle open&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-			&lt;div class=&quot;angular-ui-tree-handle selected&quot;&gt;
-				Super parent
-				&lt;span&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;ol class=&quot;angular-ui-tree-nodes&quot;&gt;
-			&lt;li class=&quot;angular-ui-tree-node&quot;&gt;
-				&lt;div class=&quot;tree-toggle-group&quot;&gt;
-					&lt;div class=&quot;toggle-handle open&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-					&lt;div class=&quot;angular-ui-tree-handle&quot;&gt;
-						Parent
-						&lt;span&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;ol class=&quot;angular-ui-tree-nodes&quot;&gt;
-					&lt;li class=&quot;angular-ui-tree-node&quot;&gt;
-						&lt;div class=&quot;tree-toggle-group&quot;&gt;
-							&lt;div class=&quot;toggle-handle&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-							&lt;div class=&quot;angular-ui-tree-handle selected&quot;&gt;
-								Child
-								&lt;span&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-					&lt;/li&gt;
-				&lt;/ol&gt;
-			&lt;/li&gt;
-		&lt;/ol&gt;
-		&lt;ol class=&quot;angular-ui-tree-nodes&quot;&gt;
-			&lt;li class=&quot;angular-ui-tree-node&quot;&gt;
-				&lt;div class=&quot;tree-toggle-group&quot;&gt;
-					&lt;div class=&quot;toggle-handle open&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-					&lt;div class=&quot;angular-ui-tree-handle&quot;&gt;
-						Parent
-						&lt;span&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;ol class=&quot;angular-ui-tree-nodes&quot;&gt;
-					&lt;li class=&quot;angular-ui-tree-node&quot;&gt;
-						&lt;div class=&quot;tree-toggle-group&quot;&gt;
-							&lt;div class=&quot;toggle-handle&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-							&lt;div class=&quot;angular-ui-tree-handle&quot;&gt;
-								Child
-								&lt;span&gt;90%&lt;/span&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-					&lt;/li&gt;
-				&lt;/ol&gt;
-			&lt;/li&gt;
-		&lt;/ol&gt;
-	&lt;/li&gt;
-&lt;/ol&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;wfm-block&quot;&gt;
+	&lt;label for=&quot;treeFilterId&quot; class=&quot;input-prepend&quot;&gt;
+	&lt;i class=&quot;mdi mdi-filter-outline&quot;&gt;
+	&lt;md-tooltip&gt;Filter tree&lt;/md-tooltip&gt;&lt;/i&gt;
+	&lt;input type=&quot;text&quot; ng-model=&quot;treeFilter&quot; id=&quot;treeFilterId&quot; placeholder=&quot;Tree filter&quot;/&gt;
+	&lt;/label&gt;
 &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+
+&lt;div class=&quot;tree&quot;&gt;
+	&lt;div ui-tree data-drag-enabled=&quot;false&quot;&gt;
+		&lt;ol ui-tree-nodes=&quot;&quot; ng-model=&quot;treeDemos&quot; class=&quot;tree-line&quot; toggle-focus&gt;
+			&lt;li ng-repeat=&quot;item in treeDemos | filter:treeFilter&quot; ui-tree-node ng-include=&quot; &#x27;item_renderer.html&#x27; &quot;&gt;&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/ng-template&quot; id=&quot;item_renderer.html&quot;&gt;
+	&lt;div class=&quot;tree-toggle-group&quot;&gt;
+		&lt;div class=&quot;toggle-handle&quot; ng-class=&quot;{open: item.show}&quot; ng-click=&quot;item.show = !item.show&quot;&gt;&lt;i ng-show=&quot;item.categories.length &gt; 0&quot; class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+		&lt;div ui-tree-handle ng-class=&quot;{selected: item.selected}&quot; ng-click=&quot;item.selected=!item.selected&quot;&gt;
+			&lt;span ng-bind=&quot;item.name&quot;&gt;&lt;/span&gt;
+			&lt;span class=&quot;tree-line-right&quot;&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;ol ui-tree-nodes=&quot;&quot; ng-model=&quot;item.categories&quot; ng-show=&quot;item.show&quot;&gt;
+		&lt;li  ng-repeat=&quot;item in item.categories | filter:treeFilter&quot; ui-tree-node ng-include=&quot; &#x27;item_renderer.html&#x27; &quot;&gt;
+			test
+		&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/script&gt;
+</code></pre>
       </div>
 
       </section>
@@ -651,32 +611,14 @@ Each tree line has a right align span child that could show an icon if the line 
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">1.4</span
-          >Forms
+          >Inputs
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Input fields are more understandable with icons. Add one for every input if possible but make sure to keep it relevant and consistent.</p>
-
-      </div>
-    </div>
-
-
-      </section>
-      <section id="kssref-1-4-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.1</span
-          >Standard inputs
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>Standard inputs can be used as is and on their own. If you want to build a form, please look at the <a href=file:///C:/Users/carlr/Repos/styleguide/styleguide/styleguide/section-4.html>form layout</a>.</p>
+        <p>Standard inputs can be used as is and on their own. If you want to build a form with several inputs and actions on submit, please look at the <a href=file:///C:/Users/carlr/Repos/styleguide/styleguide/styleguide/section-4.html>form layout</a>.</p>
+<p>Note:  &lt;br/&gt; tags are for styleguide demo purpose only.</p>
 
       </div>
     </div>
@@ -688,7 +630,9 @@ Each tree line has a right align span child that could show an icon if the line 
         <div class="kss-modifier__example">
           <input type="text" placeholder="Name..."  />
 <br/>
+<br/>
 <input type="password" placeholder="Password..." />
+<br/>
 <br/>
 <input type="number" placeholder="Numbers..." />
         </div>
@@ -697,23 +641,30 @@ Each tree line has a right align span child that could show an icon if the line 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;input type=&quot;text&quot; placeholder=&quot;Name...&quot;  /&gt;
 &lt;br/&gt;
+&lt;br/&gt;
 &lt;input type=&quot;password&quot; placeholder=&quot;Password...&quot; /&gt;
+&lt;br/&gt;
 &lt;br/&gt;
 &lt;input type=&quot;number&quot; placeholder=&quot;Numbers...&quot; /&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-4-2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-4-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.2</span
+          <span class="kss-title__ref">1.4.1</span
           >Input with prepend
         </a>
       </h3>
 
 
+      <div class="kss-description">
+        <p>Inputs with prepend icon can be used when the input effects something that can easily be represented by an icon. This way we can rely on it taking up the same space in all languages.
+However, don&#39;t mix standard inputs and prepend ones. These inputs should have a placeholder and maybe a tooltip for explanation, since the icon is used in place of a label.</p>
+
+      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -721,36 +672,38 @@ Each tree line has a right align span child that could show an icon if the line 
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="input-prepend">
-<i class="mdi mdi-filter-outline"></i>
-<input type="text" name="filterRole" />
-</div>
+          <label for="inputId" class="input-prepend">
+	<i class="mdi mdi-filter-outline">
+	<md-tooltip>Filter something</md-tooltip></i>
+	<input type="text" id="inputId" placeholder="Filter something"/>
+</label>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;input-prepend&quot;&gt;
-&lt;i class=&quot;mdi mdi-filter-outline&quot;&gt;&lt;/i&gt;
-&lt;input type=&quot;text&quot; name=&quot;filterRole&quot; /&gt;
-&lt;/div&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for=&quot;inputId&quot; class=&quot;input-prepend&quot;&gt;
+	&lt;i class=&quot;mdi mdi-filter-outline&quot;&gt;
+	&lt;md-tooltip&gt;Filter something&lt;/md-tooltip&gt;&lt;/i&gt;
+	&lt;input type=&quot;text&quot; id=&quot;inputId&quot; placeholder=&quot;Filter something&quot;/&gt;
+&lt;/label&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-4-4" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-5" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
+      <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.4</span
+          <span class="kss-title__ref">1.5</span
           >Select
         </a>
-      </h3>
+      </h2>
 
 
       <div class="kss-description">
-        <p>The select is used to provide many options to the user.</p>
+        <p>The select is used to provide many options to the user and make complex selections simpler.</p>
 <p>The first example is a common select.</p>
-<p>The second one is an angular material select. It&#39;s broken right now. We are waiting for this fix: <a href="https://github.com/angular/material/issues/2564">https://github.com/angular/material/issues/2564</a></p>
+<p>The md-select doesnt render correctly in the styleguide but works fine in the project.</p>
 
       </div>
     </div>
@@ -766,11 +719,9 @@ Each tree line has a right align span child that could show an icon if the line 
 	<option>2</option>
 	<option>3</option>
 </select>
-	<md-select ng-model="model" placeholder="Pick an option">
-		<md-option ng-value="1">Option 1</md-option>
-		<md-option ng-value="2">Option 2</md-option>
-		<md-option ng-value="3">Option 3</md-option>
-	</md-select>
+<md-select ng-model="model" placeholder="Pick an option">
+	<md-option ng-repeat="item in demos" ng-value=""></md-option>
+</md-select>
         </div>
       </div>
 
@@ -781,28 +732,33 @@ Each tree line has a right align span child that could show an icon if the line 
 	&lt;option&gt;2&lt;/option&gt;
 	&lt;option&gt;3&lt;/option&gt;
 &lt;/select&gt;
-	&lt;md-select ng-model=&quot;model&quot; placeholder=&quot;Pick an option&quot;&gt;
-		&lt;md-option ng-value=&quot;1&quot;&gt;Option 1&lt;/md-option&gt;
-		&lt;md-option ng-value=&quot;2&quot;&gt;Option 2&lt;/md-option&gt;
-		&lt;md-option ng-value=&quot;3&quot;&gt;Option 3&lt;/md-option&gt;
-	&lt;/md-select&gt;</code></pre>
+&lt;md-select ng-model=&quot;model&quot; placeholder=&quot;Pick an option&quot;&gt;
+	&lt;md-option ng-repeat=&quot;item in demos&quot; ng-value=&quot;&quot;&gt;&lt;/md-option&gt;
+&lt;/md-select&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-4-5" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-6" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
+      <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.5</span
+          <span class="kss-title__ref">1.6</span
           >Radio buttons
         </a>
-      </h3>
+      </h2>
 
 
       <div class="kss-description">
         <p>Radio buttons are a group of options that can only have one item selected at a time.</p>
-
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+  $scope.demos = [{id: &#39;1&#39;}, {id: &#39;2&#39;}, {id: &#39;3&#39;}, {id: &#39;4&#39;}];
+    </pre></code>
+</div>
+</div>
       </div>
     </div>
 
@@ -812,121 +768,89 @@ Each tree line has a right align span child that could show an icon if the line 
         </div>
         <div class="kss-modifier__example">
           <form>
-<div class="wfm-radio">
-	<input type="radio" name="group1" id="radio1" checked="true"/>
-	<label for="radio1">
-		<span class="wfm-radio-toggle"></span>
-		<span class="wfm-radio-label">This</span>
-	</label>
-</div>
-<div class="wfm-radio">
-	<input type="radio" name="group1" id="radio2" />
-	<label for="radio2">
-		<span class="wfm-radio-toggle"></span>
-		<span class="wfm-radio-label">That</span>
-	</label>
-</div>
-</form>
-<h6>Using ng-repeat:</h6>
-<form>
-<div ng-repeat="item in demos">
 	<div class="wfm-radio">
-		<label>
-			<input type="radio" name="radio" value="value">
+		<input type="radio" name="group1" id="radio1" checked="true"/>
+		<label for="radio1">
 			<span class="wfm-radio-toggle"></span>
-			<span class="wfm-radio-label">Im looped out!</span>
+			<span class="wfm-radio-label">This</span>
 		</label>
 	</div>
-</div>
+	<div class="wfm-radio">
+		<input type="radio" name="group1" id="radio2" />
+		<label for="radio2">
+			<span class="wfm-radio-toggle"></span>
+			<span class="wfm-radio-label">That</span>
+		</label>
+	</div>
+</form>
+<h3>Using ng-repeat:</h3>
+<form>
+	<div ng-repeat="item in demos">
+		<div class="wfm-radio">
+			<label>
+				<input type="radio" name="radio" value="value">
+				<span class="wfm-radio-toggle"></span>
+				<span class="wfm-radio-label">Im looped out!</span>
+			</label>
+		</div>
+	</div>
 </form>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
-&lt;div class=&quot;wfm-radio&quot;&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;group1&quot; id=&quot;radio1&quot; checked=&quot;true&quot;/&gt;
-	&lt;label for=&quot;radio1&quot;&gt;
-		&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;wfm-radio-label&quot;&gt;This&lt;/span&gt;
-	&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;wfm-radio&quot;&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;group1&quot; id=&quot;radio2&quot; /&gt;
-	&lt;label for=&quot;radio2&quot;&gt;
-		&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;wfm-radio-label&quot;&gt;That&lt;/span&gt;
-	&lt;/label&gt;
-&lt;/div&gt;
-&lt;/form&gt;
-&lt;h6&gt;Using ng-repeat:&lt;/h6&gt;
-&lt;form&gt;
-&lt;div ng-repeat=&quot;item in demos&quot;&gt;
 	&lt;div class=&quot;wfm-radio&quot;&gt;
-		&lt;label&gt;
-			&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;value&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;group1&quot; id=&quot;radio1&quot; checked=&quot;true&quot;/&gt;
+		&lt;label for=&quot;radio1&quot;&gt;
 			&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
-			&lt;span class=&quot;wfm-radio-label&quot;&gt;Im looped out!&lt;/span&gt;
+			&lt;span class=&quot;wfm-radio-label&quot;&gt;This&lt;/span&gt;
 		&lt;/label&gt;
 	&lt;/div&gt;
-&lt;/div&gt;
+	&lt;div class=&quot;wfm-radio&quot;&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;group1&quot; id=&quot;radio2&quot; /&gt;
+		&lt;label for=&quot;radio2&quot;&gt;
+			&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
+			&lt;span class=&quot;wfm-radio-label&quot;&gt;That&lt;/span&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+&lt;h3&gt;Using ng-repeat:&lt;/h3&gt;
+&lt;form&gt;
+	&lt;div ng-repeat=&quot;item in demos&quot;&gt;
+		&lt;div class=&quot;wfm-radio&quot;&gt;
+			&lt;label&gt;
+				&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;value&quot;&gt;
+				&lt;span class=&quot;wfm-radio-toggle&quot;&gt;&lt;/span&gt;
+				&lt;span class=&quot;wfm-radio-label&quot;&gt;Im looped out!&lt;/span&gt;
+			&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/form&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-4-6" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-7" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
+      <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.6</span
-          >List radio buttons
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>Same as radio but with an inline display</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="wfm-radio-list">
-	<div class="wfm-radio-list-item ">Option 1</div>
-	<div class="wfm-radio-list-item ">Option 2</div>
-	<div class="wfm-radio-list-item selected">Option 3</div>
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;wfm-radio-list&quot;&gt;
-	&lt;div class=&quot;wfm-radio-list-item &quot;&gt;Option 1&lt;/div&gt;
-	&lt;div class=&quot;wfm-radio-list-item &quot;&gt;Option 2&lt;/div&gt;
-	&lt;div class=&quot;wfm-radio-list-item selected&quot;&gt;Option 3&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-4-7" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.7</span
+          <span class="kss-title__ref">1.7</span
           >Checkboxes
         </a>
-      </h3>
+      </h2>
 
 
       <div class="kss-description">
         <p>Checkboxes are used for selecting multiple input options.</p>
-
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+  $scope.demos = [{id: &#39;1&#39;}, {id: &#39;2&#39;}, {id: &#39;3&#39;}, {id: &#39;4&#39;}];
+    </pre></code>
+</div>
+</div>
       </div>
     </div>
 
@@ -936,81 +860,81 @@ Each tree line has a right align span child that could show an icon if the line 
         </div>
         <div class="kss-modifier__example">
           <form>
-<div class="wfm-checkbox">
-	<input type="checkbox" id="check1" checked="true"/>
-	<label for="check1">
-		<span class="wfm-checkbox-toggle"></span>
-		<span class="wfm-checkbox-label">Check </span>
-	</label>
-</div>
-<div class="wfm-checkbox">
-	<input type="checkbox" id="check2" />
-	<label for="check2">
-		<span class="wfm-checkbox-toggle"></span>
-		<span class="wfm-checkbox-label">Check </span>
-	</label>
-</div>
-</form>
-<h6>Using ng-repeat:</h6>
-<form>
-<div ng-repeat="item in demos">
 	<div class="wfm-checkbox">
-		<label>
-			<input type="checkbox" name="checkbox" value="value">
+		<input type="checkbox" id="check1" checked="true"/>
+		<label for="check1">
 			<span class="wfm-checkbox-toggle"></span>
-			<span class="wfm-checkbox-label">Im looped out!</span>
+			<span class="wfm-checkbox-label">Check </span>
 		</label>
 	</div>
-</div>
+	<div class="wfm-checkbox">
+		<input type="checkbox" id="check2" />
+		<label for="check2">
+			<span class="wfm-checkbox-toggle"></span>
+			<span class="wfm-checkbox-label">Check </span>
+		</label>
+	</div>
+</form>
+<h3>Using ng-repeat:</h3>
+<form>
+	<div ng-repeat="item in demos">
+		<div class="wfm-checkbox">
+			<label>
+				<input type="checkbox" name="checkbox" value="value">
+				<span class="wfm-checkbox-toggle"></span>
+				<span class="wfm-checkbox-label">Im looped out!</span>
+			</label>
+		</div>
+	</div>
 </form>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
-&lt;div class=&quot;wfm-checkbox&quot;&gt;
-	&lt;input type=&quot;checkbox&quot; id=&quot;check1&quot; checked=&quot;true&quot;/&gt;
-	&lt;label for=&quot;check1&quot;&gt;
-		&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Check &lt;/span&gt;
-	&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;wfm-checkbox&quot;&gt;
-	&lt;input type=&quot;checkbox&quot; id=&quot;check2&quot; /&gt;
-	&lt;label for=&quot;check2&quot;&gt;
-		&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Check &lt;/span&gt;
-	&lt;/label&gt;
-&lt;/div&gt;
-&lt;/form&gt;
-&lt;h6&gt;Using ng-repeat:&lt;/h6&gt;
-&lt;form&gt;
-&lt;div ng-repeat=&quot;item in demos&quot;&gt;
 	&lt;div class=&quot;wfm-checkbox&quot;&gt;
-		&lt;label&gt;
-			&lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; value=&quot;value&quot;&gt;
+		&lt;input type=&quot;checkbox&quot; id=&quot;check1&quot; checked=&quot;true&quot;/&gt;
+		&lt;label for=&quot;check1&quot;&gt;
 			&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
-			&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Im looped out!&lt;/span&gt;
+			&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Check &lt;/span&gt;
 		&lt;/label&gt;
 	&lt;/div&gt;
-&lt;/div&gt;
+	&lt;div class=&quot;wfm-checkbox&quot;&gt;
+		&lt;input type=&quot;checkbox&quot; id=&quot;check2&quot; /&gt;
+		&lt;label for=&quot;check2&quot;&gt;
+			&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
+			&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Check &lt;/span&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+&lt;h3&gt;Using ng-repeat:&lt;/h3&gt;
+&lt;form&gt;
+	&lt;div ng-repeat=&quot;item in demos&quot;&gt;
+		&lt;div class=&quot;wfm-checkbox&quot;&gt;
+			&lt;label&gt;
+				&lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; value=&quot;value&quot;&gt;
+				&lt;span class=&quot;wfm-checkbox-toggle&quot;&gt;&lt;/span&gt;
+				&lt;span class=&quot;wfm-checkbox-label&quot;&gt;Im looped out!&lt;/span&gt;
+			&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/form&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-4-8" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-8" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
+      <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.8</span
+          <span class="kss-title__ref">1.8</span
           >Switch
         </a>
-      </h3>
+      </h2>
 
 
       <div class="kss-description">
-        <p>The switch is used to toggle between two states (for example show/hide) and uses <a href="http://goo.gl/M5U1oC">Angulars ng-show or ng-hide</a> to toggle other elements.</p>
+        <p>The switch is used to toggle between two states (for example show/hide, using <a href="http://goo.gl/M5U1oC">Angulars ng-show or ng-hide</a> to toggle other elements).</p>
 
       </div>
     </div>
@@ -1041,20 +965,221 @@ Each tree line has a right align span child that could show an icon if the line 
       </div>
 
       </section>
-      <section id="kssref-1-4-9" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-9" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.9</span
+          >Buttons
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>When using buttons try helping the user understand what the action will do and what object it will effect. This can be done using good terms and tooltips.
+For more details take a look at the <a href="http://www.google.com/design/spec/components/buttons.html#buttons-usage">material design buttons</a></p>
+<p>Note: A primary button is UNIQUE on a page and is for the MAIN action on that page.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-1-9-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.4.9</span
-          >Slider
+          <span class="kss-title__ref">1.9.1</span
+          >Flat buttons
         </a>
       </h3>
 
 
       <div class="kss-description">
-        <p>The slider is used to input a range or value on a scale.
-Right now, only numeric values are supported. Check <a href="https://github.com/angular/material/issues/200">https://github.com/angular/material/issues/200</a> to know when non-numeric values will be available.</p>
+        <p>The flat buttons are &#39;printed&#39; on the material and only show its area when hovered, it uses capital letters to differentiate it from a link.
+Use the flat buttons when there is a panel/area behind (around) the button.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <button class="wfm-btn wfm-btn-invis-default">Default</button>
+<button class="wfm-btn wfm-btn-invis-primary">Primary</button>
+<button class="wfm-btn wfm-btn-invis-disabled">Disabled</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-invis-disabled&quot;&gt;Disabled&lt;/button&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-9-2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.9.2</span
+          >Raised buttons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The raised buttons lives on a raised layer and its area is always visible. Use raised buttons when there is no panel/area behind (around) the button.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <button class="wfm-btn wfm-btn-default">Default</button>
+<button class="wfm-btn wfm-btn-primary">Primary</button>
+<button class="wfm-btn wfm-btn-primary-disabled">Disabled</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-btn wfm-btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-primary-disabled&quot;&gt;Disabled&lt;/button&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-9-3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.9.3</span
+          >Action buttons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The floating action button functions similarly to the raised buttons except that they float above the entire layout (even though its located inside the view header). They are also similar in that they are unique in each view, indicating the primary positive action. More about when to use it can be found in the <a href="http://www.google.com/design/spec/components/buttons.html#buttons-floating-action-button">google material guidelines.</a></p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <button class="wfm-fab  material-depth-1"><i class="mdi mdi-account"></i>
+	<md-tooltip>My account</md-tooltip>
+</button>
+<button class="wfm-fab  material-depth-1 info"><i class="mdi mdi-arrow-right"></i>
+	<md-tooltip>Carry on</md-tooltip>
+</button>
+<button class="wfm-fab  material-depth-1 success"><i class="mdi mdi-plus"></i>
+	<md-tooltip>Add a thing</md-tooltip>
+</button>
+<button class="wfm-fab  material-depth-1 mini"><i class="mdi mdi-account"></i>
+	<md-tooltip>My account</md-tooltip>
+</button>
+<button class="wfm-fab  material-depth-1 mini info"><i class="mdi mdi-arrow-right"></i>
+	<md-tooltip>Carry on</md-tooltip>
+</button>
+<button class="wfm-fab  material-depth-1 mini success"><i class="mdi mdi-plus"></i>
+	<md-tooltip>Add a thing</md-tooltip>
+</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-fab  material-depth-1&quot;&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;My account&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab  material-depth-1 info&quot;&gt;&lt;i class=&quot;mdi mdi-arrow-right&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;Carry on&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab  material-depth-1 success&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;Add a thing&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab  material-depth-1 mini&quot;&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;My account&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab  material-depth-1 mini info&quot;&gt;&lt;i class=&quot;mdi mdi-arrow-right&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;Carry on&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab  material-depth-1 mini success&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;Add a thing&lt;/md-tooltip&gt;
+&lt;/button&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-9-4" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.9.4</span
+          >Removing action buttons
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The action button can not be disabled, rather it should simply not be displayed if unavailable.
+It is possible to trigger the animations using ng-click and/or ng-class.</p>
+<p>These animations should only be applied to action buttons.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <button class="wfm-fab grow-out  material-depth-1"><i class="mdi mdi-plus" ></i>
+	<md-tooltip>I appear when needed</md-tooltip>
+</button>
+<button class="wfm-fab  material-depth-1" ng-class="{'shrink-in':animateIn === 'trigger1'}" ng-click="animateIn = 'trigger1'">
+	<i class="mdi mdi-close"></i>
+	<md-tooltip>Click me and im gone</md-tooltip>
+</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-fab grow-out  material-depth-1&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot; &gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;I appear when needed&lt;/md-tooltip&gt;
+&lt;/button&gt;
+&lt;button class=&quot;wfm-fab  material-depth-1&quot; ng-class=&quot;{&#x27;shrink-in&#x27;:animateIn === &#x27;trigger1&#x27;}&quot; ng-click=&quot;animateIn = &#x27;trigger1&#x27;&quot;&gt;
+	&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt;
+	&lt;md-tooltip&gt;Click me and im gone&lt;/md-tooltip&gt;
+&lt;/button&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-10" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.10</span
+          >Slider
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>The slider is used to input a range or value on a scale. It can be controlled with left and right arrow keys for greater accuracy if focused.</p>
 
       </div>
     </div>
@@ -1079,507 +1204,19 @@ With label
       </div>
 
       </section>
-      <section id="kssref-1-5" class="kss-section kss-section--depth-2">
+      <section id="kssref-1-11" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.5</span
-          >Navbars
-        </a>
-      </h2>
-
-
-    </div>
-
-
-      </section>
-      <section id="kssref-1-5-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.5.1</span
-          >Topbar
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>The topbar is, as you might have guessed at the top of the page, and contains the brand, the path to the current view, a global search and some actions. Since the same topbar is always imported into every view it should only contain global and unspescific tools and actions.</p>
-<p>Note: the &#39;path&#39; should show where the view is in relation to the root, not how the user got to it.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="material-depth-1 navbar navbar-default">
-	<div class="navbar-header content">
-		<div class="navbar-left">
-			<span class="brand" ui-sref="main">Teleopti WFM</span>
-		</div>
-		<div class="navbar-right" >
-			<span>
-				<i class="mdi mdi-magnify"></i>
-				<input type="text" placeholder="search..." class="global-search" />
-				<div class="search-results material-depth-2">
-					<ul class="wfm-list">
-						<div>
-							<li class="wfm-search-li">
-								<button ng-if="gp == 'Permission' " class="wfm-fab mini result-icon"><i class="mdi mdi-account-check"></i></button>
-								<button ng-if="gp == 'Planning Period' " class="wfm-fab mini info result-icon"><i class="mdi mdi-calendar"></i></button>
-								Tile
-							</li>
-							<li class="animate-repeat">
-								<div>
-									item
-								</div>
-							</li>
-							<li class="animate-repeat"></li>
-						</div>
-					</ul>
-				</div>
-			</span>
-			<button class="nav-context-menu">
-				<i class="mdi mdi-bell"><md-tooltip>Notifications</md-tooltip></i>
-				<div class="nav-context-menu-left">
-					<div class="arrow-up"></div>
-					<div class="context-content" >
-						<div class="notification-list">
-								<h4>Notifications</h4>
-								<div>
-									<ul class="notification-list">
-										<li><i class="mdi mdi-alert-circle"></i>1 forecast finished at 14:22</li>
-                    <li><i class="mdi mdi-alert-circle"></i>1 forecast finished at 13:22</li>
-                    <li><i class="mdi mdi-alert-circle"></i>1 forecast finished at 12:22</li>
-									</ul>
-								</div>
-						</div>
-					</div>
-				</div>
-			</button>
-			<button class="nav-context-menu">
-			<i class="mdi mdi-help-circle"><md-tooltip>Help</md-tooltip></i>
-			<div class="nav-context-menu-left">
-				<div class="arrow-up"></div>
-				<div class="context-content">
-						<h4>
-							<a href="#"></a>
-							<span class="caps">Current view</span>
-            </h4>
-						<p class="description">
-              Here you would find some information about the view you are currently in.</br>
-            </p>
-					<footer>
-						<a href="#" class="wfm-btn wfm-btn-primary-invis">Go to wiki</a>
-					</footer>
-				</div>
-			</div>
-			</button>
-			<a href="#"><i class="mdi mdi-settings"></i>
-				<md-tooltip>Settings</md-tooltip>
-			</a>
-			<a href="#"><i class="mdi mdi-logout"></i>
-				<md-tooltip>Logout</md-tooltip>
-			</a>
-		</div>
-	</div>
-</div>
-
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;material-depth-1 navbar navbar-default&quot;&gt;
-	&lt;div class=&quot;navbar-header content&quot;&gt;
-		&lt;div class=&quot;navbar-left&quot;&gt;
-			&lt;span class=&quot;brand&quot; ui-sref=&quot;main&quot;&gt;Teleopti WFM&lt;/span&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;navbar-right&quot; &gt;
-			&lt;span&gt;
-				&lt;i class=&quot;mdi mdi-magnify&quot;&gt;&lt;/i&gt;
-				&lt;input type=&quot;text&quot; placeholder=&quot;search...&quot; class=&quot;global-search&quot; /&gt;
-				&lt;div class=&quot;search-results material-depth-2&quot;&gt;
-					&lt;ul class=&quot;wfm-list&quot;&gt;
-						&lt;div&gt;
-							&lt;li class=&quot;wfm-search-li&quot;&gt;
-								&lt;button ng-if=&quot;gp == &#x27;Permission&#x27; &quot; class=&quot;wfm-fab mini result-icon&quot;&gt;&lt;i class=&quot;mdi mdi-account-check&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-								&lt;button ng-if=&quot;gp == &#x27;Planning Period&#x27; &quot; class=&quot;wfm-fab mini info result-icon&quot;&gt;&lt;i class=&quot;mdi mdi-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-								Tile
-							&lt;/li&gt;
-							&lt;li class=&quot;animate-repeat&quot;&gt;
-								&lt;div&gt;
-									item
-								&lt;/div&gt;
-							&lt;/li&gt;
-							&lt;li class=&quot;animate-repeat&quot;&gt;&lt;/li&gt;
-						&lt;/div&gt;
-					&lt;/ul&gt;
-				&lt;/div&gt;
-			&lt;/span&gt;
-			&lt;button class=&quot;nav-context-menu&quot;&gt;
-				&lt;i class=&quot;mdi mdi-bell&quot;&gt;&lt;md-tooltip&gt;Notifications&lt;/md-tooltip&gt;&lt;/i&gt;
-				&lt;div class=&quot;nav-context-menu-left&quot;&gt;
-					&lt;div class=&quot;arrow-up&quot;&gt;&lt;/div&gt;
-					&lt;div class=&quot;context-content&quot; &gt;
-						&lt;div class=&quot;notification-list&quot;&gt;
-								&lt;h4&gt;Notifications&lt;/h4&gt;
-								&lt;div&gt;
-									&lt;ul class=&quot;notification-list&quot;&gt;
-										&lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;1 forecast finished at 14:22&lt;/li&gt;
-                    &lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;1 forecast finished at 13:22&lt;/li&gt;
-                    &lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;1 forecast finished at 12:22&lt;/li&gt;
-									&lt;/ul&gt;
-								&lt;/div&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/button&gt;
-			&lt;button class=&quot;nav-context-menu&quot;&gt;
-			&lt;i class=&quot;mdi mdi-help-circle&quot;&gt;&lt;md-tooltip&gt;Help&lt;/md-tooltip&gt;&lt;/i&gt;
-			&lt;div class=&quot;nav-context-menu-left&quot;&gt;
-				&lt;div class=&quot;arrow-up&quot;&gt;&lt;/div&gt;
-				&lt;div class=&quot;context-content&quot;&gt;
-						&lt;h4&gt;
-							&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
-							&lt;span class=&quot;caps&quot;&gt;Current view&lt;/span&gt;
-            &lt;/h4&gt;
-						&lt;p class=&quot;description&quot;&gt;
-              Here you would find some information about the view you are currently in.&lt;/br&gt;
-            &lt;/p&gt;
-					&lt;footer&gt;
-						&lt;a href=&quot;#&quot; class=&quot;wfm-btn wfm-btn-primary-invis&quot;&gt;Go to wiki&lt;/a&gt;
-					&lt;/footer&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-			&lt;/button&gt;
-			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-settings&quot;&gt;&lt;/i&gt;
-				&lt;md-tooltip&gt;Settings&lt;/md-tooltip&gt;
-			&lt;/a&gt;
-			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-logout&quot;&gt;&lt;/i&gt;
-				&lt;md-tooltip&gt;Logout&lt;/md-tooltip&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-5-2" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.5.2</span
-          >Headers
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>The normal header is used to indicate a new area or panel, any headers within that panel will have the second header (however, try to keep the total number of headers within one panel as low as possible).</p>
-<p>A secondary header should not live within another secondary header, rather, make a new secondary header to make skimming through the panel simple.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="sub-header">
-First header title
-</div>
-<div class="bottom-header">
-Second header title
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;sub-header&quot;&gt;
-First header title
-&lt;/div&gt;
-&lt;div class=&quot;bottom-header&quot;&gt;
-Second header title
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-5-3" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.5.3</span
-          >Sidenav headers
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>These headers are twice as thick as the normal headers. They are only used in the sidenavs and should not be part of the normal layout.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="sidenav-header">
-Place me in your sidenav!
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;sidenav-header&quot;&gt;
-Place me in your sidenav!
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-6" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.6</span
-          >Buttons
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>When using buttons, avoid non specific actions as a label.
-For example, &quot;OK&quot;, &quot;GO&quot;, &quot;ACCEPT&quot; are not specific while &quot;SAVE USER&quot; and &quot;GO ON DASHBOARD&quot; are.
-This helps the user understand what the action will do and what object it will effect.
-For more details take a look at the <a href="http://www.google.com/design/spec/components/buttons.html#buttons-usage">material design buttons</a></p>
-<p>The primary version of the button should be used for the primary action (i.e the one the user is most likely to take) in that view.
-By that logic there should normally only be one per screen.</p>
-<p>There are different types of buttons, however try to use one type of button per container. Only mix button types when you have a good reason to do so.</p>
-
-      </div>
-    </div>
-
-
-      </section>
-      <section id="kssref-1-6-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.6.1</span
-          >Flat buttons
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>The flat buttons are &#39;printed&#39; on the material and only show its area when hovered, it uses capital letters to differentiate it from a link.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <button class="wfm-btn wfm-btn-invis-default">Default</button>
-<button class="wfm-btn wfm-btn-invis-primary">Primary</button>
-<button class="wfm-btn wfm-btn-invis-disabled">Disabled</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;wfm-btn wfm-btn-invis-disabled&quot;&gt;Disabled&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-6-2" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.6.2</span
-          >Raised buttons
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>The raised buttons lives on a raised layer and its area is always visible.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <button class="wfm-btn wfm-btn-default">Default</button>
-<button class="wfm-btn wfm-btn-primary">Primary</button>
-<button class="wfm-btn wfm-btn-primary-disabled">Disabled</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-btn wfm-btn-default&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;wfm-btn wfm-btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;wfm-btn wfm-btn-primary-disabled&quot;&gt;Disabled&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-6-3" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.6.3</span
-          >Action buttons
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>The floating action button functions much like the primary raised button in that there should preferably only be one per view, indicating the primary positive action. More about when to use it can be found in the <a href="http://www.google.com/design/spec/components/buttons.html#buttons-floating-action-button">google material guidelines.</a></p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <button class="wfm-fab"><i class="mdi mdi-account"></i>
-<md-tooltip>My account</md-tooltip>
-</button>
-<button class="wfm-fab info"><i class="mdi mdi-arrow-right"></i>
-<md-tooltip>Carry on</md-tooltip>
-</button>
-<button class="wfm-fab success"><i class="mdi mdi-plus"></i>
-<md-tooltip>Add a thing</md-tooltip>
-</button>
-<button class="wfm-fab mini"><i class="mdi mdi-account"></i>
-<md-tooltip>My account</md-tooltip>
-</button>
-<button class="wfm-fab mini info"><i class="mdi mdi-arrow-right"></i>
-<md-tooltip>Carry on</md-tooltip>
-</button>
-<button class="wfm-fab mini success"><i class="mdi mdi-plus"></i>
-<md-tooltip>Add a thing</md-tooltip>
-</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-fab&quot;&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;My account&lt;/md-tooltip&gt;
-&lt;/button&gt;
-&lt;button class=&quot;wfm-fab info&quot;&gt;&lt;i class=&quot;mdi mdi-arrow-right&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;Carry on&lt;/md-tooltip&gt;
-&lt;/button&gt;
-&lt;button class=&quot;wfm-fab success&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;Add a thing&lt;/md-tooltip&gt;
-&lt;/button&gt;
-&lt;button class=&quot;wfm-fab mini&quot;&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;My account&lt;/md-tooltip&gt;
-&lt;/button&gt;
-&lt;button class=&quot;wfm-fab mini info&quot;&gt;&lt;i class=&quot;mdi mdi-arrow-right&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;Carry on&lt;/md-tooltip&gt;
-&lt;/button&gt;
-&lt;button class=&quot;wfm-fab mini success&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;Add a thing&lt;/md-tooltip&gt;
-&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-6-4" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.6.4</span
-          >Animated action button
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>The action button can not be disabled, rather it should simply not be displayed if unavailable.
-It is possible to trigger the animations using ng-click and/or ng-class.</p>
-<p>These animations should only be applied to action buttons.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <button class="wfm-fab grow-out info"><i class="mdi mdi-plus" ></i>
-<md-tooltip>I appear when needed</md-tooltip>
-</button>
-<button class="wfm-fab info" ng-class="{'shrink-in':animateIn === 'trigger1'}" ng-click="animateIn = 'trigger1'">
-<i class="mdi mdi-close"></i>
-<md-tooltip>Click me and im gone</md-tooltip>
-</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;wfm-fab grow-out info&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot; &gt;&lt;/i&gt;
-&lt;md-tooltip&gt;I appear when needed&lt;/md-tooltip&gt;
-&lt;/button&gt;
-&lt;button class=&quot;wfm-fab info&quot; ng-class=&quot;{&#x27;shrink-in&#x27;:animateIn === &#x27;trigger1&#x27;}&quot; ng-click=&quot;animateIn = &#x27;trigger1&#x27;&quot;&gt;
-&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt;
-&lt;md-tooltip&gt;Click me and im gone&lt;/md-tooltip&gt;
-&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-7" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.7</span
-          >Text
-        </a>
-      </h2>
-
-
-    </div>
-
-
-      </section>
-      <section id="kssref-1-7-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.7.1</span
+          <span class="kss-title__ref">1.11</span
           >Typography
         </a>
-      </h3>
+      </h2>
 
 
       <div class="kss-description">
-        <p>Our standard font-family is  15px Calibri (&#39;Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif).</p>
+        <p>Our standard font-family is 14px Calibri (&#39;Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif). Avoid introducing other font types or sizes as this may lead to issues with layout or translation.</p>
 
       </div>
     </div>
@@ -1589,90 +1226,27 @@ It is possible to trigger the animations using ng-click and/or ng-class.</p>
           Example
         </div>
         <div class="kss-modifier__example">
-          <p>Simple text</p>
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
+          <h1>View header</h1>
+<h2>Panel header</h2>
+<h3>Sub header</h3>
+<p>Simple text</p>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Simple text&lt;/p&gt;
-&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;View header&lt;/h1&gt;
+&lt;h2&gt;Panel header&lt;/h2&gt;
+&lt;h3&gt;Sub header&lt;/h3&gt;
+&lt;p&gt;Simple text&lt;/p&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-7-2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-11-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.7.2</span
-          >Language
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>We would like to keep a common naming for normal actions throughout the application.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <table class="wfm-table">
-<thead><tr><th>Do</th><th>Don't</th><th>Distinction</th></tr></thead>
-<tbody>
-<tr><td>Add</td><td>New</td><td>Add sounds more positive.</td></tr>
-<tr><td>Search</td><td>Find</td><td>We can't promise the user we will find something.</td></tr>
-<tr><td>Manage</td><td>Handle</td><td>Manage sounds more positive.</td></tr>
-<tr><td>Edit</td><td>Modify</td><td>Edit is more commonly used.</td></tr>
-<tr><td>Refresh</td><td>Update</td><td>Refresh is more commonly used.</td></tr>
-<tr><td>OK</td><td>Agree</td><td>Use OK if needed but try to use something that describes the action better.</td></tr>
-<tr><td>Delete/ Remove/ Hide</td><td>Clear</td><td>Use delete for permanent actions, remove for non permanent actions and hide to hide for just that user.</td></tr>
-<tr><td>Select</td><td>Choose</td><td>Select sounds more positive, choose sounds limiting and demanding.</td></tr>
-<tr><td>Send/Apply/Save</td><td>Submit</td><td>Use send for actions that need further actions (a request for example), Use save for saving new or changed parameters, apply can be used where appropriate.</td></tr>
-<tr><td>Show</td><td>Display/view</td><td>Show sounds more positive and less formal.</td></tr>
-<tr><td>Cancel/Dismiss</td><td>-</td><td>Use cancel for cancelling actions. Use dismiss for removing information where no action from the user is required (like modals without actions).</td></tr>
-</tbody>
-</table>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table&quot;&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Do&lt;/th&gt;&lt;th&gt;Don&#x27;t&lt;/th&gt;&lt;th&gt;Distinction&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt;Add&lt;/td&gt;&lt;td&gt;New&lt;/td&gt;&lt;td&gt;Add sounds more positive.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Search&lt;/td&gt;&lt;td&gt;Find&lt;/td&gt;&lt;td&gt;We can&#x27;t promise the user we will find something.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Manage&lt;/td&gt;&lt;td&gt;Handle&lt;/td&gt;&lt;td&gt;Manage sounds more positive.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Edit&lt;/td&gt;&lt;td&gt;Modify&lt;/td&gt;&lt;td&gt;Edit is more commonly used.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Refresh&lt;/td&gt;&lt;td&gt;Update&lt;/td&gt;&lt;td&gt;Refresh is more commonly used.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;OK&lt;/td&gt;&lt;td&gt;Agree&lt;/td&gt;&lt;td&gt;Use OK if needed but try to use something that describes the action better.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Delete/ Remove/ Hide&lt;/td&gt;&lt;td&gt;Clear&lt;/td&gt;&lt;td&gt;Use delete for permanent actions, remove for non permanent actions and hide to hide for just that user.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Select&lt;/td&gt;&lt;td&gt;Choose&lt;/td&gt;&lt;td&gt;Select sounds more positive, choose sounds limiting and demanding.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Send/Apply/Save&lt;/td&gt;&lt;td&gt;Submit&lt;/td&gt;&lt;td&gt;Use send for actions that need further actions (a request for example), Use save for saving new or changed parameters, apply can be used where appropriate.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Show&lt;/td&gt;&lt;td&gt;Display/view&lt;/td&gt;&lt;td&gt;Show sounds more positive and less formal.&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Cancel/Dismiss&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Use cancel for cancelling actions. Use dismiss for removing information where no action from the user is required (like modals without actions).&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-7-3" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.7.3</span
+          <span class="kss-title__ref">1.11.1</span
           >Helper classes for text
         </a>
       </h3>
@@ -1704,38 +1278,503 @@ It is possible to trigger the animations using ng-click and/or ng-class.</p>
       </div>
 
       </section>
-      <section id="kssref-1-8" class="kss-section kss-section--depth-2">
+      <section id="kssref-1-12" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.8</span
+          <span class="kss-title__ref">1.12</span
+          >Notifications
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Notifications are more global and general compared to notices. They can function more like a actions archive. For more about notifications see the <a href="file:///C:/Users/carlr/Repos/styleguide/styleguide/styleguide/section-1.html#/kssref-1-14" >navbar chapter</a>.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="notification-list wfm-simple-list">
+	<li>
+		<i class="mdi mdi-alert-circle"></i>
+		<b>Forecast</b>
+		<span class="pull-right">16:18</span>
+		<div class="subtext">Done without errors</div>
+	</li>
+	<li>
+		<i class="mdi mdi-alert-circle"></i>
+		<b>Forecast</b>
+		<span class="pull-right">13:37</span>
+		<div class="subtext">Done without errors</div>
+	</li>
+	<li>
+		<i class="mdi mdi-alert-circle"></i>
+		<b>Forecast</b>
+		<span class="pull-right">11:11</span>
+		<div class="subtext">Done without errors</div>
+	</li>
+</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;notification-list wfm-simple-list&quot;&gt;
+	&lt;li&gt;
+		&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;
+		&lt;b&gt;Forecast&lt;/b&gt;
+		&lt;span class=&quot;pull-right&quot;&gt;16:18&lt;/span&gt;
+		&lt;div class=&quot;subtext&quot;&gt;Done without errors&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;
+		&lt;b&gt;Forecast&lt;/b&gt;
+		&lt;span class=&quot;pull-right&quot;&gt;13:37&lt;/span&gt;
+		&lt;div class=&quot;subtext&quot;&gt;Done without errors&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;
+		&lt;b&gt;Forecast&lt;/b&gt;
+		&lt;span class=&quot;pull-right&quot;&gt;11:11&lt;/span&gt;
+		&lt;div class=&quot;subtext&quot;&gt;Done without errors&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-13" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.13</span
+          >Context menus
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Context menus are used where more actions are needed.
+To keep them manageable, limit the number of actions displayed within to a maximum of 5.
+Additionally a menu can not trigger a child menu from within itself.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+           <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+ 	Place me on the left
+ 	<span class="context-menu-right">
+ 		<ul class="wfm-list">
+ 			<li><i class="mdi mdi-account"></i>Sign out</li>
+ 			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+ 			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+ <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+ 	place me in the middle
+ 	<span class="context-menu-bottom">
+ 		<ul class="wfm-list">
+ 			<li><i class="mdi mdi-account"></i>Sign out</li>
+ 			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+ 			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+ <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+ 	Place me on the right
+ 	<span class="context-menu-left">
+ 		<ul class="wfm-list">
+ 			<li><i class="mdi mdi-account"></i>Sign out</li>
+ 			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+ 			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+ <br/>
+ <div tabindex=0 class="context-menu card-context">
+ 	<i class="mdi mdi-dots-vertical"></i>
+ 	<span class="context-menu-right">
+ 		<ul class="wfm-list">
+ 			<li><i class="mdi mdi-account"></i>Sign out</li>
+ 			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+ 			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+ <div tabindex=0 class="context-menu card-context">
+ 	<i class="mdi mdi-dots-vertical"></i>
+ 	<span class="context-menu-bottom">
+ 		<ul class="wfm-list">
+ 			<li><i class="mdi mdi-account"></i>Sign out</li>
+ 			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+ 			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+ <div tabindex=0 class="context-menu card-context">
+ 	<i class="mdi mdi-dots-vertical"></i>
+ 	<span class="context-menu-left">
+ 		<ul class="wfm-list">
+ 			<li><i class="mdi mdi-account"></i>Sign out</li>
+ 			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+ 			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html"> &lt;div tabindex=0 class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
+ 	Place me on the left
+ 	&lt;span class=&quot;context-menu-right&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div tabindex=0 class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
+ 	place me in the middle
+ 	&lt;span class=&quot;context-menu-bottom&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div tabindex=0 class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
+ 	Place me on the right
+ 	&lt;span class=&quot;context-menu-left&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;br/&gt;
+ &lt;div tabindex=0 class=&quot;context-menu card-context&quot;&gt;
+ 	&lt;i class=&quot;mdi mdi-dots-vertical&quot;&gt;&lt;/i&gt;
+ 	&lt;span class=&quot;context-menu-right&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div tabindex=0 class=&quot;context-menu card-context&quot;&gt;
+ 	&lt;i class=&quot;mdi mdi-dots-vertical&quot;&gt;&lt;/i&gt;
+ 	&lt;span class=&quot;context-menu-bottom&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div tabindex=0 class=&quot;context-menu card-context&quot;&gt;
+ 	&lt;i class=&quot;mdi mdi-dots-vertical&quot;&gt;&lt;/i&gt;
+ 	&lt;span class=&quot;context-menu-left&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
+ 			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-14" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.14</span
+          >Navbars
+        </a>
+      </h2>
+
+
+    </div>
+
+
+      </section>
+      <section id="kssref-1-14-1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.14.1</span
+          >Topbar
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The topbar is, as you might have guessed at the top of the page, and contains the brand, a global search and some actions. Since the same topbar is always imported into every view it should only contain global and unspescific tools and actions.</p>
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+  $scope.demos = [{id: &#39;1&#39;}, {id: &#39;2&#39;}, {id: &#39;3&#39;}, {id: &#39;4&#39;}];
+    </pre></code>
+</div>
+</div>
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="material-depth-1 navbar navbar-default">
+	<div class="navbar-header content">
+		<div class="navbar-left">
+			<span class="brand" ui-sref="main">Teleopti WFM</span>
+		</div>
+		<div class="navbar-right" >
+			<span>
+				<label for="searchBar" class="input-prepend">
+				<i class="mdi mdi-magnify">
+				<md-tooltip>Filter something</md-tooltip></i>
+				<input type="text" id="searchBar" placeholder="Search" class="global-search"/>
+				</label>
+			</span>
+			<span tabindex=0 class="nav-context-menu">
+				<i class="mdi mdi-bell"><md-tooltip>Notifications</md-tooltip></i>
+				<div class="nav-context-menu-left">
+					<div class="arrow-up"></div>
+					<div class="context-content" >
+						<div class="notification-list">
+								<h4>Notifications
+							<div class="wfm-switch">
+									<input type="checkbox" ng-model="activeNotification" ng-init="activeNotification=true" id="notificationToggle"/>
+									<label for="notificationToggle">
+										<span class="wfm-switch-toggle"></span>
+									</label>
+									<md-tooltip ng-if="activeNotification==true">Turn off</md-tooltip>
+									<md-tooltip ng-if="activeNotification==false">Turn on</md-tooltip>
+								</div>
+								</h4>
+								<div>
+									<ul ng-if="activeNotification==true" class="notification-list wfm-simple-list">
+											<li ng-repeat="item in demos">
+														<i class="mdi mdi-alert-circle"></i>
+														<b>Forecast</b>
+														<span class="pull-right">13:37</span>
+														<div class="subtext">Done without errors</div>
+											</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</span>
+			<span tabindex=0 class="nav-context-menu">
+			<i class="mdi mdi-help-circle"><md-tooltip>Help</md-tooltip></i>
+			<div class="nav-context-menu-left">
+				<div class="arrow-up"></div>
+				<div class="context-content">
+						<h4>
+							<a href="#"></a>
+							<span class="caps">Current view</span>
+            </h4>
+						<p class="description">
+              Here you would find some information about the view you are currently in.</br>
+            </p>
+					<footer>
+						<a href="#" class="wfm-btn wfm-btn-primary-invis">Go to wiki</a>
+					</footer>
+				</div>
+			</div>
+		</span>
+			<a href="#"><i class="mdi mdi-settings"></i>
+				<md-tooltip>Settings</md-tooltip>
+			</a>
+			<a href="#"><i class="mdi mdi-logout"></i>
+				<md-tooltip>Logout</md-tooltip>
+			</a>
+		</div>
+	</div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;material-depth-1 navbar navbar-default&quot;&gt;
+	&lt;div class=&quot;navbar-header content&quot;&gt;
+		&lt;div class=&quot;navbar-left&quot;&gt;
+			&lt;span class=&quot;brand&quot; ui-sref=&quot;main&quot;&gt;Teleopti WFM&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;navbar-right&quot; &gt;
+			&lt;span&gt;
+				&lt;label for=&quot;searchBar&quot; class=&quot;input-prepend&quot;&gt;
+				&lt;i class=&quot;mdi mdi-magnify&quot;&gt;
+				&lt;md-tooltip&gt;Filter something&lt;/md-tooltip&gt;&lt;/i&gt;
+				&lt;input type=&quot;text&quot; id=&quot;searchBar&quot; placeholder=&quot;Search&quot; class=&quot;global-search&quot;/&gt;
+				&lt;/label&gt;
+			&lt;/span&gt;
+			&lt;span tabindex=0 class=&quot;nav-context-menu&quot;&gt;
+				&lt;i class=&quot;mdi mdi-bell&quot;&gt;&lt;md-tooltip&gt;Notifications&lt;/md-tooltip&gt;&lt;/i&gt;
+				&lt;div class=&quot;nav-context-menu-left&quot;&gt;
+					&lt;div class=&quot;arrow-up&quot;&gt;&lt;/div&gt;
+					&lt;div class=&quot;context-content&quot; &gt;
+						&lt;div class=&quot;notification-list&quot;&gt;
+								&lt;h4&gt;Notifications
+							&lt;div class=&quot;wfm-switch&quot;&gt;
+									&lt;input type=&quot;checkbox&quot; ng-model=&quot;activeNotification&quot; ng-init=&quot;activeNotification=true&quot; id=&quot;notificationToggle&quot;/&gt;
+									&lt;label for=&quot;notificationToggle&quot;&gt;
+										&lt;span class=&quot;wfm-switch-toggle&quot;&gt;&lt;/span&gt;
+									&lt;/label&gt;
+									&lt;md-tooltip ng-if=&quot;activeNotification==true&quot;&gt;Turn off&lt;/md-tooltip&gt;
+									&lt;md-tooltip ng-if=&quot;activeNotification==false&quot;&gt;Turn on&lt;/md-tooltip&gt;
+								&lt;/div&gt;
+								&lt;/h4&gt;
+								&lt;div&gt;
+									&lt;ul ng-if=&quot;activeNotification==true&quot; class=&quot;notification-list wfm-simple-list&quot;&gt;
+											&lt;li ng-repeat=&quot;item in demos&quot;&gt;
+														&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;
+														&lt;b&gt;Forecast&lt;/b&gt;
+														&lt;span class=&quot;pull-right&quot;&gt;13:37&lt;/span&gt;
+														&lt;div class=&quot;subtext&quot;&gt;Done without errors&lt;/div&gt;
+											&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/span&gt;
+			&lt;span tabindex=0 class=&quot;nav-context-menu&quot;&gt;
+			&lt;i class=&quot;mdi mdi-help-circle&quot;&gt;&lt;md-tooltip&gt;Help&lt;/md-tooltip&gt;&lt;/i&gt;
+			&lt;div class=&quot;nav-context-menu-left&quot;&gt;
+				&lt;div class=&quot;arrow-up&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;context-content&quot;&gt;
+						&lt;h4&gt;
+							&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+							&lt;span class=&quot;caps&quot;&gt;Current view&lt;/span&gt;
+            &lt;/h4&gt;
+						&lt;p class=&quot;description&quot;&gt;
+              Here you would find some information about the view you are currently in.&lt;/br&gt;
+            &lt;/p&gt;
+					&lt;footer&gt;
+						&lt;a href=&quot;#&quot; class=&quot;wfm-btn wfm-btn-primary-invis&quot;&gt;Go to wiki&lt;/a&gt;
+					&lt;/footer&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/span&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-settings&quot;&gt;&lt;/i&gt;
+				&lt;md-tooltip&gt;Settings&lt;/md-tooltip&gt;
+			&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-logout&quot;&gt;&lt;/i&gt;
+				&lt;md-tooltip&gt;Logout&lt;/md-tooltip&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-14-2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.14.2</span
+          >View headers
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>A view header should be the first visible element in your view. It is used to help orientate the user. If needed you can add a global floating action button to it. If you do, it counts towards the limit of action buttons in you view (i.e one).
+The view header is also a uniqe element in the view and not part of any other panel or element.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="view-header">
+	<div class="view-title">
+		<h1><i class="mdi mdi-account"></i> First header title</h1>
+		<p>Optional description of the view goes here.</p>
+	</div>
+	<div class="fab-wrapper">
+		<button class="wfm-fab  material-depth-1"><i class="mdi mdi-plus"></i>
+			<md-tooltip>Add something</md-tooltip>
+		</button>
+	</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;view-header&quot;&gt;
+	&lt;div class=&quot;view-title&quot;&gt;
+		&lt;h1&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt; First header title&lt;/h1&gt;
+		&lt;p&gt;Optional description of the view goes here.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;fab-wrapper&quot;&gt;
+		&lt;button class=&quot;wfm-fab  material-depth-1&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;
+			&lt;md-tooltip&gt;Add something&lt;/md-tooltip&gt;
+		&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-15" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.15</span
           >Tables
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <div class="styleguide-break"><i class="mdi mdi-alert"></i><span></span></div>
-
-<p>Tables are used to give a overview of data, however, following the <a href="index.html" >Main concepts</a> of the styleguide, only relevant data should be displayed. In the cases where that is not possible, please use infinite scrolling or pagination to keep the page lightweight.
-If a table does take time to be loaded, a loading bar should be displayed during this time to indicate to the user that it will take some time and that the table is not broken.</p>
+        <p>Tables are used to give a overview of data, however, following the <a href="index.html" >Main concepts</a> of the styleguide, only relevant data should be displayed. In the cases where that is not possible, please use infinite scrolling or pagination to keep the page lightweight.
+If a table does take time to be loaded, a spinner should be displayed during this time to indicate to the user that it will take some time and that the table is not broken.</p>
 <p>A table should be displayed in alphabetical order by default, unless there is an obvious way the user would want the data sorted. Even so, the ability to sort and search within the table is most welcome.
 If the table can be sorted, it should have filled arrows in the header indicating the sorting direction (down for descending and up for ascending), clicking the header should change the sorting direction and the arrow direction.</p>
 <p>Cells containing numbers are right aligned using the &#39;number-cell&#39; class to differentiate them from text content.</br>
-If you need to display bigger forms of data or need more complex actions such as importing/exporting, multi select or the ability to hide columns - take a look at the <a href="section-6.html#kssref-6.1">&#39;Big table&#39; in chapeter 6 - Scalability</a>.</p>
+If you need to display bigger forms of data or need more complex actions such as importing/exporting, multi select or the ability to hide columns - take a look at the Big table.</p>
 
       </div>
     </div>
 
 
       </section>
-      <section id="kssref-1-8-1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-15-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.8.1</span
+          <span class="kss-title__ref">1.15.1</span
           >Default table
         </a>
       </h3>
@@ -1749,31 +1788,55 @@ If you need to display bigger forms of data or need more complex actions such as
         </div>
         <div class="kss-modifier__example">
           <table class="wfm-table">
-<thead><tr><th>texts</th><th>numbers</th></tr></thead>
-<tbody><tr><td>text1</td><td class="number-cell">2135847</td></tr>
-<tr><td>text1</td><td class="number-cell">2.3546</td></tr>
-</tbody>
+	<thead>
+		<tr>
+			<th>texts</th>
+			<th>numbers</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>text1</td>
+			<td class="number-cell">2135847</td>
+		</tr>
+		<tr>
+			<td>text1</td>
+			<td class="number-cell">2.3546</td>
+		</tr>
+	</tbody>
 </table>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table&quot;&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;texts&lt;/th&gt;&lt;th&gt;numbers&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;text1&lt;/td&gt;&lt;td class=&quot;number-cell&quot;&gt;2135847&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;text1&lt;/td&gt;&lt;td class=&quot;number-cell&quot;&gt;2.3546&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;texts&lt;/th&gt;
+			&lt;th&gt;numbers&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;text1&lt;/td&gt;
+			&lt;td class=&quot;number-cell&quot;&gt;2135847&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;text1&lt;/td&gt;
+			&lt;td class=&quot;number-cell&quot;&gt;2.3546&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-8-2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-15-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.8.2</span
-          >Two dimensions table
+          <span class="kss-title__ref">1.15.2</span
+          >Two dimensional table
         </a>
       </h3>
 
@@ -1786,30 +1849,380 @@ If you need to display bigger forms of data or need more complex actions such as
         </div>
         <div class="kss-modifier__example">
           <table class="wfm-table wfm-table-multi">
-<thead><tr><th></th><th>column header</th><th>column header</th></tr></thead>
-<tbody><tr><td>row header</td><td>item1</td><td>item2</td></tr>
-<tr><td>row header</td><td>item3</td><td>item4</td></tr>
-</tbody>
+	<thead>
+		<tr>
+			<th></th>
+			<th>column header</th>
+			<th>column header</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>row header</td>
+			<td>item1</td>
+			<td>item2</td>
+		</tr>
+		<tr>
+			<td>row header</td>
+			<td>item3</td>
+			<td>item4</td>
+		</tr>
+	</tbody>
 </table>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table wfm-table-multi&quot;&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;column header&lt;/th&gt;&lt;th&gt;column header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;row header&lt;/td&gt;&lt;td&gt;item1&lt;/td&gt;&lt;td&gt;item2&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;row header&lt;/td&gt;&lt;td&gt;item3&lt;/td&gt;&lt;td&gt;item4&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;&lt;/th&gt;
+			&lt;th&gt;column header&lt;/th&gt;
+			&lt;th&gt;column header&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row header&lt;/td&gt;
+			&lt;td&gt;item1&lt;/td&gt;
+			&lt;td&gt;item2&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row header&lt;/td&gt;
+			&lt;td&gt;item3&lt;/td&gt;
+			&lt;td&gt;item4&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-9" class="kss-section kss-section--depth-2">
+      <section id="kssref-1-15-3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.15.3</span
+          >Big tables
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The big table is used to give data more space and actions. Check out the <a href="http://ui-grid.info/docs/#/tutorial">documentation</a> to see all available functions.</p>
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+var data = [];
+for (var i = 0; i &lt; 100; i++) {
+    data[i] = {};
+    for (var j = 0; j &lt; 10; j++) {
+            data[i][&#39;j&#39; + j] = j;
+    }
+}
+$scope.gridOptions = {
+    exporterCsvFilename: &#39;myFile.csv&#39;,
+    exporterMenuPdf: false,
+    enableSelectAll: true,
+    enableRowSelection: true,
+    selectionRowHeaderWidth: 35,
+    data: data,
+};
+$scope.gridOptions.enableGridMenu = true;
+    </pre></code>
+</div>
+</div>
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div ui-grid="gridOptions" ui-grid-exporter ui-grid-auto-resize ui-grid-selection class="myGrid"></div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ui-grid=&quot;gridOptions&quot; ui-grid-exporter ui-grid-auto-resize ui-grid-selection class=&quot;myGrid&quot;&gt;&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-16" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.9</span
+          <span class="kss-title__ref">1.16</span
+          >Modal
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A modal is launched above the main view and stays there until the user has taken action. Since this is such a obnoxious element it should only be used when you absolutely want the user to focus on a single task.</p>
+<p>Note: In all modals and panels the footer links should be buttons, not  &lt;a/&gt; tags.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div ng-cloak class="modal-box">
+	<button ng-click="modalLaunch1 = !modalLaunch1" class="wfm-btn wfm-btn-default">Open modal</button>
+	<div ng-cloak ng-show="modalLaunch1">
+		<div class="modalbg">
+			<div class="dialog">
+				<h1 class="modal-title">
+					Modal title
+				</h1>
+				<div class="modal-inner-content">
+					Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
+				</div>
+				<div class="modal-actions">
+					<aside>
+						<button ng-click="modalLaunch1 = !modalLaunch1" class="wfm-btn wfm-btn-invis-default">dismiss</button>
+						<button ng-click="modalLaunch1 = !modalLaunch1"  class="wfm-btn wfm-btn-invis-primary">Sounds good</button>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
+	&lt;button ng-click=&quot;modalLaunch1 = !modalLaunch1&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open modal&lt;/button&gt;
+	&lt;div ng-cloak ng-show=&quot;modalLaunch1&quot;&gt;
+		&lt;div class=&quot;modalbg&quot;&gt;
+			&lt;div class=&quot;dialog&quot;&gt;
+				&lt;h1 class=&quot;modal-title&quot;&gt;
+					Modal title
+				&lt;/h1&gt;
+				&lt;div class=&quot;modal-inner-content&quot;&gt;
+					Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
+				&lt;/div&gt;
+				&lt;div class=&quot;modal-actions&quot;&gt;
+					&lt;aside&gt;
+						&lt;button ng-click=&quot;modalLaunch1 = !modalLaunch1&quot; class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;dismiss&lt;/button&gt;
+						&lt;button ng-click=&quot;modalLaunch1 = !modalLaunch1&quot;  class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;Sounds good&lt;/button&gt;
+					&lt;/aside&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-16-1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.16.1</span
+          >Mini modal
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The mini modal can be used when the regular modal is to big for its content or as a confirmation dialog.
+it does not have a header or any other elements inside it aprt from plain text and footer buttons.
+Remember that it still takes the focus away from what the use was doing untill it has been dismissed.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div ng-cloak class="modal-box">
+	<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-default">Open modal</button>
+	<div ng-cloak ng-show="modalLaunch3">
+		<div class="modalbg">
+			<div class="dialog-mini">
+				<div class="modal-inner-content">
+					Are you sure you want to do the thing?
+				</div>
+				<div class="modal-actions">
+					<aside>
+						<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-invis-default">no thanks</button>
+						<button ng-click="modalLaunch3 = !modalLaunch3"  class="wfm-btn wfm-btn-invis-primary">yes please</button>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
+	&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open modal&lt;/button&gt;
+	&lt;div ng-cloak ng-show=&quot;modalLaunch3&quot;&gt;
+		&lt;div class=&quot;modalbg&quot;&gt;
+			&lt;div class=&quot;dialog-mini&quot;&gt;
+				&lt;div class=&quot;modal-inner-content&quot;&gt;
+					Are you sure you want to do the thing?
+				&lt;/div&gt;
+				&lt;div class=&quot;modal-actions&quot;&gt;
+					&lt;aside&gt;
+						&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot; class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;no thanks&lt;/button&gt;
+						&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot;  class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;yes please&lt;/button&gt;
+					&lt;/aside&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-16-2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.16.2</span
+          >Tabbed modal
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p><div class="styleguide-break"><i class="mdi mdi-alert"></i><span>Use with care, creates complexity. </span></div>
+When needing to display more information than the normal modal allows or present a string of actions to the user a tabbed modal can be used.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div ng-cloak class="modal-box">
+	<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-default">Open tab modal</button>
+	<div ng-cloak ng-show="modalLaunch2">
+		<div class="modalbg">
+			<div class="dialog">
+				<div class="wfm-slide-tabs tabbed-panel">
+					<md-content class="md-padding">
+						<md-tabs md-dynamic-height md-border-bottom >
+							<md-tab label="Tab title1">
+								<md-content class="md-padding">
+									<div class="con-row">
+										<div class="con-flex">Content</div>
+									</div>
+								</md-content>
+							</md-tab>
+							<md-tab label="Tab title2">
+								<md-content class="md-padding">
+									<div class="con-row">
+										<div class="con-flex">Content</div>
+									</div>
+								</md-content>
+							</md-tab>
+							<md-tab label="Tab title3">
+								<md-content class="md-padding">
+									<div class="con-row demo-outline">
+										<div class="con-flex">Content</div>
+									</div>
+								</md-content>
+							</md-tab>
+							<md-tab label="Tab title4">
+								<md-content class="md-padding">
+									<div class="con-row">
+										<div class="con-flex">Content</div>
+									</div>
+								</md-content>
+							</md-tab>
+						</md-tabs>
+					</md-content>
+				</div>
+				<div class="modal-actions">
+					<aside>
+						<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-invis-primary">dismiss</button>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
+	&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open tab modal&lt;/button&gt;
+	&lt;div ng-cloak ng-show=&quot;modalLaunch2&quot;&gt;
+		&lt;div class=&quot;modalbg&quot;&gt;
+			&lt;div class=&quot;dialog&quot;&gt;
+				&lt;div class=&quot;wfm-slide-tabs tabbed-panel&quot;&gt;
+					&lt;md-content class=&quot;md-padding&quot;&gt;
+						&lt;md-tabs md-dynamic-height md-border-bottom &gt;
+							&lt;md-tab label=&quot;Tab title1&quot;&gt;
+								&lt;md-content class=&quot;md-padding&quot;&gt;
+									&lt;div class=&quot;con-row&quot;&gt;
+										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/md-content&gt;
+							&lt;/md-tab&gt;
+							&lt;md-tab label=&quot;Tab title2&quot;&gt;
+								&lt;md-content class=&quot;md-padding&quot;&gt;
+									&lt;div class=&quot;con-row&quot;&gt;
+										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/md-content&gt;
+							&lt;/md-tab&gt;
+							&lt;md-tab label=&quot;Tab title3&quot;&gt;
+								&lt;md-content class=&quot;md-padding&quot;&gt;
+									&lt;div class=&quot;con-row demo-outline&quot;&gt;
+										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/md-content&gt;
+							&lt;/md-tab&gt;
+							&lt;md-tab label=&quot;Tab title4&quot;&gt;
+								&lt;md-content class=&quot;md-padding&quot;&gt;
+									&lt;div class=&quot;con-row&quot;&gt;
+										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/md-content&gt;
+							&lt;/md-tab&gt;
+						&lt;/md-tabs&gt;
+					&lt;/md-content&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;modal-actions&quot;&gt;
+					&lt;aside&gt;
+						&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;dismiss&lt;/button&gt;
+					&lt;/aside&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-17" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.17</span
           >Loading
         </a>
       </h2>
@@ -1823,12 +2236,12 @@ If you need to display bigger forms of data or need more complex actions such as
 
 
       </section>
-      <section id="kssref-1-9-1" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-17-1" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.9.1</span
+          <span class="kss-title__ref">1.17.1</span
           >Progress bar
         </a>
       </h3>
@@ -1862,19 +2275,20 @@ If you need to display bigger forms of data or need more complex actions such as
       </div>
 
       </section>
-      <section id="kssref-1-9-2" class="kss-section kss-section--depth-3">
+      <section id="kssref-1-17-2" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.9.2</span
+          <span class="kss-title__ref">1.17.2</span
           >Spinner
         </a>
       </h3>
 
 
       <div class="kss-description">
-        <p>The spinner is used to indicate automatic loading in tables, lists and views. It should be centered witin the containing element.</p>
+        <p>The spinner is used to indicate automatic loading in big elements such as tables, lists and views. While it is visible it should be centeted within its container.
+The mini spinner can be shown along side any element or in a header to indicate loading.</p>
 
       </div>
     </div>
@@ -1895,298 +2309,19 @@ If you need to display bigger forms of data or need more complex actions such as
       </div>
 
       </section>
-      <section id="kssref-1-10" class="kss-section kss-section--depth-2">
+      <section id="kssref-1-18" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.10</span
-          >Notices
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Notices indicate to the user that an event or action has taken place or that something is stopping the current action.
-There are several different markers to make the type of notice easy to spot:</p>
-<ul>
-<li>Success: Shown to indicate that an action has been done successfully.</li>
-<li>Info: Should be used to give the user hints and information.</li>
-<li>Details: These are never shown alone, but rather beneath one of the other markers.</li>
-<li>Warning: Should be used to alert the user that something have to be done before they can continue.</li>
-<li>Error: Should only be triggered when something goes wrong in the background.</li>
-</ul>
-<p>Note: the &#39;notice-spacer&#39; class is for styleguide demo purpose only.</p>
-<p>A notice should either self-destruct or be dismissable to free up space.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="alert-success notice-spacer"><i class='mdi mdi-thumb-up'></i> Success: User is saved successfully.</div>
-<div class="notice-group">
-<div class="alert-info notice-spacer"><i class='mdi mdi-information'></i> Info: A user logged out.</div>
-<div class="alert-detail notice-spacer">I was born to show details.</div>
-</div>
-<div class="alert-warning notice-spacer"><i class='mdi mdi-alert'></i> Warning: Press refresh as the data was changed by another user.</div>
-<div class="alert-error notice-spacer"><i class='mdi mdi-alert-octagon'></i> Error: Something exploded so fix it.</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;alert-success notice-spacer&quot;&gt;&lt;i class=&#x27;mdi mdi-thumb-up&#x27;&gt;&lt;/i&gt; Success: User is saved successfully.&lt;/div&gt;
-&lt;div class=&quot;notice-group&quot;&gt;
-&lt;div class=&quot;alert-info notice-spacer&quot;&gt;&lt;i class=&#x27;mdi mdi-information&#x27;&gt;&lt;/i&gt; Info: A user logged out.&lt;/div&gt;
-&lt;div class=&quot;alert-detail notice-spacer&quot;&gt;I was born to show details.&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;alert-warning notice-spacer&quot;&gt;&lt;i class=&#x27;mdi mdi-alert&#x27;&gt;&lt;/i&gt; Warning: Press refresh as the data was changed by another user.&lt;/div&gt;
-&lt;div class=&quot;alert-error notice-spacer&quot;&gt;&lt;i class=&#x27;mdi mdi-alert-octagon&#x27;&gt;&lt;/i&gt; Error: Something exploded so fix it.&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-11" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.11</span
-          >Notifications
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Notifications are more global and general compared to notices. They can function more like a actions archive. All notifications are shown in the right sidenav.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <ul class="notification-list">
-<li><i class="mdi mdi-alert-circle"></i>Notifications are great!</li>
-<li><i class="mdi mdi-alert-circle"></i>Have another one.</li>
-</ul>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;notification-list&quot;&gt;
-&lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;Notifications are great!&lt;/li&gt;
-&lt;li&gt;&lt;i class=&quot;mdi mdi-alert-circle&quot;&gt;&lt;/i&gt;Have another one.&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-12" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.12</span
-          >Modals
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>A modal is launched above the main view and stays there until the user has taken action. Since this is such a obnoxious element it should only be used when you absolutely want the user to focus on a single task.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div ng-cloak class="modal-box">
-	<button ng-click="modalLaunch1 = !modalLaunch1" class="wfm-btn wfm-btn-default">Open modal</button>
-	<div ng-cloak ng-show="modalLaunch1">
-		<div class="modalbg">
-			<div class="dialog">
-				<div class="modal-header">
-					Modal title
-				</div>
-				<div class="modal-inner-content">
-					Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
-				</div>
-				<div class="modal-footer">
-					<aside>
-						<a ng-click="modalLaunch1 = !modalLaunch1" class="wfm-btn wfm-btn-invis-default">dismiss</a>
-						<a ng-click="modalLaunch1 = !modalLaunch1"  class="wfm-btn wfm-btn-invis-primary">Sounds good</a>
-					</aside>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
-	&lt;button ng-click=&quot;modalLaunch1 = !modalLaunch1&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open modal&lt;/button&gt;
-	&lt;div ng-cloak ng-show=&quot;modalLaunch1&quot;&gt;
-		&lt;div class=&quot;modalbg&quot;&gt;
-			&lt;div class=&quot;dialog&quot;&gt;
-				&lt;div class=&quot;modal-header&quot;&gt;
-					Modal title
-				&lt;/div&gt;
-				&lt;div class=&quot;modal-inner-content&quot;&gt;
-					Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
-				&lt;/div&gt;
-				&lt;div class=&quot;modal-footer&quot;&gt;
-					&lt;aside&gt;
-						&lt;a ng-click=&quot;modalLaunch1 = !modalLaunch1&quot; class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;dismiss&lt;/a&gt;
-						&lt;a ng-click=&quot;modalLaunch1 = !modalLaunch1&quot;  class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;Sounds good&lt;/a&gt;
-					&lt;/aside&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-12-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.12.1</span
-          >Tabbed modal
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p><div class="styleguide-break"><i class="mdi mdi-alert"></i><span>Use with care, creates complexity. </span></div>
-When needing to display more information than the normal modal allows or present a string of actions to the user a tabbed modal can be used.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div ng-cloak class="modal-box">
-<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-default">Open tab modal</button>
-<div ng-cloak ng-show="modalLaunch2">
-	<div class="modalbg">
-		<div class="dialog">
-				<div class="wfm-slide-tabs">
-					<md-content style="padding:0!important;">
-						<md-tabs md-dynamic-height md-border-bottom>
-							<md-tab label="first tab">
-								<md-content class="md-padding">
-									<h4>Tab One</h4>
-									<p>Click a tab to watch me go!</p>
-								</md-content>
-							</md-tab>
-							<md-tab label="second tab">
-								<md-content class="md-padding">
-									<h4>Tab Two</h4>
-									<p>wheeeee</p>
-								</md-content>
-							</md-tab>
-							<md-tab label="third tab">
-								<md-content class="md-padding">
-									<h4>Tab Three</h4>
-									<p>Slow down!</p>
-								</md-content>
-							</md-tab>
-							<md-tab label="fourth tab">
-								<md-content class="md-padding">
-									<h4>Tab Four</h4>
-									<p>Now listen here you little whippersnapper. </p>
-								</md-content>
-							</md-tab>
-						</md-tabs>
-					</md-content>
-				</div>
-			<div class="modal-footer">
-				<aside>
-					<a ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-invis-primary">dismiss</a>
-				</aside>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
-&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open tab modal&lt;/button&gt;
-&lt;div ng-cloak ng-show=&quot;modalLaunch2&quot;&gt;
-	&lt;div class=&quot;modalbg&quot;&gt;
-		&lt;div class=&quot;dialog&quot;&gt;
-				&lt;div class=&quot;wfm-slide-tabs&quot;&gt;
-					&lt;md-content style=&quot;padding:0!important;&quot;&gt;
-						&lt;md-tabs md-dynamic-height md-border-bottom&gt;
-							&lt;md-tab label=&quot;first tab&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;h4&gt;Tab One&lt;/h4&gt;
-									&lt;p&gt;Click a tab to watch me go!&lt;/p&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;second tab&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;h4&gt;Tab Two&lt;/h4&gt;
-									&lt;p&gt;wheeeee&lt;/p&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;third tab&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;h4&gt;Tab Three&lt;/h4&gt;
-									&lt;p&gt;Slow down!&lt;/p&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;fourth tab&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;h4&gt;Tab Four&lt;/h4&gt;
-									&lt;p&gt;Now listen here you little whippersnapper. &lt;/p&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-						&lt;/md-tabs&gt;
-					&lt;/md-content&gt;
-				&lt;/div&gt;
-			&lt;div class=&quot;modal-footer&quot;&gt;
-				&lt;aside&gt;
-					&lt;a ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;dismiss&lt;/a&gt;
-				&lt;/aside&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-13" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.13</span
+          <span class="kss-title__ref">1.18</span
           >Tooltips
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Tooltips should be added wherever more information is needed. Keep the text short and clear as to not obstruct other elements on smaller screens. We are waiting for a fix for scroll bug <a href="https://github.com/angular/material/issues/2406">https://github.com/angular/material/issues/2406</a></p>
+        <p>Tooltips should be added wherever more information is needed. Keep the text short and clear as to not obstruct other elements on smaller screens.</p>
 
       </div>
     </div>
@@ -2201,6 +2336,11 @@ When needing to display more information than the normal modal allows or present
 		Refresh
 	</md-tooltip>
 </button>
+<i class="action-icon mdi mdi-duck ">
+	<md-tooltip>
+		Refresh
+	</md-tooltip>
+</i>
         </div>
       </div>
 
@@ -2209,280 +2349,28 @@ When needing to display more information than the normal modal allows or present
 	&lt;md-tooltip&gt;
 		Refresh
 	&lt;/md-tooltip&gt;
-&lt;/button&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-14" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.14</span
-          >Context menus
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Context menus are used where more actions are needed. To keep them manageable, limit the number of actions displayed within to a maximum of 5.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <button class="context-menu wfm-btn wfm-btn-default">
-Place me on the right
-<span class="context-menu-left">
-	<ul class="wfm-list">
-		<li><i class="mdi mdi-account"></i>Sign out</li>
-		<li><i class="mdi mdi-plus"></i>Add a new agent</li>
-		<li><i class="mdi mdi-alert"></i>Drop agents table</li>
-	</ul>
-</span>
-</button>
-<button class="context-menu wfm-btn wfm-btn-default">
-place me in the middle
-<span class="context-menu-bottom">
-	<ul class="wfm-list">
-		<li><i class="mdi mdi-account"></i>Sign out</li>
-		<li><i class="mdi mdi-plus"></i>Add a new agent</li>
-		<li><i class="mdi mdi-alert"></i>Drop agents table</li>
-	</ul>
-</span>
-</button>
-<button class="context-menu wfm-btn wfm-btn-default">
-Place me on the left
-<span class="context-menu-right">
-	<ul class="wfm-list">
-		<li><i class="mdi mdi-account"></i>Sign out</li>
-		<li><i class="mdi mdi-plus"></i>Add a new agent</li>
-		<li><i class="mdi mdi-alert"></i>Drop agents table</li>
-	</ul>
-</span>
-</button>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
-Place me on the right
-&lt;span class=&quot;context-menu-left&quot;&gt;
-	&lt;ul class=&quot;wfm-list&quot;&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/span&gt;
 &lt;/button&gt;
-&lt;button class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
-place me in the middle
-&lt;span class=&quot;context-menu-bottom&quot;&gt;
-	&lt;ul class=&quot;wfm-list&quot;&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/span&gt;
-&lt;/button&gt;
-&lt;button class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
-Place me on the left
-&lt;span class=&quot;context-menu-right&quot;&gt;
-	&lt;ul class=&quot;wfm-list&quot;&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
-		&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/span&gt;
-&lt;/button&gt;</code></pre>
+&lt;i class=&quot;action-icon mdi mdi-duck &quot;&gt;
+	&lt;md-tooltip&gt;
+		Refresh
+	&lt;/md-tooltip&gt;
+&lt;/i&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-1-15" class="kss-section kss-section--depth-2">
+      <section id="kssref-1-19" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.15</span
-          >Accordions
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Accordions are expandable and collapseable areas that can hide a number of wfm-blocks.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          ﻿<ul class="wfm-accordion">
-  <li>
-    <div class="wfm-accordion-head" ng-click="accordionToggle1 = !accordionToggle1">Title A<i ng-class="{'toggle-icon-open':accordionToggle1}" class="mdi mdi-chevron-right"></i></div>
-    <div class="wfm-accordion-content" ng-cloak ng-show="accordionToggle1">
-      a
-    </div>
-  </li>
-  <li>
-    <div class="wfm-accordion-head" ng-click="accordionToggle2 = !accordionToggle2">Title B<i ng-class="{'toggle-icon-open':accordionToggle2}" class="mdi mdi-chevron-right"></i></div>
-    <div class="wfm-accordion-content" ng-cloak ng-show="accordionToggle2">
-      b
-    </div>
-  </li>
-  <li>
-    <div class="wfm-accordion-head" ng-click="accordionToggle3 = !accordionToggle3">Title C<i ng-class="{'toggle-icon-open':accordionToggle3}"  class="mdi mdi-chevron-right"></i></div>
-    <div class="wfm-accordion-subheader" ng-show="accordionToggle3">
-      I am a subheader inside C
-    </div>
-    <div class="wfm-accordion-content" ng-cloak ng-show="accordionToggle3">
-      Check out my content
-    </div>
-
-  </li>
-</ul>
-
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">﻿&lt;ul class=&quot;wfm-accordion&quot;&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;wfm-accordion-head&quot; ng-click=&quot;accordionToggle1 = !accordionToggle1&quot;&gt;Title A&lt;i ng-class=&quot;{&#x27;toggle-icon-open&#x27;:accordionToggle1}&quot; class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-    &lt;div class=&quot;wfm-accordion-content&quot; ng-cloak ng-show=&quot;accordionToggle1&quot;&gt;
-      a
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;wfm-accordion-head&quot; ng-click=&quot;accordionToggle2 = !accordionToggle2&quot;&gt;Title B&lt;i ng-class=&quot;{&#x27;toggle-icon-open&#x27;:accordionToggle2}&quot; class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-    &lt;div class=&quot;wfm-accordion-content&quot; ng-cloak ng-show=&quot;accordionToggle2&quot;&gt;
-      b
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;wfm-accordion-head&quot; ng-click=&quot;accordionToggle3 = !accordionToggle3&quot;&gt;Title C&lt;i ng-class=&quot;{&#x27;toggle-icon-open&#x27;:accordionToggle3}&quot;  class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-    &lt;div class=&quot;wfm-accordion-subheader&quot; ng-show=&quot;accordionToggle3&quot;&gt;
-      I am a subheader inside C
-    &lt;/div&gt;
-    &lt;div class=&quot;wfm-accordion-content&quot; ng-cloak ng-show=&quot;accordionToggle3&quot;&gt;
-      Check out my content
-    &lt;/div&gt;
-
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-16" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.16</span
-          >Tabs
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Tabs are used to change big content areas and are a great way to divide a single task into smaller pieces. They are typicaly located at the top of the page or a big panel instead of a header. One important thing to remember is to order the tabs in a way that makes sense to the workflow.  Also, avoid having nested tabs or several tab -groups close together to avoid confusion.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="wfm-slide-tabs">
- <md-content class="md-padding">
-   <md-tabs md-dynamic-height md-border-bottom>
-     <md-tab label="first tab">
-       <md-content class="md-padding">
-         <h4>Tab One</h4>
-         <p>Click a tab to watch me go!</p>
-       </md-content>
-     </md-tab>
-     <md-tab label="second tab">
-       <md-content class="md-padding">
-         <h4>Tab Two</h4>
-         <p>wheeeee</p>
-       </md-content>
-     </md-tab>
-     <md-tab label="third tab">
-       <md-content class="md-padding">
-         <h4>Tab Three</h4>
-         <p>Slow down!</p>
-       </md-content>
-     </md-tab>
-     <md-tab label="fourth tab">
-       <md-content class="md-padding">
-         <h4>Tab Four</h4>
-         <p>Now listen here you little whippersnapper, back in the good old days you had to break words all by the sweat of your own brow. You youngsters have it easy! If you have a long text in here, I will like just wrap to a new line if it has to. </p>
-       </md-content>
-     </md-tab>
-   </md-tabs>
- </md-content>
-</div>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;wfm-slide-tabs&quot;&gt;
- &lt;md-content class=&quot;md-padding&quot;&gt;
-   &lt;md-tabs md-dynamic-height md-border-bottom&gt;
-     &lt;md-tab label=&quot;first tab&quot;&gt;
-       &lt;md-content class=&quot;md-padding&quot;&gt;
-         &lt;h4&gt;Tab One&lt;/h4&gt;
-         &lt;p&gt;Click a tab to watch me go!&lt;/p&gt;
-       &lt;/md-content&gt;
-     &lt;/md-tab&gt;
-     &lt;md-tab label=&quot;second tab&quot;&gt;
-       &lt;md-content class=&quot;md-padding&quot;&gt;
-         &lt;h4&gt;Tab Two&lt;/h4&gt;
-         &lt;p&gt;wheeeee&lt;/p&gt;
-       &lt;/md-content&gt;
-     &lt;/md-tab&gt;
-     &lt;md-tab label=&quot;third tab&quot;&gt;
-       &lt;md-content class=&quot;md-padding&quot;&gt;
-         &lt;h4&gt;Tab Three&lt;/h4&gt;
-         &lt;p&gt;Slow down!&lt;/p&gt;
-       &lt;/md-content&gt;
-     &lt;/md-tab&gt;
-     &lt;md-tab label=&quot;fourth tab&quot;&gt;
-       &lt;md-content class=&quot;md-padding&quot;&gt;
-         &lt;h4&gt;Tab Four&lt;/h4&gt;
-         &lt;p&gt;Now listen here you little whippersnapper, back in the good old days you had to break words all by the sweat of your own brow. You youngsters have it easy! If you have a long text in here, I will like just wrap to a new line if it has to. &lt;/p&gt;
-       &lt;/md-content&gt;
-     &lt;/md-tab&gt;
-   &lt;/md-tabs&gt;
- &lt;/md-content&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-17" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.17</span
+          <span class="kss-title__ref">1.19</span
           >Cards
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Cards can be used to display similar content in a grid.</p>
+        <p>Cards are used to show a large number of same size content. Providing filters or ways to sort cards is good.</p>
 
       </div>
     </div>
@@ -2493,30 +2381,26 @@ Place me on the left
         </div>
         <div class="kss-modifier__example">
           <div class="card-group">
-<div class="wfm-card" tabindex="0">
-			Title
-	</div>
-<div class="wfm-card wfm-card-disabled" tabindex="0">
-			Title
-	</div>
-<div class="wfm-card" tabindex="0">
-		Title
-	</div>
+	<div class="wfm-card" tabindex="0"><h2>Title</h2></div>
+	<div class="wfm-card wfm-card-disabled" tabindex="0"><h2>Title</h2></div>
+	<div class="wfm-card" tabindex="0"><h2>Title</h2></div>
+	<div class="wfm-card" tabindex="0"><h2>Title</h2></div>
+	<div class="wfm-card" tabindex="0"><h2>Title</h2></div>
+	<div class="wfm-card" tabindex="0"><h2>Title</h2></div>
+	<div class="wfm-card" tabindex="0"><h2>Title</h2></div>
 </div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;card-group&quot;&gt;
-&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;
-			Title
-	&lt;/div&gt;
-&lt;div class=&quot;wfm-card wfm-card-disabled&quot; tabindex=&quot;0&quot;&gt;
-			Title
-	&lt;/div&gt;
-&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;
-		Title
-	&lt;/div&gt;
+	&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class=&quot;wfm-card wfm-card-disabled&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class=&quot;wfm-card&quot; tabindex=&quot;0&quot;&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
 
@@ -2529,7 +2413,7 @@ Place me on the left
 <script>
   prettyPrint();
 </script>
-	
+
 
 
 

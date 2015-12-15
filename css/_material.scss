@@ -4,7 +4,7 @@ outline: -webkit-focus-ring-color auto 0;
 
 body{
 	background-color: $gray012;
-	font-size:15px;
+	font-size:14px;
 	overflow-x: hidden;
 	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif!important;
 
@@ -14,6 +14,10 @@ body{
 		outline: 0px auto -webkit-focus-ring-color!important;
 		outline-offset: 0px;
 	}
+}
+
+table{
+	border-spacing: 0!important;
 }
 
 button, input, select{	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif!important;
@@ -46,6 +50,10 @@ dd {
     z-index: -1;
 }
 
+.pull-right{
+	float:right;
+}
+
 .wfm-block {
 	padding:$full-padding;
 	width:100%;
@@ -69,13 +77,11 @@ dd {
 }
 
 .layout-container .content {
-	@extend .material-depth-1;
 	-webkit-flex: auto;
 	flex: auto;
 	padding: 10px;
 	flex-basis: 70%;
 	margin: 62px 10px 0px 10px;
-	background-color: $white;
 }
 
 .animate-show {
@@ -91,4 +97,68 @@ dd {
 .animate-show.ng-hide {
   line-height: 0;
   opacity: 0;
+}
+
+.md-ripple-container{
+	visibility: hidden;
+}
+
+
+.panel{
+  margin-bottom: $full-padding*2;
+  background:$white;
+  position: relative;
+	border-radius: 0;
+	border:0px solid transparent;
+
+  .panel-menu{
+    position: absolute;
+    top:8px;
+    right:8px;
+    z-index:10;
+  }
+
+  hr{
+    border:1px solid ;
+    border-color:rgba(0,0,0,.06);
+  }
+
+  .con-footer {
+      text-align: right;
+      color: rgba(0,0,0,.87);
+  }
+}
+
+.con-flex{
+  flex-basis: 100%;
+  padding:$full-padding;
+
+  input, select{
+    width:100%;
+  }
+}
+
+.split-3-1{
+  flex-basis: 50%!important;
+}
+
+.split-1-2{
+  flex-basis: 25%!important;
+}
+
+@media screen and (min-width: 768px) {
+  .con-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .con-flex {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
 }

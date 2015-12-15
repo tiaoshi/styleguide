@@ -14,7 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="../vendor/fonts.css" />
 	<link type="text/css" rel="stylesheet" href="./public/kss.css" />
 
-	<link type="text/css" rel="stylesheet" href="../vendor/angular-ui-tree.min.css"/>
+  <link rel="stylesheet" href="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.css">
 	<link type="text/css" rel="stylesheet" href="../vendor/mdi/css/materialdesignicons.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../vendor/ui-grid-stable.min.css"/>
@@ -23,6 +23,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/main.min.css"/>
 
 	<script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
 	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
 	<script src="../node_modules/angular-route/angular-route.min.js"></script>
 	<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
@@ -33,13 +34,14 @@
 	<script src="../vendor/d3/d3.min.js"></script>
 	<script src="../vendor/c3/c3.min.js"></script>
 	<script src="../vendor/c3/c3-angular.min.js"></script>
+  <script src="../vendor/angular-growl.js"></script>
 	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
 	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
-        <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
-	
+  <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
+
 	<script src="../app.js"></script>
   
 </head>
@@ -47,7 +49,8 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">Teleopti WFM<br>Style Guide</h1>
+    <img src="http://www.teleopti.com/system/images/teleopti_logo.png" alt="Teleopti logo" height="30px" style="vertical-align:bottom;">
+    <h1 class="kss-doc-title">Style Guide</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -60,7 +63,7 @@
       <li class="kss-nav__menu-item">
         <a href="section-1.html">
           <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Style Rules</span>
+          ><span class="kss-nav__name">Elements</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -90,13 +93,13 @@
             <li class="kss-nav__menu-item">
               <a href="section-2.html#kssref-2-4">
                 <span class="kss-nav__ref">2.4</span
-                ><span class="kss-nav__name">Card List</span>
+                ><span class="kss-nav__name">Time Range Picker</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-2.html#kssref-2-5">
                 <span class="kss-nav__ref">2.5</span
-                ><span class="kss-nav__name">Time Range Picker</span>
+                ><span class="kss-nav__name">Notices</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
@@ -116,19 +119,19 @@
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
           <span class="kss-nav__ref">4</span
-          ><span class="kss-nav__name">Layouts</span>
+          ><span class="kss-nav__name">Containers</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-5.html">
           <span class="kss-nav__ref">5</span
-          ><span class="kss-nav__name">Icons</span>
+          ><span class="kss-nav__name">Language</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-6.html">
           <span class="kss-nav__ref">6</span
-          ><span class="kss-nav__name">Scalability</span>
+          ><span class="kss-nav__name">Icons</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -154,7 +157,7 @@
 
 
       <div class="kss-description">
-        <p>Here you can find more complex elements that rely on Javascript and Angular.</p>
+        <p>This chapter details the use of more javascript heavy components and directives. Most of these need some configuration from the js side to make them work.</p>
 
       </div>
     </div>
@@ -184,20 +187,20 @@
         </div>
         <div class="kss-modifier__example">
           <div class="wfm-datepicker-wrap">
-<div class="sub-header">
-	From/to:
-</div>
-<datepicker show-weeks="true" ng-model="someDate" class="wfm-datepicker"></datepicker>
+	<div class="sub-header">
+		From/to:
+	</div>
+	<datepicker show-weeks="true" ng-model="someDate" class="wfm-datepicker"></datepicker>
 </div >
         </div>
       </div>
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;wfm-datepicker-wrap&quot;&gt;
-&lt;div class=&quot;sub-header&quot;&gt;
-	From/to:
-&lt;/div&gt;
-&lt;datepicker show-weeks=&quot;true&quot; ng-model=&quot;someDate&quot; class=&quot;wfm-datepicker&quot;&gt;&lt;/datepicker&gt;
+	&lt;div class=&quot;sub-header&quot;&gt;
+		From/to:
+	&lt;/div&gt;
+	&lt;datepicker show-weeks=&quot;true&quot; ng-model=&quot;someDate&quot; class=&quot;wfm-datepicker&quot;&gt;&lt;/datepicker&gt;
 &lt;/div &gt;</code></pre>
       </div>
 
@@ -251,29 +254,21 @@
 
 
       <div class="kss-description">
-        <p>A chart is a great way to present complex data. We use <a href="http://c3js.org/gettingstarted.html">C3 charts</a> to get nice features like legends, zoom and period selection.</p>
-<p><h5>Javascript example</h5>
-<code><pre>
-var chart = c3.generate({
-   bindto: &#39;#myChart&#39;,
-   data: {
-       columns: [
-        [&#39;data1&#39;, 30, 200, 100, 400, 150, 250],
-           [&#39;data2&#39;, 20, 180, 240, 100, 190,0]
-       ],
-       selection: {
-   enabled: true
- }
-   },
-   subchart: {
-       show: true
-   },
-zoom: {
-       enabled: true
-   }
-});
-</pre></code></p>
-
+        <p>A chart used to present complex data. We use <a href="http://c3js.org/gettingstarted.html">C3 charts</a> to get nice features like legends, zoom and period selection.</p>
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+var data = [];
+for (var i = 0; i &lt; 100; i++) {
+    data[i] = {};
+    for (var j = 0; j &lt; 10; j++) {
+    data[i][&#39;j&#39; + j] = j;
+    }
+}
+    </pre></code>
+</div>
+</div>
       </div>
     </div>
 
@@ -297,82 +292,6 @@ zoom: {
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">2.4</span
-          >Card List
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>The Teleopti Card List is based on the card list displayed in google inbox.  Each card can be clicked on within the list and will expand to show detail.</br>
- Only one card can be opened at a time.The header and content of each card is completely customizable and any html elements provided within the &lt;card-header&gt; and  &lt;card-body&gt; tags will be rendered appropriately.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <wfm-card-list multi-select>
-<wfm-card ng-repeat="item in items">
-	<card-header>
-		<span><i class="mdi" ng-class="item.title"></i></span>
-		multi-select
-		<span class="chevron"><i class="mdi mdi-chevron-right"></i></span>
-	</card-header>
-	<card-body>
-		card body
-	</card-body>
-</wfm-card>
-</wfm-card-list>
-<wfm-card-list >
-<wfm-card ng-repeat="item in items">
-	<card-header>
-		<span><i class="mdi" ng-class="item.title"></i></span>
-		<span class="chevron"><i class="mdi mdi-chevron-right"></i></span>
-	</card-header>
-	<card-body>
-		card body
-	</card-body>
-</wfm-card>
-</wfm-card-list>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;wfm-card-list multi-select&gt;
-&lt;wfm-card ng-repeat=&quot;item in items&quot;&gt;
-	&lt;card-header&gt;
-		&lt;span&gt;&lt;i class=&quot;mdi&quot; ng-class=&quot;item.title&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-		multi-select
-		&lt;span class=&quot;chevron&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-	&lt;/card-header&gt;
-	&lt;card-body&gt;
-		card body
-	&lt;/card-body&gt;
-&lt;/wfm-card&gt;
-&lt;/wfm-card-list&gt;
-&lt;wfm-card-list &gt;
-&lt;wfm-card ng-repeat=&quot;item in items&quot;&gt;
-	&lt;card-header&gt;
-		&lt;span&gt;&lt;i class=&quot;mdi&quot; ng-class=&quot;item.title&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-		&lt;span class=&quot;chevron&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-	&lt;/card-header&gt;
-	&lt;card-body&gt;
-		card body
-	&lt;/card-body&gt;
-&lt;/wfm-card&gt;
-&lt;/wfm-card-list&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-2-5" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">2.5</span
           >Time Range Picker
         </a>
       </h2>
@@ -410,6 +329,78 @@ In WFM, the timepicker is self-adjusted to the user&#39;s time-format setting, i
       </div>
 
       </section>
+      <section id="kssref-2-5" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">2.5</span
+          >Notices
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Notices indicate to the user that an event or action has taken place or that something is stopping the current action.
+There are several different markers to make the type of notice easy to spot:</p>
+<ul class="wfm-simple-list"><li class="text-success"><b>Success: </b>Indicates successful action.</li>
+<li><b>Info: </b>Gives hints and information.</li>
+<li class="text-warning"><b>Warning: </b>Alerts that something has to be done before they can continue.</li>
+<li class="text-danger"><b>Error: </b>Should be triggered when something goes wrong in the background.</li></ul>
+
+<p>A notice should either self-destruct or be dismissable to free up space.</p>
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+$scope.displaySuccess = function() {
+    growl.success(&#39;<i class="mdi mdi-thumb-up"></i> Success: User is saved successfully.&#39;, {
+            ttl: 5000,
+            disableCountDown: true,
+    });
+};
+    </pre></code>
+</div>
+</div>
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          
+<!-- Some examples of how triggering a notice -->
+<button class="wfm-btn wfm-btn-default" ng-click="displaySuccess();">Trigger success</button>
+<button class="wfm-btn wfm-btn-default" ng-click="displayInfo();">Trigger info</button>
+<button class="wfm-btn wfm-btn-default" ng-click="displayWarning();">Trigger warning</button>
+<button class="wfm-btn wfm-btn-default" ng-click="displayError();">Trigger error</button>
+
+<!-- The code below is included by default in our index.html. NO NEED TO REPEAT IT-->
+<div id="notice" class="growl-wrapper material-depth-1">
+	<div growl></div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">
+&lt;!-- Some examples of how triggering a notice --&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-default&quot; ng-click=&quot;displaySuccess();&quot;&gt;Trigger success&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-default&quot; ng-click=&quot;displayInfo();&quot;&gt;Trigger info&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-default&quot; ng-click=&quot;displayWarning();&quot;&gt;Trigger warning&lt;/button&gt;
+&lt;button class=&quot;wfm-btn wfm-btn-default&quot; ng-click=&quot;displayError();&quot;&gt;Trigger error&lt;/button&gt;
+
+&lt;!-- The code below is included by default in our index.html. NO NEED TO REPEAT IT--&gt;
+&lt;div id=&quot;notice&quot; class=&quot;growl-wrapper material-depth-1&quot;&gt;
+	&lt;div growl&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
       <section id="kssref-2-6" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
@@ -428,6 +419,18 @@ In WFM, the timepicker is self-adjusted to the user&#39;s time-format setting, i
 <tr><td>pagination-options</td><td>configurations about the pagination, it contains two properties. &quot;pageNumber&quot; is the current page number; &quot;totalPages&quot; is hwo many pages it sets.</td><td>true</td></tr>
 <tr><td>get-data-for-page-callback</td><td>this is the function which is used by the directive to call to get the data for a given page number.</td><td>true</td></tr>
 </table>
+
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+$scope.paginationOptions = {pageNumber: 1, totalPages: 7};
+$scope.getPageData = function(pageIndex) {
+   angular.log(pageIndex);
+};
+    </pre></code>
+</div>
+</div>
       </div>
     </div>
 
@@ -436,12 +439,12 @@ In WFM, the timepicker is self-adjusted to the user&#39;s time-format setting, i
           Example
         </div>
         <div class="kss-modifier__example">
-          <wfm-pagination pagination-options="paginationOptions" get-data-for-page-callback="getPageData"></wfm-pagination>
+          <wfm-pagination class="pull-pagination" pagination-options="paginationOptions" get-data-for-page-callback="getPageData"></wfm-pagination>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;wfm-pagination pagination-options=&quot;paginationOptions&quot; get-data-for-page-callback=&quot;getPageData&quot;&gt;&lt;/wfm-pagination&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;wfm-pagination class=&quot;pull-pagination&quot; pagination-options=&quot;paginationOptions&quot; get-data-for-page-callback=&quot;getPageData&quot;&gt;&lt;/wfm-pagination&gt;</code></pre>
       </div>
 
       </section>
@@ -453,7 +456,7 @@ In WFM, the timepicker is self-adjusted to the user&#39;s time-format setting, i
 <script>
   prettyPrint();
 </script>
-	
+
 
 
 

@@ -1,45 +1,101 @@
 // Context menus
 //
-//Context menus are used where more actions are needed. To keep them manageable, limit the number of actions displayed within to a maximum of 5.
+//Context menus are used where more actions are needed.
+//To keep them manageable, limit the number of actions displayed within to a maximum of 5.
+//Additionally a menu can not trigger a child menu from within itself.
 //
 //Markup:
-//<button class="context-menu wfm-btn wfm-btn-default">
-//	Place me on the right
-//	<span class="context-menu-left">
-//		<ul class="wfm-list">
-//			<li><i class="mdi mdi-account"></i>Sign out</li>
-//			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
-//			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
-//		</ul>
-//	</span>
-//</button>
-//<button class="context-menu wfm-btn wfm-btn-default">
-//	place me in the middle
-//	<span class="context-menu-bottom">
-//		<ul class="wfm-list">
-//			<li><i class="mdi mdi-account"></i>Sign out</li>
-//			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
-//			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
-//		</ul>
-//	</span>
-//</button>
-//<button class="context-menu wfm-btn wfm-btn-default">
-//	Place me on the left
-//	<span class="context-menu-right">
-//		<ul class="wfm-list">
-//			<li><i class="mdi mdi-account"></i>Sign out</li>
-//			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
-//			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
-//		</ul>
-//	</span>
-//</button>
+//  <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+//  	Place me on the left
+//  	<span class="context-menu-right">
+//  		<ul class="wfm-list">
+//  			<li><i class="mdi mdi-account"></i>Sign out</li>
+//  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+//  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+//  		</ul>
+//  	</span>
+//  </div>
+//  <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+//  	place me in the middle
+//  	<span class="context-menu-bottom">
+//  		<ul class="wfm-list">
+//  			<li><i class="mdi mdi-account"></i>Sign out</li>
+//  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+//  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+//  		</ul>
+//  	</span>
+//  </div>
+//  <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+//  	Place me on the right
+//  	<span class="context-menu-left">
+//  		<ul class="wfm-list">
+//  			<li><i class="mdi mdi-account"></i>Sign out</li>
+//  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+//  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+//  		</ul>
+//  	</span>
+//  </div>
+//  <br/>
+//  <div tabindex=0 class="context-menu card-context">
+//  	<i class="mdi mdi-dots-vertical"></i>
+//  	<span class="context-menu-right">
+//  		<ul class="wfm-list">
+//  			<li><i class="mdi mdi-account"></i>Sign out</li>
+//  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+//  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+//  		</ul>
+//  	</span>
+//  </div>
+//  <div tabindex=0 class="context-menu card-context">
+//  	<i class="mdi mdi-dots-vertical"></i>
+//  	<span class="context-menu-bottom">
+//  		<ul class="wfm-list">
+//  			<li><i class="mdi mdi-account"></i>Sign out</li>
+//  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+//  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+//  		</ul>
+//  	</span>
+//  </div>
+//  <div tabindex=0 class="context-menu card-context">
+//  	<i class="mdi mdi-dots-vertical"></i>
+//  	<span class="context-menu-left">
+//  		<ul class="wfm-list">
+//  			<li><i class="mdi mdi-account"></i>Sign out</li>
+//  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
+//  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+//  		</ul>
+//  	</span>
+//  </div>
 //
-//Styleguide 1.14
+//Styleguide 1.13
 //
+.card-context{
+  border: none;
+  margin:$full-padding;
+  cursor: pointer;
+  padding:8px;
+  line-height:16px!important;
+  text-align:center;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  text-decoration:none!important;
+}
+
+.card-context:hover{
+  background: $gray012!important;
+}
+
+.card-context:focus{
+  @extend .material-depth-2;
+  background: $gray012!important;
+}
 
 .context-menu {
     position: relative;
     cursor:pointer;
+    background:transparent;
+    border:none;
+    display: inline-block;
 
     [class*="context-menu-"] {
         transition: $transition-timing;
@@ -51,6 +107,7 @@
     }
 
     &:focus {
+      @extend .material-depth-2;
         [class*="context-menu-"] {
             visibility: visible;
             opacity: 1;

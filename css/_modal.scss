@@ -1,6 +1,8 @@
-﻿// Modals
+﻿// Modal
 //
 // A modal is launched above the main view and stays there until the user has taken action. Since this is such a obnoxious element it should only be used when you absolutely want the user to focus on a single task.
+//
+// Note: In all modals and panels the footer links should be buttons, not  &lt;a/&gt; tags.
 //
 //Markup:
 //	<div ng-cloak class="modal-box">
@@ -8,16 +10,16 @@
 //		<div ng-cloak ng-show="modalLaunch1">
 //			<div class="modalbg">
 //				<div class="dialog">
-//					<div class="modal-header">
+//					<h1 class="modal-title">
 //						Modal title
-//					</div>
+//					</h1>
 //					<div class="modal-inner-content">
 //						Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
 //					</div>
-//					<div class="modal-footer">
+//					<div class="modal-actions">
 //						<aside>
-//							<a ng-click="modalLaunch1 = !modalLaunch1" class="wfm-btn wfm-btn-invis-default">dismiss</a>
-//							<a ng-click="modalLaunch1 = !modalLaunch1"  class="wfm-btn wfm-btn-invis-primary">Sounds good</a>
+//							<button ng-click="modalLaunch1 = !modalLaunch1" class="wfm-btn wfm-btn-invis-default">dismiss</button>
+//							<button ng-click="modalLaunch1 = !modalLaunch1"  class="wfm-btn wfm-btn-invis-primary">Sounds good</button>
 //						</aside>
 //					</div>
 //				</div>
@@ -25,61 +27,95 @@
 //		</div>
 //	</div>
 //
-//Styleguide 1.12
+//Styleguide 1.16
 //
+
+//Mini modal
+//
+// The mini modal can be used when the regular modal is to big for its content or as a confirmation dialog.
+// it does not have a header or any other elements inside it aprt from plain text and footer buttons.
+//Remember that it still takes the focus away from what the use was doing untill it has been dismissed.
+//
+//Markup:
+//	<div ng-cloak class="modal-box">
+//		<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-default">Open modal</button>
+//		<div ng-cloak ng-show="modalLaunch3">
+//			<div class="modalbg">
+//				<div class="dialog-mini">
+//					<div class="modal-inner-content">
+//						Are you sure you want to do the thing?
+//					</div>
+//					<div class="modal-actions">
+//						<aside>
+//							<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-invis-default">no thanks</button>
+//							<button ng-click="modalLaunch3 = !modalLaunch3"  class="wfm-btn wfm-btn-invis-primary">yes please</button>
+//						</aside>
+//					</div>
+//				</div>
+//			</div>
+//		</div>
+//	</div>
+//
+//Styleguide 1.16.1
+//
+
 
 //Tabbed modal
 //
 //<div class="styleguide-break"><i class="mdi mdi-alert"></i><span>Use with care, creates complexity. </span></div>
-//When needing to display more information than the normal modal allows or present a string of actions to the user a tabbed modal can be used. 
+//When needing to display more information than the normal modal allows or present a string of actions to the user a tabbed modal can be used.
 //
 //Markup:
-//<div ng-cloak class="modal-box">
-//	<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-default">Open tab modal</button>
-//	<div ng-cloak ng-show="modalLaunch2">
-//		<div class="modalbg">
-//			<div class="dialog">
-//					<div class="wfm-slide-tabs">
-//						<md-content style="padding:0!important;">
-//							<md-tabs md-dynamic-height md-border-bottom>
-//								<md-tab label="first tab">
+//	<div ng-cloak class="modal-box">
+//		<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-default">Open tab modal</button>
+//		<div ng-cloak ng-show="modalLaunch2">
+//			<div class="modalbg">
+//				<div class="dialog">
+//					<div class="wfm-slide-tabs tabbed-panel">
+//						<md-content class="md-padding">
+//							<md-tabs md-dynamic-height md-border-bottom >
+//								<md-tab label="Tab title1">
 //									<md-content class="md-padding">
-//										<h4>Tab One</h4>
-//										<p>Click a tab to watch me go!</p>
+//										<div class="con-row">
+//											<div class="con-flex">Content</div>
+//										</div>
 //									</md-content>
 //								</md-tab>
-//								<md-tab label="second tab">
+//								<md-tab label="Tab title2">
 //									<md-content class="md-padding">
-//										<h4>Tab Two</h4>
-//										<p>wheeeee</p>
+//										<div class="con-row">
+//											<div class="con-flex">Content</div>
+//										</div>
 //									</md-content>
 //								</md-tab>
-//								<md-tab label="third tab">
+//								<md-tab label="Tab title3">
 //									<md-content class="md-padding">
-//										<h4>Tab Three</h4>
-//										<p>Slow down!</p>
+//										<div class="con-row demo-outline">
+//											<div class="con-flex">Content</div>
+//										</div>
 //									</md-content>
 //								</md-tab>
-//								<md-tab label="fourth tab">
+//								<md-tab label="Tab title4">
 //									<md-content class="md-padding">
-//										<h4>Tab Four</h4>
-//										<p>Now listen here you little whippersnapper. </p>
+//										<div class="con-row">
+//											<div class="con-flex">Content</div>
+//										</div>
 //									</md-content>
 //								</md-tab>
 //							</md-tabs>
 //						</md-content>
 //					</div>
-//				<div class="modal-footer">
-//					<aside>
-//						<a ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-invis-primary">dismiss</a>
-//					</aside>
+//					<div class="modal-actions">
+//						<aside>
+//							<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-invis-primary">dismiss</button>
+//						</aside>
+//					</div>
 //				</div>
 //			</div>
 //		</div>
 //	</div>
-//</div>
 //
-//Styleguide 1.12.1
+//Styleguide 1.16.2
 //
 
 .modal-box {
@@ -92,56 +128,85 @@
 		z-index: 99998;
 		background: $gray026;
 	}
-	
-	.modalbg .dialog {
+
+	.modalbg .dialog, .modalbg .dialog-mini {
 		width: 60%;
 		z-index: 99999;
 		position: relative;
 		top: -20px;
 		margin: 10% auto;
-		background: $white;	
+		background: $white;
 	}
 
+	.modalbg .dialog-mini {
+		width: 25%;
+	}
+
+	.tabbed-panel > md-content{
+		padding: 0;
+	}
+
+	/*Dialog*/
 	@media only screen and (max-width:1200px){
 	.modalbg .dialog {
 	  width:90%;
 	 }
 	}
-	
+
 	@media(max-width:599px){
 		.modal-box .modalbg .dialog{
 			max-height:90%;
-			overflow-y:auto!important;	
+			overflow-y:auto!important;
 		}
 	}
 
 	@media(min-width:600px){
 		.modal-box .modalbg .dialog{
-			max-height:70%;
-			overflow-y:auto!important;	
+			max-height:25%!important;
+			overflow-y:auto!important;
 		}
 	}
-	
-	.modal-header{
-		padding: $full-padding;
-		background-color: $blue-500;
-		color: $white;
+
+/*Mini dialog*/
+	@media only screen and (max-width:1200px){
+		.modalbg .dialog-mini {
+			width:90%;
+		 }
+		}
+
+		@media(max-width:599px){
+			.modal-box .modalbg .dialog-mini{
+				max-height:90%;
+				overflow-y:auto!important;
+			}
+		}
+
+		@media(min-width:600px){
+			.modal-box .modalbg .dialog-mini{
+				max-height:70%;
+				overflow-y:auto!important;
+			}
+		}
+
+
+	.modal-title{
+		padding-left:10px!important;
+		text-align: left;
 	}
-	
+
 	.modal-inner-content{
 		background-color: $white;
 		color: $gray087;
 		max-height: 70vh;
-		padding:5px;
+		padding:10px;
 		overflow-y: auto;
+		text-align: left;
 	}
-	
-	.modal-footer{
-		padding: $full-padding * 2 $full-padding;
-		border-top: 1px solid $gray012;
+
+	.modal-actions{
 		color: $gray087;
 	}
-	
+
 	aside{
 		text-align:right;
 	}

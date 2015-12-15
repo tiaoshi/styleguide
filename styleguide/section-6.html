@@ -14,7 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="../vendor/fonts.css" />
 	<link type="text/css" rel="stylesheet" href="./public/kss.css" />
 
-	<link type="text/css" rel="stylesheet" href="../vendor/angular-ui-tree.min.css"/>
+  <link rel="stylesheet" href="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.css">
 	<link type="text/css" rel="stylesheet" href="../vendor/mdi/css/materialdesignicons.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../vendor/ui-grid-stable.min.css"/>
@@ -23,6 +23,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/main.min.css"/>
 
 	<script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
 	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
 	<script src="../node_modules/angular-route/angular-route.min.js"></script>
 	<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
@@ -33,13 +34,14 @@
 	<script src="../vendor/d3/d3.min.js"></script>
 	<script src="../vendor/c3/c3.min.js"></script>
 	<script src="../vendor/c3/c3-angular.min.js"></script>
+  <script src="../vendor/angular-growl.js"></script>
 	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
 	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
-        <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
-	
+  <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
+
 	<script src="../app.js"></script>
   
 </head>
@@ -47,7 +49,8 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">Teleopti WFM<br>Style Guide</h1>
+    <img src="http://www.teleopti.com/system/images/teleopti_logo.png" alt="Teleopti logo" height="30px" style="vertical-align:bottom;">
+    <h1 class="kss-doc-title">Style Guide</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -60,7 +63,7 @@
       <li class="kss-nav__menu-item">
         <a href="section-1.html">
           <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Style Rules</span>
+          ><span class="kss-nav__name">Elements</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -78,25 +81,25 @@
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
           <span class="kss-nav__ref">4</span
-          ><span class="kss-nav__name">Layouts</span>
+          ><span class="kss-nav__name">Containers</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-5.html">
           <span class="kss-nav__ref">5</span
-          ><span class="kss-nav__name">Icons</span>
+          ><span class="kss-nav__name">Language</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-6.html">
           <span class="kss-nav__ref">6</span
-          ><span class="kss-nav__name">Scalability</span>
+          ><span class="kss-nav__name">Icons</span>
         </a>
         <ul class="kss-nav__menu-child">
             <li class="kss-nav__menu-item">
               <a href="section-6.html#kssref-6-1">
                 <span class="kss-nav__ref">6.1</span
-                ><span class="kss-nav__name">Big tables</span>
+                ><span class="kss-nav__name">Quick symbol library</span>
               </a>
             </li>
         </ul>
@@ -118,13 +121,16 @@
       <h1 class="kss-title kss-title--level-1">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">6</span
-          >Scalability
+          >Icons
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>How to adapt our elements to big databases</p>
+        <p>We only use <a href="http://materialdesignicons.com/">Material icons</a>.
+To use an icon, use the i-tag and apply the classes &quot;mdi&quot; and &quot;mdi-icon-name&quot; (replacing icon-name with the name form the icon index).</p>
+<p>Single icons can be used as links. if used in this way, make sure you provide a pointer cursor and a tooltip to highlight that it is infact a link.</p>
+<p>In the cases where icons appear in the defined markup throughout this styleguide, they might have special style rules applied to them so be sure that the functionality is intact if you opt to remove them.</p>
 
       </div>
     </div>
@@ -137,51 +143,52 @@
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">6.1</span
-          >Big tables
+          >Quick symbol library
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>The big table is used to give data more space and actions. Check out the <a href="http://ui-grid.info/docs/#/tutorial">documentation</a> to see all available functions.</p>
-
+        <p>These icons are used in the project and have a definition of when they should be used.</p>
+<table class="wfm-table">
+<thead><tr><th>Icon</th><th>Class name</th><th>Definition</th></tr></thead>
+<tbody>
+ <tr><td><i class="mdi mdi-menu"></i></td><td>mdi mdi-menu</td><td>Trigger a major menu</td></tr>
+ <tr><td><i class="mdi mdi-dots-vertical"></i></td><td>mdi mdi-dots-vertical</td><td>Trigger a minor menu</td></tr>
+ <tr><td><i class="mdi mdi-menu-down"></i></td><td>mdi mdi-menu-down</td><td>Indicates a dropdown menu</td></tr>
+ <tr><td><i class="mdi mdi-chevron-left"></i> </td><td>mdi mdi-chevron-left</td><td>Indicate expandable row </td></tr>
+ <tr><td><i class="mdi mdi-chevron-right"></i> </td><td>mdi mdi-chevron-right</td><td>Indicate expandable row </td></tr>
+ <tr><td><i class="mdi mdi-alert"></i> </td><td>mdi mdi-alert</td><td>Used for warnings </td></tr>
+ <tr><td><i class='mdi mdi-thumb-up'></i> </td><td>mdi mdi-thumb-up</td><td>Used for positive feedback </td></tr>
+ <tr><td><i class="mdi mdi-alert-circle"></i> </td><td>mdi mdi-alert-circle</td><td>Used for general notifications </td></tr>
+ <tr><td><i class="mdi mdi-alert-octagon"></i> </td><td>mdi mdi-alert-octagon</td><td>Used for errors </td></tr>
+ <tr><td><i class="mdi mdi-plus"></i> </td><td>mdi mdi-plus</td><td>Add new item </td></tr>
+ <tr><td><i class="mdi mdi-content-copy"></i> </td><td>mdi mdi-content-copy</td><td>Duplicate the item </td></tr>
+ <tr><td><i class="mdi mdi-pencil"></i> </td><td>mdi mdi-pencil</td><td>Edit the item </td></tr>
+ <tr><td><i class="mdi mdi-delete"></i> </td><td>mdi mdi-delete</td><td>Remove the item </td></tr>
+ <tr><td><i class="mdi mdi-magnify"></i> </td><td>mdi mdi-magnify</td><td>Indicate a search </td></tr>
+ <tr><td><i class="mdi mdi-filter-outline"></i> </td><td>mdi mdi-filter-outline</td><td>Indicate a filter </td></tr>
+ <tr><td><i class="mdi mdi-account"></i> </td><td>mdi mdi-account</td><td>User and account related actions </td></tr>
+ <tr><td><i class="mdi mdi-arrow-right"></i> </td><td>mdi mdi-arrow-right</td><td>Go, run, proceed </td></tr>
+ <tr><td><i class="mdi mdi-sort-ascending"></i> </td><td>mdi mdi-sort-ascending</td><td>Ascending sorting </td></tr>
+ <tr><td><i class="mdi mdi-sort-descending"></i> </td><td>mdi mdi-sort-descending</td><td>Descending sorting </td></tr>
+ <tr><td><i class="mdi mdi-arrow-up"></i> </td><td>mdi mdi-arrow-up</td><td>Currently sorting ascending</td></tr>
+ <tr><td><i class="mdi mdi-arrow-down"></i> </td><td>mdi mdi-arrow-down</td><td>Currently sorting descending</td></tr>
+ <tr><td><i class="mdi mdi-skip-previous"></i> </td><td>mdi mdi-skip-previous</td><td>Go to first </td></tr>
+ <tr><td><i class="mdi mdi-skip-next"></i> </td><td>mdi mdi-skip-next</td><td>Go to last</td></tr>
+ <tr><td><i class="mdi mdi-close"></i> </td><td>mdi mdi-close</td><td>Close </td></tr>
+ <tr><td><i class="mdi mdi-check"></i> </td><td>mdi mdi-check</td><td>Selected</td></tr>
+ <tr><td><i class="mdi mdi-chart-bar"></i> </td><td>mdi mdi-chart-bar</td><td>Show a bar chart </td></tr>
+ <tr><td><i class="mdi mdi-chart-line"></i> </td><td>mdi mdi-chart-line</td><td>Show a line chart </td></tr>
+ <tr><td><i class="mdi mdi-help-circle"></i> </td><td>mdi mdi-help-circle</td><td>Indicate help tools </td></tr>
+ <tr><td><i class="mdi mdi-block-helper"></i> </td><td>mdi mdi-block-helper</td><td>Clear selections </td></tr>
+ <tr><td><i class="mdi mdi-food-apple"></i> </td><td>mdi mdi-food-apple</td><td>Knowledge center </td></tr>
+ <tr><td><i class="mdi mdi-school"></i> </td><td>mdi mdi-school</td><td>Training </td></tr>
+</tbody>
+</table>
       </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <div class="big-table-wrapper material-depth-1">
-<div class="wfm-block">
-<h4>Table with numbers</h4>
-</div>
-<div ui-grid="gridOptions" ui-grid-exporter ui-grid-auto-resize ui-grid-selection class="myGrid"></div>
-<div class="wfm-block">
-<div class="big-table-footer-actions">
-	<a class="wfm-btn wfm-btn-invis-default">Do something</a>
-</div>
-</div>
-</div>
-
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;big-table-wrapper material-depth-1&quot;&gt;
-&lt;div class=&quot;wfm-block&quot;&gt;
-&lt;h4&gt;Table with numbers&lt;/h4&gt;
-&lt;/div&gt;
-&lt;div ui-grid=&quot;gridOptions&quot; ui-grid-exporter ui-grid-auto-resize ui-grid-selection class=&quot;myGrid&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;wfm-block&quot;&gt;
-&lt;div class=&quot;big-table-footer-actions&quot;&gt;
-	&lt;a class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;Do something&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-      </div>
 
       </section>
 </article>
@@ -192,7 +199,7 @@
 <script>
   prettyPrint();
 </script>
-	
+
 
 
 

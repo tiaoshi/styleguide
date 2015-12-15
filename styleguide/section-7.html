@@ -14,7 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="../vendor/fonts.css" />
 	<link type="text/css" rel="stylesheet" href="./public/kss.css" />
 
-	<link type="text/css" rel="stylesheet" href="../vendor/angular-ui-tree.min.css"/>
+  <link rel="stylesheet" href="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.css">
 	<link type="text/css" rel="stylesheet" href="../vendor/mdi/css/materialdesignicons.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"/>
 	<link type="text/css" rel="stylesheet" href="../vendor/ui-grid-stable.min.css"/>
@@ -23,6 +23,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/main.min.css"/>
 
 	<script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
 	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
 	<script src="../node_modules/angular-route/angular-route.min.js"></script>
 	<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
@@ -33,13 +34,14 @@
 	<script src="../vendor/d3/d3.min.js"></script>
 	<script src="../vendor/c3/c3.min.js"></script>
 	<script src="../vendor/c3/c3-angular.min.js"></script>
+  <script src="../vendor/angular-growl.js"></script>
 	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
 	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
-        <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
-	
+  <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
+
 	<script src="../app.js"></script>
   
 </head>
@@ -47,7 +49,8 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">Teleopti WFM<br>Style Guide</h1>
+    <img src="http://www.teleopti.com/system/images/teleopti_logo.png" alt="Teleopti logo" height="30px" style="vertical-align:bottom;">
+    <h1 class="kss-doc-title">Style Guide</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -60,7 +63,7 @@
       <li class="kss-nav__menu-item">
         <a href="section-1.html">
           <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Style Rules</span>
+          ><span class="kss-nav__name">Elements</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -78,19 +81,19 @@
       <li class="kss-nav__menu-item">
         <a href="section-4.html">
           <span class="kss-nav__ref">4</span
-          ><span class="kss-nav__name">Layouts</span>
+          ><span class="kss-nav__name">Containers</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-5.html">
           <span class="kss-nav__ref">5</span
-          ><span class="kss-nav__name">Icons</span>
+          ><span class="kss-nav__name">Language</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-6.html">
           <span class="kss-nav__ref">6</span
-          ><span class="kss-nav__name">Scalability</span>
+          ><span class="kss-nav__name">Icons</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -162,7 +165,7 @@
 <script>
   prettyPrint();
 </script>
-	
+
 
 
 
