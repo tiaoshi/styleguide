@@ -1400,22 +1400,11 @@ md-tabs .md-tab.md-active, md-tabs .md-tab.md-focused {
 md-content.md-default-theme {
   background-color: #ffffff !important; }
 
-.wfm-slide-tabs md-tabs md-tab-item.md-active {
-  color: #3f51b5 !important;
-  background-color: #66c2ff !important;
-  height: 79%; }
-
 .wfm-slide-tabs md-tabs .md-tab {
-  color: rgba(0, 0, 0, 0.54);
   margin-top: -8px; }
 
 .wfm-slide-tabs md-tabs-wrapper {
   height: 36px !important; }
-
-.wfm-slide-tabs md-ink-bar {
-  color: #E91E63;
-  background: #E91E63;
-  top: 28px; }
 
 @media (max-width: 599px) {
   .modal-box .modalbg .dialog {
