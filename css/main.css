@@ -1619,7 +1619,8 @@ md-progress-circular .md-inner .md-gap {
   border-top-color: #E91E63; }
 
 md-progress-circular .md-inner .md-right .md-half-circle {
-  border-right-color: #E91E63; }
+  border-right-color: #E91E63;
+  border-top-color: #E91E63 !important; }
 
 .mini-spinner {
   transform: scale(0.2) !important; }
