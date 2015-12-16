@@ -1363,6 +1363,15 @@ md-slider.md-min .md-thumb:after {
       left: 100%;
       margin-top: 10px; }
 
+.wfm-slide-tabs .md-active {
+  color: rgba(0, 0, 0, 0.87) !important; }
+
+.wfm-slide-tabs md-ink-bar {
+  box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.26) !important; }
+
+.wfm-slide-tabs md-tab-item:not([disabled]) {
+  color: rgba(0, 0, 0, 0.87) !important; }
+
 .wfm-slide-tabs md-next-button {
   padding-right: 18%;
   background: #99d6ff; }
@@ -1610,6 +1619,9 @@ md-progress-linear[md-mode=buffer] .md-dashed:before {
   animation: none;
   -webkit-animation: none; }
 
+md-progress-circular .md-inner .md-half-circle {
+  border-left-color: #E91E63 !important; }
+
 md-progress-circular .md-inner .md-left .md-half-circle {
   border-left-color: #E91E63; }
 
@@ -1619,8 +1631,7 @@ md-progress-circular .md-inner .md-gap {
   border-top-color: #E91E63; }
 
 md-progress-circular .md-inner .md-right .md-half-circle {
-  border-right-color: #E91E63;
-  border-top-color: #E91E63 !important; }
+  border-right-color: #E91E63; }
 
 .mini-spinner {
   transform: scale(0.2) !important; }
