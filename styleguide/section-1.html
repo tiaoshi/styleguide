@@ -585,6 +585,53 @@ However, don&#39;t mix standard inputs and prepend ones. These inputs should hav
       </div>
 
       </section>
+      <section id="kssref-1-3-2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.3.2</span
+          >File upload
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+document.getElementById(&quot;uploadBtnId&quot;).onchange = function () {
+    document.getElementById(&quot;uploadFile&quot;).value = document.getElementById(&quot;uploadBtnId&quot;).files[0].name;
+}
+    </pre></code>
+</div>
+</div>
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <label class="fileUpload">
+   <input id="uploadBtnId" type="file" class="upload" />
+   <i class="mdi mdi-file-outline uploadBtn"></i>
+</label>
+<input id="uploadFile" class="disableInputField" disabled="disabled" value="No file selected" />
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label class=&quot;fileUpload&quot;&gt;
+   &lt;input id=&quot;uploadBtnId&quot; type=&quot;file&quot; class=&quot;upload&quot; /&gt;
+   &lt;i class=&quot;mdi mdi-file-outline uploadBtn&quot;&gt;&lt;/i&gt;
+&lt;/label&gt;
+&lt;input id=&quot;uploadFile&quot; class=&quot;disableInputField&quot; disabled=&quot;disabled&quot; value=&quot;No file selected&quot; /&gt;</code></pre>
+      </div>
+
+      </section>
       <section id="kssref-1-4" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
@@ -1719,6 +1766,67 @@ The view header is also a uniqe element in the view and not part of any other pa
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink">
           <span class="kss-title__ref">1.14.1</span
+          >Default table
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div ng-cloak class="modal-box">
+	<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-default">Open modal</button>
+	<div ng-cloak ng-show="modalLaunch3">
+		<div class="modalbg">
+			<div class="dialog-mini">
+				<div class="modal-inner-content">
+					Are you sure you want to do the thing?
+				</div>
+				<div class="modal-actions">
+					<aside>
+						<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-invis-default">no thanks</button>
+						<button ng-click="modalLaunch3 = !modalLaunch3"  class="wfm-btn wfm-btn-invis-primary">yes please</button>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
+	&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open modal&lt;/button&gt;
+	&lt;div ng-cloak ng-show=&quot;modalLaunch3&quot;&gt;
+		&lt;div class=&quot;modalbg&quot;&gt;
+			&lt;div class=&quot;dialog-mini&quot;&gt;
+				&lt;div class=&quot;modal-inner-content&quot;&gt;
+					Are you sure you want to do the thing?
+				&lt;/div&gt;
+				&lt;div class=&quot;modal-actions&quot;&gt;
+					&lt;aside&gt;
+						&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot; class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;no thanks&lt;/button&gt;
+						&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot;  class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;yes please&lt;/button&gt;
+					&lt;/aside&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-14-1" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.14.1</span
           >Mini modal
         </a>
       </h3>
@@ -1737,170 +1845,18 @@ Remember that it still takes the focus away from what the use was doing untill i
           Example
         </div>
         <div class="kss-modifier__example">
-          <table class="wfm-table">
-	<thead>
-		<tr>
-			<th>texts</th>
-			<th>numbers</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>text1</td>
-			<td class="number-cell">2135847</td>
-		</tr>
-		<tr>
-			<td>text1</td>
-			<td class="number-cell">2.3546</td>
-		</tr>
-	</tbody>
-</table>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table&quot;&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th&gt;texts&lt;/th&gt;
-			&lt;th&gt;numbers&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;text1&lt;/td&gt;
-			&lt;td class=&quot;number-cell&quot;&gt;2135847&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;text1&lt;/td&gt;
-			&lt;td class=&quot;number-cell&quot;&gt;2.3546&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-14-1" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.14.1</span
-          >Default table
-        </a>
-      </h3>
-
-
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <table class="wfm-table">
-	<thead>
-		<tr>
-			<th>texts</th>
-			<th>numbers</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>text1</td>
-			<td class="number-cell">2135847</td>
-		</tr>
-		<tr>
-			<td>text1</td>
-			<td class="number-cell">2.3546</td>
-		</tr>
-	</tbody>
-</table>
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table&quot;&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th&gt;texts&lt;/th&gt;
-			&lt;th&gt;numbers&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;text1&lt;/td&gt;
-			&lt;td class=&quot;number-cell&quot;&gt;2135847&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;text1&lt;/td&gt;
-			&lt;td class=&quot;number-cell&quot;&gt;2.3546&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-1-14-2" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink">
-          <span class="kss-title__ref">1.14.2</span
-          >Two dimensional table
-        </a>
-      </h3>
-
-
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
           <div ng-cloak class="modal-box">
-	<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-default">Open tab modal</button>
-	<div ng-cloak ng-show="modalLaunch2">
+	<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-default">Open modal</button>
+	<div ng-cloak ng-show="modalLaunch3">
 		<div class="modalbg">
-			<div class="dialog">
-				<div class="wfm-slide-tabs tabbed-panel">
-					<md-content class="md-padding">
-						<md-tabs md-dynamic-height md-border-bottom >
-							<md-tab label="Tab title1">
-								<md-content class="md-padding">
-									<div class="con-row">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-							<md-tab label="Tab title2">
-								<md-content class="md-padding">
-									<div class="con-row">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-							<md-tab label="Tab title3">
-								<md-content class="md-padding">
-									<div class="con-row demo-outline">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-							<md-tab label="Tab title4">
-								<md-content class="md-padding">
-									<div class="con-row">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-						</md-tabs>
-					</md-content>
+			<div class="dialog-mini">
+				<div class="modal-inner-content">
+					Are you sure you want to do the thing?
 				</div>
 				<div class="modal-actions">
 					<aside>
-						<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-invis-primary">dismiss</button>
+						<button ng-click="modalLaunch3 = !modalLaunch3" class="wfm-btn wfm-btn-invis-default">no thanks</button>
+						<button ng-click="modalLaunch3 = !modalLaunch3"  class="wfm-btn wfm-btn-invis-primary">yes please</button>
 					</aside>
 				</div>
 			</div>
@@ -1912,47 +1868,17 @@ Remember that it still takes the focus away from what the use was doing untill i
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
-	&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open tab modal&lt;/button&gt;
-	&lt;div ng-cloak ng-show=&quot;modalLaunch2&quot;&gt;
+	&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open modal&lt;/button&gt;
+	&lt;div ng-cloak ng-show=&quot;modalLaunch3&quot;&gt;
 		&lt;div class=&quot;modalbg&quot;&gt;
-			&lt;div class=&quot;dialog&quot;&gt;
-				&lt;div class=&quot;wfm-slide-tabs tabbed-panel&quot;&gt;
-					&lt;md-content class=&quot;md-padding&quot;&gt;
-						&lt;md-tabs md-dynamic-height md-border-bottom &gt;
-							&lt;md-tab label=&quot;Tab title1&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;Tab title2&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;Tab title3&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row demo-outline&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;Tab title4&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-						&lt;/md-tabs&gt;
-					&lt;/md-content&gt;
+			&lt;div class=&quot;dialog-mini&quot;&gt;
+				&lt;div class=&quot;modal-inner-content&quot;&gt;
+					Are you sure you want to do the thing?
 				&lt;/div&gt;
 				&lt;div class=&quot;modal-actions&quot;&gt;
 					&lt;aside&gt;
-						&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;dismiss&lt;/button&gt;
+						&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot; class=&quot;wfm-btn wfm-btn-invis-default&quot;&gt;no thanks&lt;/button&gt;
+						&lt;button ng-click=&quot;modalLaunch3 = !modalLaunch3&quot;  class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;yes please&lt;/button&gt;
 					&lt;/aside&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
@@ -1985,106 +1911,119 @@ When needing to display more information than the normal modal allows or present
           Example
         </div>
         <div class="kss-modifier__example">
-          <div ng-cloak class="modal-box">
-	<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-default">Open tab modal</button>
-	<div ng-cloak ng-show="modalLaunch2">
-		<div class="modalbg">
-			<div class="dialog">
-				<div class="wfm-slide-tabs tabbed-panel">
-					<md-content class="md-padding">
-						<md-tabs md-dynamic-height md-border-bottom >
-							<md-tab label="Tab title1">
-								<md-content class="md-padding">
-									<div class="con-row">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-							<md-tab label="Tab title2">
-								<md-content class="md-padding">
-									<div class="con-row">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-							<md-tab label="Tab title3">
-								<md-content class="md-padding">
-									<div class="con-row demo-outline">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-							<md-tab label="Tab title4">
-								<md-content class="md-padding">
-									<div class="con-row">
-										<div class="con-flex">Content</div>
-									</div>
-								</md-content>
-							</md-tab>
-						</md-tabs>
-					</md-content>
-				</div>
-				<div class="modal-actions">
-					<aside>
-						<button ng-click="modalLaunch2 = !modalLaunch2" class="wfm-btn wfm-btn-invis-primary">dismiss</button>
-					</aside>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+          <table class="wfm-table wfm-table-multi">
+	<thead>
+		<tr>
+			<th></th>
+			<th>column header</th>
+			<th>column header</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>row header</td>
+			<td>item1</td>
+			<td>item2</td>
+		</tr>
+		<tr>
+			<td>row header</td>
+			<td>item3</td>
+			<td>item4</td>
+		</tr>
+	</tbody>
+</table>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div ng-cloak class=&quot;modal-box&quot;&gt;
-	&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open tab modal&lt;/button&gt;
-	&lt;div ng-cloak ng-show=&quot;modalLaunch2&quot;&gt;
-		&lt;div class=&quot;modalbg&quot;&gt;
-			&lt;div class=&quot;dialog&quot;&gt;
-				&lt;div class=&quot;wfm-slide-tabs tabbed-panel&quot;&gt;
-					&lt;md-content class=&quot;md-padding&quot;&gt;
-						&lt;md-tabs md-dynamic-height md-border-bottom &gt;
-							&lt;md-tab label=&quot;Tab title1&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;Tab title2&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;Tab title3&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row demo-outline&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-							&lt;md-tab label=&quot;Tab title4&quot;&gt;
-								&lt;md-content class=&quot;md-padding&quot;&gt;
-									&lt;div class=&quot;con-row&quot;&gt;
-										&lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/md-content&gt;
-							&lt;/md-tab&gt;
-						&lt;/md-tabs&gt;
-					&lt;/md-content&gt;
-				&lt;/div&gt;
-				&lt;div class=&quot;modal-actions&quot;&gt;
-					&lt;aside&gt;
-						&lt;button ng-click=&quot;modalLaunch2 = !modalLaunch2&quot; class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;dismiss&lt;/button&gt;
-					&lt;/aside&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table wfm-table-multi&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;&lt;/th&gt;
+			&lt;th&gt;column header&lt;/th&gt;
+			&lt;th&gt;column header&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row header&lt;/td&gt;
+			&lt;td&gt;item1&lt;/td&gt;
+			&lt;td&gt;item2&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row header&lt;/td&gt;
+			&lt;td&gt;item3&lt;/td&gt;
+			&lt;td&gt;item4&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-14-2" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.14.2</span
+          >Two dimensional table
+        </a>
+      </h3>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="wfm-table wfm-table-multi">
+	<thead>
+		<tr>
+			<th></th>
+			<th>column header</th>
+			<th>column header</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>row header</td>
+			<td>item1</td>
+			<td>item2</td>
+		</tr>
+		<tr>
+			<td>row header</td>
+			<td>item3</td>
+			<td>item4</td>
+		</tr>
+	</tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;wfm-table wfm-table-multi&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;&lt;/th&gt;
+			&lt;th&gt;column header&lt;/th&gt;
+			&lt;th&gt;column header&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row header&lt;/td&gt;
+			&lt;td&gt;item1&lt;/td&gt;
+			&lt;td&gt;item2&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row header&lt;/td&gt;
+			&lt;td&gt;item3&lt;/td&gt;
+			&lt;td&gt;item4&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
       </div>
 
       </section>
