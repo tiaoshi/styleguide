@@ -1688,7 +1688,9 @@ md-content {
 .wfm-card-unselected {
   width: 90%;
   margin: 10px auto;
-  transition: all .2s ease-out;
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
   background: #ffffff; }
 
 .wfm-card-unselected:hover {
@@ -1719,6 +1721,7 @@ md-card {
   transition: box-shadow 0.3s linear; }
 
 .wfm-card-content {
+  padding: 10px 16px;
   background-color: #ffffff; }
 
 .wfm-time-range-picker-wrap button, .wfm-time-range-picker-wrap input {
