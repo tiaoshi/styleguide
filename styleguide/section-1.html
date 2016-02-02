@@ -39,6 +39,7 @@
 	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
 	<script src="../vendor/wfmDirectives/cardlist/wfmcardlist.directive.js"></script>
 	<script src="../vendor/wfmDirectives/pagination/wfmpagination.directive.js"></script>
+  <script src="../vendor/wfmDirectives/modal/wfmmodal.directive.js"></script>
 	<script src="../js/date-range-picker/date-range-picker.directive.js"></script>
   <script src="../js/time-range-picker/time-range-picker.directive.js"></script>
 
@@ -1950,6 +1951,69 @@ When needing to display more information than the normal modal allows or present
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-14-3" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">1.14.3</span
+          >Click outside modal
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>The click outside modal directive provide additional ways of dismissing the modal (clicking outside the dialog, the regular close button or a close icon).</p>
+<div class="jsprewrap">
+<div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
+<div ng-show="showjs">
+    <code><pre>
+       $scope.modalShown = false;
+       $scope.toggleModal = function() {
+         $scope.modalShown = !$scope.modalShown;
+       };
+    </pre></code>
+</div>
+</div>
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <button ng-click='toggleModal()' class="wfm-btn wfm-btn-default">Open modal</button>
+<modal-dialog show='modalShown' ng-cloak>
+	<h1 class="modal-title">Modal title</h1>
+	<div class="modal-inner-content">
+		Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
+	</div>
+	<div class="modal-actions">
+		<aside>
+			<button ng-click='toggleModal()'  class="wfm-btn wfm-btn-invis-primary">dismiss</button>
+		</aside>
+	</div>
+</modal-dialog>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button ng-click=&#x27;toggleModal()&#x27; class=&quot;wfm-btn wfm-btn-default&quot;&gt;Open modal&lt;/button&gt;
+&lt;modal-dialog show=&#x27;modalShown&#x27; ng-cloak&gt;
+	&lt;h1 class=&quot;modal-title&quot;&gt;Modal title&lt;/h1&gt;
+	&lt;div class=&quot;modal-inner-content&quot;&gt;
+		Ladies and gentlemen, allow me to introduce myself, I am the amazing modal window body!
+	&lt;/div&gt;
+	&lt;div class=&quot;modal-actions&quot;&gt;
+		&lt;aside&gt;
+			&lt;button ng-click=&#x27;toggleModal()&#x27;  class=&quot;wfm-btn wfm-btn-invis-primary&quot;&gt;dismiss&lt;/button&gt;
+		&lt;/aside&gt;
+	&lt;/div&gt;
+&lt;/modal-dialog&gt;</code></pre>
       </div>
 
       </section>

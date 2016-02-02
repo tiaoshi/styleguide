@@ -1112,39 +1112,23 @@ md-slider.md-min .md-thumb:after {
     left: 0;
     z-index: 99998;
     background: rgba(0, 0, 0, 0.26); }
-  .modal-box .modalbg .dialog, .modal-box .modalbg .dialog-mini {
+  .modal-box .dialog, .modal-box .dialog-mini {
     width: 60%;
     z-index: 99999;
     position: relative;
     top: -20px;
     margin: 10% auto;
     background: #ffffff; }
-  .modal-box .modalbg .dialog-mini {
+  .modal-box .dialog-mini {
     width: 25%; }
   .modal-box .tabbed-panel > md-content {
     padding: 0; }
-  @media only screen and (max-width: 1200px) {
-    .modal-box .modalbg .dialog {
+  @media only screen and (max-width: 769px) {
+    .modal-box .dialog {
       width: 90%; } }
-  @media (max-width: 599px) {
-    .modal-box .modal-box .modalbg .dialog {
-      max-height: 90%;
-      overflow-y: auto !important; } }
-  @media (min-width: 600px) {
-    .modal-box .modal-box .modalbg .dialog {
-      max-height: 25% !important;
-      overflow-y: auto !important; } }
   @media only screen and (max-width: 1200px) {
-    .modal-box .modalbg .dialog-mini {
-      width: 90%; } }
-  @media (max-width: 599px) {
-    .modal-box .modal-box .modalbg .dialog-mini {
-      max-height: 90%;
-      overflow-y: auto !important; } }
-  @media (min-width: 600px) {
-    .modal-box .modal-box .modalbg .dialog-mini {
-      max-height: 70%;
-      overflow-y: auto !important; } }
+    .modal-box .dialog-mini {
+      width: 90% !important; } }
   .modal-box .modal-title {
     padding-left: 10px !important;
     text-align: left; }
@@ -1159,6 +1143,12 @@ md-slider.md-min .md-thumb:after {
     color: rgba(0, 0, 0, 0.87); }
   .modal-box aside {
     text-align: right; }
+
+.click-modal .head-actions {
+  margin-top: 0; }
+
+.click-modal .dialog {
+  position: fixed; }
 
 .wfm-accordion {
   list-style: none;
