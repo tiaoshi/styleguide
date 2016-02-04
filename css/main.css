@@ -1,6 +1,18 @@
 @charset "UTF-8";
 /*Teleopti blue*/
 /*sets wfm-block*/
+.cursor-pointer {
+  cursor: pointer; }
+
+.show {
+  display: block !important; }
+
+.hidden {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden; }
+
 /*Overrides bootstrap*/
 .wfm-datepicker-wrap {
   margin: 5px;
@@ -138,6 +150,9 @@ h3 {
 
 .text-danger {
   color: #ee8f7d; }
+
+.sm-font-size {
+  font-size: 12px !important; }
 
 *:focus {
   outline: -webkit-focus-ring-color auto 0; }
