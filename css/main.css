@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /*Teleopti blue*/
 /*sets wfm-block*/
+.line-right {
+  text-align: right; }
+
+.line-center {
+  text-align: center; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -136,9 +142,6 @@ h3 {
   font-size: 14px;
   font-weight: bold; }
 
-.caps {
-  text-transform: capitalize; }
-
 .text-muted {
   color: rgba(0, 0, 0, 0.54); }
 
@@ -153,6 +156,12 @@ h3 {
 
 .sm-font-size {
   font-size: 12px !important; }
+
+.full-padding {
+  padding: 5px; }
+
+.caps:first-letter {
+  text-transform: uppercase; }
 
 *:focus {
   outline: -webkit-focus-ring-color auto 0; }
