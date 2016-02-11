@@ -7,7 +7,7 @@
 .line-center {
   text-align: center; }
 
-.cursor-pointer {
+.cursor-pointer, .pointer {
   cursor: pointer; }
 
 .show {
@@ -154,11 +154,17 @@ h3 {
 .text-danger {
   color: #ee8f7d; }
 
+.text-white {
+  color: #ffffff; }
+
 .sm-font-size {
   font-size: 12px !important; }
 
 .full-padding {
   padding: 5px; }
+
+.padding-reset {
+  padding: 0 !important; }
 
 .caps:first-letter {
   text-transform: uppercase; }
