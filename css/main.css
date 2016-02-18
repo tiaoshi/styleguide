@@ -198,7 +198,8 @@ dd {
 .material-depth-2, .raise:hover, .nav-context-menu [class*="context-menu-"], .wfm-btn-default:hover, .wfm-btn-primary:hover, .wfm-fab:hover, .card-context:focus, .context-menu [class*="context-menu-"], .context-menu:focus, .wfm-card-unselected:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
 
-.raise:hover {
+.raise {
+  cursor: pointer;
   transition: 0.2s all ease-in-out; }
 
 .material-trench-1 {
@@ -1607,6 +1608,7 @@ md-progress-circular .md-inner .md-right .md-half-circle {
     transform: scale(0); } }
 
 .reveal-material {
+  cursor: pointer;
   animation: grow 0.5s;
   animation-timing-function: ease-out;
   animation-play-state: running;
