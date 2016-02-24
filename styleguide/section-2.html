@@ -21,23 +21,29 @@
 	<link type="text/css" rel="stylesheet" href="../vendor/c3/c3.min.css" />
 	<link type="text/css" rel="stylesheet" href="../css/styleguide.css"/>
 	<link type="text/css" rel="stylesheet" href="../css/main.min.css"/>
-
+	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
 	<script src="../node_modules/angular/angular.min.js"></script>
-  <script src="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
+	<script src="../node_modules/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
 	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
 	<script src="../node_modules/angular-route/angular-route.min.js"></script>
 	<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
 	<script src="../vendor/ui-grid-stable.min.js"></script>
+
 	<script src="../node_modules/angular-material/angular-material.min.js"></script>
-	<script src="../vendor/ui-bootstrap-custom-build/ui-bootstrap-tpls-0.13.0.min.js"></script>
+	<script src="../node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="../node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="../vendor/ui-bootstrap-custom-build/datepicker.directive.ext.js"></script>
 	<script src="../vendor/ui-bootstrap-custom-build/timepicker.directive.ext.js"></script>
 	<script src="../vendor/d3/d3.min.js"></script>
 	<script src="../vendor/c3/c3.min.js"></script>
 	<script src="../vendor/c3/c3-angular.min.js"></script>
-  <script src="../vendor/angular-growl.js"></script>
-	<script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
-	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>
-  <script src="../dist/wfmdirectives.min.js"></script>
+
+	<script src="../vendor/angular-growl.js"></script>
+
+	<script src="../node_modules/angular-moment/angular-moment.min.js"></script>	
+	<script src="../dist/templates.js"></script>
+	<script src="../dist/wfmdirectives.min.js"></script>
+
 
 	<script src="../app.js"></script>
   
@@ -199,7 +205,7 @@
 	<div class="sub-header">
 		From/to:
 	</div>
-	<datepicker show-weeks="true" ng-model="someDate" class="wfm-datepicker"></datepicker>
+	<uib-datepicker show-weeks="true" ng-model="someDate" class="wfm-datepicker"></datepicker>
 </div >
         </div>
       </div>
@@ -209,7 +215,7 @@
 	&lt;div class=&quot;sub-header&quot;&gt;
 		From/to:
 	&lt;/div&gt;
-	&lt;datepicker show-weeks=&quot;true&quot; ng-model=&quot;someDate&quot; class=&quot;wfm-datepicker&quot;&gt;&lt;/datepicker&gt;
+	&lt;uib-datepicker show-weeks=&quot;true&quot; ng-model=&quot;someDate&quot; class=&quot;wfm-datepicker&quot;&gt;&lt;/datepicker&gt;
 &lt;/div &gt;</code></pre>
       </div>
 
@@ -229,10 +235,8 @@
         <p>A directive for specifying a date-only period. It is composed from datepicker with added validation messages. In WFM, the error messages will be translated automatically.</p>
 <table class="wfm-table">
 <tr><th>Attribute Name</th><th>Usage</th><th>Required</th></tr>
-<tr><td>start-date</td><td>Bind to period start date</td><td>true</td></tr>
-<tr><td>end-date</td><td>Bind to period end date</td><td>true</td></tr>
-<tr><td>errors</td><td>Bind to errors. Its value will be set by the picker to an array of error-keys. The pre-defined error keys are &#39;order&#39; and &#39;empty&#39;</td><td>false</td></tr>
-<tr><td>hide-message</td><td>mute the error message</td><td>false</td></tr>
+<tr><td>ng-model</td><td>Bind to a js-object representing the date range. The object is composed by <code>startDate</code> and <code>endDate</code> key-value pairs</td><td>true</td></tr>
+<tr><td>template-type</td><td>Declares whether to use <b>inline</b> or <b>popup</b> mode</td><td>false</td></tr>
 </table>
       </div>
     </div>
@@ -242,12 +246,16 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <date-range-picker start-date="startDate" end-date="endDate"></date-range-picker>
+          <label>Template type:</label> <select ng-model="dateRangeTemplateType"
+       ng-options="option for option in dateRangeTemplateTypes"></select>
+<date-range-picker ng-model="dateRange" template-type="dateRangeTemplateType"></date-range-picker>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;date-range-picker start-date=&quot;startDate&quot; end-date=&quot;endDate&quot;&gt;&lt;/date-range-picker&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label&gt;Template type:&lt;/label&gt; &lt;select ng-model=&quot;dateRangeTemplateType&quot;
+       ng-options=&quot;option for option in dateRangeTemplateTypes&quot;&gt;&lt;/select&gt;
+&lt;date-range-picker ng-model=&quot;dateRange&quot; template-type=&quot;dateRangeTemplateType&quot;&gt;&lt;/date-range-picker&gt;</code></pre>
       </div>
 
       </section>
