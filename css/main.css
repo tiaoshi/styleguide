@@ -86,26 +86,29 @@
   position: relative; }
   .wfm-date-range-picker-wrap .inline-datepicker-wrap .dropdown-menu {
     position: absolute;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    background-color: #F5F5F5;
     z-index: 100;
-    margin-top: 0px; }
+    margin-top: 5px; }
   .wfm-date-range-picker-wrap .inline-datepicker-wrap .start-date-input + .dropdown-menu {
     margin-left: -60px; }
   .wfm-date-range-picker-wrap .inline-datepicker-wrap .end-date-input + .dropdown-menu {
     margin-right: -60px; }
 
 .wfm-date-range-picker-wrap .pin-down {
-  box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background-color: #E0E0E0; }
+  background-color: rgba(0, 0, 0, 0.06); }
 
 .wfm-date-range-picker-wrap .popup-control {
-  height: 22px;
-  width: 22px;
+  height: 24px;
+  width: 24px;
   display: inline-block;
   text-align: center;
-  padding-top: 1px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s all ease;
   cursor: pointer; }
+
+.wfm-date-range-picker-wrap .popup-control:hover {
+  background-color: rgba(0, 0, 0, 0.06); }
 
 .wfm-date-range-picker-wrap .inline-vertical-fix {
   position: relative;
@@ -210,7 +213,7 @@ button, input, select {
 dd {
   margin-left: 40px !important; }
 
-.material-depth-1, .wfm-datepicker-wrap, .wfm-btn-default, .wfm-btn-primary, .wfm-slide-tabs md-ink-bar, .sidenav-toggle .sidenav-wrapper, .wfm-card {
+.material-depth-1, .wfm-datepicker-wrap, .wfm-date-range-picker-wrap .pin-down, .error-msg-container, .wfm-btn-default, .wfm-btn-primary, .wfm-slide-tabs md-ink-bar, .sidenav-toggle .sidenav-wrapper, .wfm-card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
 .material-depth-2, .raise:hover, .nav-context-menu [class*="context-menu-"], .wfm-btn-default:hover, .wfm-btn-primary:hover, .wfm-fab:hover, .card-context:focus, .context-menu [class*="context-menu-"], .context-menu:focus, .wfm-card-unselected:hover {
