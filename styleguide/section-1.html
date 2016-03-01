@@ -1124,7 +1124,8 @@ Additionally a menu can not trigger a child menu from within itself.</p>
           Example
         </div>
         <div class="kss-modifier__example">
-           <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
+           <h3>Button menu trigger:</h3>
+ <div tabindex=0 class="context-menu wfm-btn wfm-btn-default">
  	Place me on the left
  	<span class="context-menu-right">
  		<ul class="wfm-list">
@@ -1154,7 +1155,7 @@ Additionally a menu can not trigger a child menu from within itself.</p>
  		</ul>
  	</span>
  </div>
- <br/>
+ <h3>Icon menu trigger:</h3>
  <div tabindex=0 class="context-menu card-context">
  	<i class="mdi mdi-dots-vertical"></i>
  	<span class="context-menu-right">
@@ -1182,6 +1183,26 @@ Additionally a menu can not trigger a child menu from within itself.</p>
  			<li><i class="mdi mdi-account"></i>Sign out</li>
  			<li><i class="mdi mdi-plus"></i>Add a new agent</li>
  			<li><i class="mdi mdi-alert"></i>Drop agents table</li>
+ 		</ul>
+ 	</span>
+ </div>
+ <h3>Menu with keyboard shortcuts:</h3>
+ <div tabindex=0 class="context-menu card-context">
+ 	<i class="mdi mdi-dots-vertical"></i>
+ 	<span class="context-menu-right">
+ 		<ul class="wfm-list">
+ 			<li>
+         <span class="pull-left">Select all</span>
+         <span class="pull-right">Alt+A</span>
+       </li>
+ 			<li>
+         <span class="pull-left">Duplicate</span>
+         <span class="pull-right">Ctrl+C</span>
+       </li>
+ 			<li>
+         <span class="pull-left">Navigate</span>
+         <span class="pull-right">Shift+Down Arrow</span>
+       </li>
  		</ul>
  	</span>
  </div>
@@ -1189,7 +1210,8 @@ Additionally a menu can not trigger a child menu from within itself.</p>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html"> &lt;div tabindex=0 class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html"> &lt;h3&gt;Button menu trigger:&lt;/h3&gt;
+ &lt;div tabindex=0 class=&quot;context-menu wfm-btn wfm-btn-default&quot;&gt;
  	Place me on the left
  	&lt;span class=&quot;context-menu-right&quot;&gt;
  		&lt;ul class=&quot;wfm-list&quot;&gt;
@@ -1219,7 +1241,7 @@ Additionally a menu can not trigger a child menu from within itself.</p>
  		&lt;/ul&gt;
  	&lt;/span&gt;
  &lt;/div&gt;
- &lt;br/&gt;
+ &lt;h3&gt;Icon menu trigger:&lt;/h3&gt;
  &lt;div tabindex=0 class=&quot;context-menu card-context&quot;&gt;
  	&lt;i class=&quot;mdi mdi-dots-vertical&quot;&gt;&lt;/i&gt;
  	&lt;span class=&quot;context-menu-right&quot;&gt;
@@ -1247,6 +1269,26 @@ Additionally a menu can not trigger a child menu from within itself.</p>
  			&lt;li&gt;&lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt;Sign out&lt;/li&gt;
  			&lt;li&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;Add a new agent&lt;/li&gt;
  			&lt;li&gt;&lt;i class=&quot;mdi mdi-alert&quot;&gt;&lt;/i&gt;Drop agents table&lt;/li&gt;
+ 		&lt;/ul&gt;
+ 	&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;h3&gt;Menu with keyboard shortcuts:&lt;/h3&gt;
+ &lt;div tabindex=0 class=&quot;context-menu card-context&quot;&gt;
+ 	&lt;i class=&quot;mdi mdi-dots-vertical&quot;&gt;&lt;/i&gt;
+ 	&lt;span class=&quot;context-menu-right&quot;&gt;
+ 		&lt;ul class=&quot;wfm-list&quot;&gt;
+ 			&lt;li&gt;
+         &lt;span class=&quot;pull-left&quot;&gt;Select all&lt;/span&gt;
+         &lt;span class=&quot;pull-right&quot;&gt;Alt+A&lt;/span&gt;
+       &lt;/li&gt;
+ 			&lt;li&gt;
+         &lt;span class=&quot;pull-left&quot;&gt;Duplicate&lt;/span&gt;
+         &lt;span class=&quot;pull-right&quot;&gt;Ctrl+C&lt;/span&gt;
+       &lt;/li&gt;
+ 			&lt;li&gt;
+         &lt;span class=&quot;pull-left&quot;&gt;Navigate&lt;/span&gt;
+         &lt;span class=&quot;pull-right&quot;&gt;Shift+Down Arrow&lt;/span&gt;
+       &lt;/li&gt;
  		&lt;/ul&gt;
  	&lt;/span&gt;
  &lt;/div&gt;</code></pre>

@@ -239,11 +239,13 @@
 
       <div class="kss-description">
         <p>A directive for specifying a date-only period. It is composed from datepicker with added validation messages. In WFM, the error messages will be translated automatically.</p>
-<table class="wfm-table">
-<tr><th>Attribute Name</th><th>Usage</th><th>Required</th></tr>
-<tr><td>ng-model</td><td>Bind to a js-object representing the date range. The object is composed by <code>startDate</code> and <code>endDate</code> key-value pairs</td><td>true</td></tr>
-<tr><td>template-type</td><td>Declares whether to use <b>inline</b> or <b>popup</b> mode</td><td>false</td></tr>
+<p><table class="wfm-table"></p>
+<p><tr><th>Attribute Name</th><th>Usage</th><th>Required</th></tr></p>
+<p><tr><td>ng-model</td><td>Bind to a js-object representing the date range. The object is composed by <code>startDate</code> and <code>endDate</code> key-value pairs</td><td>true</td></tr></p>
+<p><tr><td>template-type</td><td>Declares whether to use <b>inline</b> or <b>popup</b> mode</td><td>false</td></tr>
 </table>
+</br></p>
+
       </div>
     </div>
 
@@ -327,14 +329,16 @@ Their time parts (hour &amp; minute) represent the timespan. When the <code>next
 is off, the values of their date parts will equal; otherwise they will differ.
 In WFM, the timepicker is self-adjusted to the user&#39;s time-format setting, i.e. meridian will be used for 12h&#39;s format and disabled for 24h&#39;s format, and the AM/PM texts are translated automatically.</p>
 <p>Additionally for consistency with the old WFM client, we have added a special case: when <code>disable-next-day</code> is on, setting the end time to 00:00 will mean the midnight time of the next day, and the user will see &quot;+ 1&quot; displayed beside the end time to avoid ambiguity even though he or she cannot mannual toggle the next-day switch.</p>
-<table class="wfm-table">
-<tr><th>Attribute Name</th><th>Usage</th><th>Required</th></tr>
-<tr><td>start-time</td><td>Bind to start time</td><td>true</td></tr>
-<tr><td>end-time</td><td>Bind to end time</td><td>true</td></tr>
-<tr><td>errors</td><td>Bind to errors. Its value will be set by the picker to an array of error-keys. The pre-defined error keys are &#39;order&#39; and &#39;empty&#39;</td><td>false</td></tr>
-<tr><td>hide-message</td><td>mute the error message</td><td>false</td></tr>
-<tr><td>disable-next-day</td><td>Disable next-day switch</td><td>false</td></tr>
+<p><table class="wfm-table"></p>
+<p><tr><th>Attribute Name</th><th>Usage</th><th>Required</th></tr></p>
+<p><tr><td>start-time</td><td>Bind to start time</td><td>true</td></tr></p>
+<p><tr><td>end-time</td><td>Bind to end time</td><td>true</td></tr></p>
+<p><tr><td>errors</td><td>Bind to errors. Its value will be set by the picker to an array of error-keys. The pre-defined error keys are &#39;order&#39; and &#39;empty&#39;</td><td>false</td></tr></p>
+<p><tr><td>hide-message</td><td>mute the error message</td><td>false</td></tr></p>
+<p><tr><td>disable-next-day</td><td>Disable next-day switch</td><td>false</td></tr>
 </table>
+</br></p>
+
       </div>
     </div>
 
@@ -437,12 +441,12 @@ $scope.displaySuccess = function() {
 
       <div class="kss-description">
         <p>Pagination is a directive which displays a list of availale pages and provides the properties for outer scope to set the pagination options and get data for the given page number.</p>
-<table class="wfm-table">
-<tr><th>Attribute Name</th><th>Description</th><th>Required</th></tr>
-<tr><td>pagination-options</td><td>configurations about the pagination, it contains two properties. &quot;pageNumber&quot; is the current page number; &quot;totalPages&quot; is hwo many pages it sets.</td><td>true</td></tr>
-<tr><td>get-data-for-page-callback</td><td>this is the function which is used by the directive to call to get the data for a given page number.</td><td>true</td></tr>
+<p><table class="wfm-table"></p>
+<p><tr><th>Attribute Name</th><th>Description</th><th>Required</th></tr></p>
+<p><tr><td>pagination-options</td><td>configurations about the pagination, it contains two properties. &quot;pageNumber&quot; is the current page number; &quot;totalPages&quot; is hwo many pages it sets.</td><td>true</td></tr></p>
+<p><tr><td>get-data-for-page-callback</td><td>this is the function which is used by the directive to call to get the data for a given page number.</td><td>true</td></tr>
 </table>
-
+</br></p>
 <div class="jsprewrap">
 <div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
 <div ng-show="showjs">

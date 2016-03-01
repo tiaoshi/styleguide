@@ -170,8 +170,9 @@
 Almost everything described in the elements chapter should be housed inside a container.
 There are different kinds of containers that all have different applications, what they do however have in common is the ability to house flex grids and/or elements.
 When building a new view, start by picking one or several containers and a flex layout that fits with your views content.</p>
-<p>Note: Never nest a container within another container.</p>
-<p>Note: In all modals and panels the footer links should be buttons, not  &lt;a/&gt; tags.</p>
+<p> Note: Con-flex elements are marked by a dashed outline in the styleguide for structure and layout clarification, these should <b>not</b> be visible in the project.</p>
+<p> Note: Never nest a container within another container.</p>
+<p> Note: In all modals and panels the footer links should be buttons, not  &lt;a/&gt; tags.</p>
 
       </div>
     </div>
@@ -191,7 +192,6 @@ When building a new view, start by picking one or several containers and a flex 
 
       <div class="kss-description">
         <p>The layout consists of the flex grid. Since the grid is adapting to the number of items inside it, be careful not to use too many in one row. The recomended max number of con-flex items in one row is 4, if more are needed, concider using a tabbed container or spreading them out over sveral rows.</p>
-<p>Note: the ´demo-outline´ class is for styleguide demo purpose only and should be removed before use of the layout.</p>
 
       </div>
     </div>
@@ -201,29 +201,29 @@ When building a new view, start by picking one or several containers and a flex 
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="con-row demo-outline">
+          <div class="con-row">
    <div class="con-flex">100%</div>
 </div>
-<div class="con-row demo-outline">
+<div class="con-row">
    <div class="con-flex">50%</div>
    <div class="con-flex">50%</div>
 </div>
-<div class="con-row demo-outline">
+<div class="con-row">
    <div class="con-flex">33%</div>
    <div class="con-flex">33%</div>
    <div class="con-flex">33%</div>
 </div>
-<div class="con-row demo-outline">
+<div class="con-row">
    <div class="con-flex">25%</div>
    <div class="con-flex">25%</div>
    <div class="con-flex">25%</div>
    <div class="con-flex">25%</div>
 </div>
-<div class="con-row demo-outline">
+<div class="con-row">
    <div class="con-flex split-3-1">75%</div>
    <div class="con-flex">25%</div>
 </div>
- <div class="con-row demo-outline">
+ <div class="con-row">
    <div class="con-flex split-1-2">50%</div>
    <div class="con-flex">25%</div>
    <div class="con-flex">25%</div>
@@ -232,29 +232,29 @@ When building a new view, start by picking one or several containers and a flex 
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;con-row demo-outline&quot;&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;con-row&quot;&gt;
    &lt;div class=&quot;con-flex&quot;&gt;100%&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;con-row demo-outline&quot;&gt;
+&lt;div class=&quot;con-row&quot;&gt;
    &lt;div class=&quot;con-flex&quot;&gt;50%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;50%&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;con-row demo-outline&quot;&gt;
+&lt;div class=&quot;con-row&quot;&gt;
    &lt;div class=&quot;con-flex&quot;&gt;33%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;33%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;33%&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;con-row demo-outline&quot;&gt;
+&lt;div class=&quot;con-row&quot;&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;con-row demo-outline&quot;&gt;
+&lt;div class=&quot;con-row&quot;&gt;
    &lt;div class=&quot;con-flex split-3-1&quot;&gt;75%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
 &lt;/div&gt;
- &lt;div class=&quot;con-row demo-outline&quot;&gt;
+ &lt;div class=&quot;con-row&quot;&gt;
    &lt;div class=&quot;con-flex split-1-2&quot;&gt;50%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
    &lt;div class=&quot;con-flex&quot;&gt;25%&lt;/div&gt;
@@ -277,7 +277,6 @@ When building a new view, start by picking one or several containers and a flex 
         <p>The panel is the main container and the most versatile. It can house most elements and can be configured in a number of layouts.
 If needed it can have a context menu or a footer for more actions. Since a panel is a raised piece of material, avoid using other raised elements on top of it, unless they are floating (like a action button or context menu)
 The panel can have a footer with a number of actions, try to keep this number as small as possible. The most important action should be to the far right and if it is the primary action it should have a wfm-btn-invis-primary class.</p>
-<p>Note: the ´demo-outline´ class is for styleguide demo purpose only.</p>
 
       </div>
     </div>
@@ -303,7 +302,7 @@ The panel can have a footer with a number of actions, try to keep this number as
       </div>
     </div>
   </div>
- <div class="con-row demo-outline">
+ <div class="con-row">
     <div class="con-flex">Content</div>
  </div>
   <div class="con-footer">
@@ -331,7 +330,7 @@ The panel can have a footer with a number of actions, try to keep this number as
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
- &lt;div class=&quot;con-row demo-outline&quot;&gt;
+ &lt;div class=&quot;con-row&quot;&gt;
     &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
  &lt;/div&gt;
   &lt;div class=&quot;con-footer&quot;&gt;
@@ -356,7 +355,6 @@ The panel can have a footer with a number of actions, try to keep this number as
       <div class="kss-description">
         <p>When using tabbed panels, one important thing to remember is to order the tabs in a way that makes sense to the workflow.
 Also, avoid several tab panels close together to avoid confusion and maintain focus. For the same reason, modals can not be launched from within tabs.</p>
-<p>Note: the ´demo-outline´ class is for styleguide demo purpose only.</p>
 
       </div>
     </div>
@@ -384,7 +382,7 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
        <md-tabs md-dynamic-height md-border-bottom >
          <md-tab label="Tab title1">
            <md-content class="md-padding">
-             <div class="con-row demo-outline">
+             <div class="con-row">
                <div class="con-flex">Content</div>
              </div>
              <div class="con-footer">
@@ -395,7 +393,7 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
          </md-tab>
          <md-tab label="Tab title2">
            <md-content class="md-padding">
-             <div class="con-row demo-outline">
+             <div class="con-row">
            <div class="con-flex">Content</div>
          </div>
          <div class="con-footer">
@@ -406,7 +404,7 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
      </md-tab>
      <md-tab label="Tab title3">
        <md-content class="md-padding">
-         <div class="con-row demo-outline">
+         <div class="con-row">
            <div class="con-flex">Content</div>
          </div>
          <div class="con-footer">
@@ -417,10 +415,10 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
      </md-tab>
      <md-tab label="Tab title4">
        <md-content class="md-padding">
-         <div class="con-row demo-outline">
+         <div class="con-row">
            <div class="con-flex">Content</div>
          </div>
-         <div class="con-row demo-outline">
+         <div class="con-row">
            <div class="con-flex">Things</div>
            <div class="con-flex">Things</div>
            <div class="con-flex">Things</div>
@@ -458,7 +456,7 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
        &lt;md-tabs md-dynamic-height md-border-bottom &gt;
          &lt;md-tab label=&quot;Tab title1&quot;&gt;
            &lt;md-content class=&quot;md-padding&quot;&gt;
-             &lt;div class=&quot;con-row demo-outline&quot;&gt;
+             &lt;div class=&quot;con-row&quot;&gt;
                &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
              &lt;/div&gt;
              &lt;div class=&quot;con-footer&quot;&gt;
@@ -469,7 +467,7 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
          &lt;/md-tab&gt;
          &lt;md-tab label=&quot;Tab title2&quot;&gt;
            &lt;md-content class=&quot;md-padding&quot;&gt;
-             &lt;div class=&quot;con-row demo-outline&quot;&gt;
+             &lt;div class=&quot;con-row&quot;&gt;
            &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
          &lt;/div&gt;
          &lt;div class=&quot;con-footer&quot;&gt;
@@ -480,7 +478,7 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
      &lt;/md-tab&gt;
      &lt;md-tab label=&quot;Tab title3&quot;&gt;
        &lt;md-content class=&quot;md-padding&quot;&gt;
-         &lt;div class=&quot;con-row demo-outline&quot;&gt;
+         &lt;div class=&quot;con-row&quot;&gt;
            &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
          &lt;/div&gt;
          &lt;div class=&quot;con-footer&quot;&gt;
@@ -491,10 +489,10 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
      &lt;/md-tab&gt;
      &lt;md-tab label=&quot;Tab title4&quot;&gt;
        &lt;md-content class=&quot;md-padding&quot;&gt;
-         &lt;div class=&quot;con-row demo-outline&quot;&gt;
+         &lt;div class=&quot;con-row&quot;&gt;
            &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
          &lt;/div&gt;
-         &lt;div class=&quot;con-row demo-outline&quot;&gt;
+         &lt;div class=&quot;con-row&quot;&gt;
            &lt;div class=&quot;con-flex&quot;&gt;Things&lt;/div&gt;
            &lt;div class=&quot;con-flex&quot;&gt;Things&lt;/div&gt;
            &lt;div class=&quot;con-flex&quot;&gt;Things&lt;/div&gt;
@@ -526,7 +524,6 @@ Also, avoid several tab panels close together to avoid confusion and maintain fo
 
       <div class="kss-description">
         <p>In case you want to guide the user through a series of steps you can use a wizard panel.</p>
-<p>Note: the ´demo-outline´ class is for styleguide demo purpose only.</p>
 <div class="jsprewrap">
 <div ng-click="showjs = !showjs" class="ksscopy">JavaScript</div>
 <div ng-show="showjs">
@@ -565,7 +562,7 @@ $scope.nextTab = function() {
    <md-tabs md-dynamic-height md-border-bottom md-selected="selectedIndex">
      <md-tab label="Tab title1">
        <md-content class="md-padding">
-           <div class="con-row demo-outline">
+           <div class="con-row">
              <div class="con-flex">Content</div>
            </div>
          <div class="con-footer">
@@ -575,7 +572,7 @@ $scope.nextTab = function() {
      </md-tab>
      <md-tab label="Tab title2">
        <md-content class="md-padding">
-           <div class="con-row demo-outline">
+           <div class="con-row">
              <div class="con-flex">Content</div>
            </div>
          <div class="con-footer">
@@ -585,7 +582,7 @@ $scope.nextTab = function() {
      </md-tab>
      <md-tab label="Tab title3">
        <md-content class="md-padding">
-           <div class="con-row demo-outline">
+           <div class="con-row">
              <div class="con-flex">Content</div>
            </div>
          <div class="con-footer">
@@ -595,7 +592,7 @@ $scope.nextTab = function() {
      </md-tab>
      <md-tab label="Tab title4">
        <md-content class="md-padding">
-           <div class="con-row demo-outline">
+           <div class="con-row">
              <div class="con-flex">Content</div>
            </div>
          <div class="con-footer">
@@ -629,7 +626,7 @@ $scope.nextTab = function() {
    &lt;md-tabs md-dynamic-height md-border-bottom md-selected=&quot;selectedIndex&quot;&gt;
      &lt;md-tab label=&quot;Tab title1&quot;&gt;
        &lt;md-content class=&quot;md-padding&quot;&gt;
-           &lt;div class=&quot;con-row demo-outline&quot;&gt;
+           &lt;div class=&quot;con-row&quot;&gt;
              &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
            &lt;/div&gt;
          &lt;div class=&quot;con-footer&quot;&gt;
@@ -639,7 +636,7 @@ $scope.nextTab = function() {
      &lt;/md-tab&gt;
      &lt;md-tab label=&quot;Tab title2&quot;&gt;
        &lt;md-content class=&quot;md-padding&quot;&gt;
-           &lt;div class=&quot;con-row demo-outline&quot;&gt;
+           &lt;div class=&quot;con-row&quot;&gt;
              &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
            &lt;/div&gt;
          &lt;div class=&quot;con-footer&quot;&gt;
@@ -649,7 +646,7 @@ $scope.nextTab = function() {
      &lt;/md-tab&gt;
      &lt;md-tab label=&quot;Tab title3&quot;&gt;
        &lt;md-content class=&quot;md-padding&quot;&gt;
-           &lt;div class=&quot;con-row demo-outline&quot;&gt;
+           &lt;div class=&quot;con-row&quot;&gt;
              &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
            &lt;/div&gt;
          &lt;div class=&quot;con-footer&quot;&gt;
@@ -659,7 +656,7 @@ $scope.nextTab = function() {
      &lt;/md-tab&gt;
      &lt;md-tab label=&quot;Tab title4&quot;&gt;
        &lt;md-content class=&quot;md-padding&quot;&gt;
-           &lt;div class=&quot;con-row demo-outline&quot;&gt;
+           &lt;div class=&quot;con-row&quot;&gt;
              &lt;div class=&quot;con-flex&quot;&gt;Content&lt;/div&gt;
            &lt;/div&gt;
          &lt;div class=&quot;con-footer&quot;&gt;
@@ -727,7 +724,7 @@ $scope.reset = function(form) {
     </div>
   </div>
 <form name="form" class="wfm-form" novalidate>
- <div class="con-row demo-outline">
+ <div class="con-row">
     <div class="con-flex">
       <dl>
         <dd>
@@ -830,7 +827,7 @@ $scope.reset = function(form) {
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;form name=&quot;form&quot; class=&quot;wfm-form&quot; novalidate&gt;
- &lt;div class=&quot;con-row demo-outline&quot;&gt;
+ &lt;div class=&quot;con-row&quot;&gt;
     &lt;div class=&quot;con-flex&quot;&gt;
       &lt;dl&gt;
         &lt;dd&gt;

@@ -7,13 +7,13 @@
   display: inline-block;
   background: white; }
 
-.demo-outline > .con-flex {
-  outline: 1px dashed rgba(0, 0, 0, 0.06); }
-
 .jsprewrap {
   width: 98%;
   margin: 0 auto;
   cursor: pointer; }
+
+.con-flex, .form-input-wrap {
+  border: 1px dashed rgba(0, 0, 0, 0.26); }
 
 .ksscopy {
   margin: -10px -10px 10px -10px;
@@ -145,6 +145,9 @@
 
 .swatch-list .gray-100-swatch {
   background: black !important; }
+
+.swatch-list .gray-500-swatch {
+  background: #9E9E9E !important; }
 
 .swatch-list .white-swatch {
   background: #ffffff !important; }
