@@ -24,7 +24,7 @@
   margin: 5px;
   display: inline-block;
   background-color: #ffffff;
-  min-height: 290px; }
+  min-height: 270px; }
 
 .glyphicon {
   display: inline-block;
@@ -46,40 +46,34 @@
 .glyphicon-chevron-left:before {
   content: "" !important; }
 
-.wfm-datepicker table th {
-  border-color: transparent; }
-
-.wfm-datepicker .btn-default {
-  border-color: transparent !important;
-  background: #ffffff; }
-
-.wfm-datepicker .btn-info.active {
-  background-color: #99d6ff !important;
-  color: #ffffff; }
-
-.wfm-datepicker tbody > tr > td.text-center.h6 {
-  opacity: 0.4; }
-
-.wfm-datepicker .btn {
-  border-radius: 0;
-  outline: none !important; }
-
-.wfm-datepicker .btn.active, .wfm-datepicker .btn:active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-.wfm-datepicker .btn-info {
-  color: black;
-  background-color: transparent;
-  border-color: transparent; }
-
-.wfm-datepicker .text-info {
-  color: inherit; }
-
-.wfm-datepicker .range > button {
-  background-color: #c2e085; }
+.wfm-datepicker {
+  padding: 5px; }
+  .wfm-datepicker table th {
+    border-color: transparent; }
+  .wfm-datepicker .btn-default {
+    border-color: transparent !important;
+    background: #ffffff; }
+  .wfm-datepicker .btn-info.active {
+    background-color: #99d6ff !important;
+    color: #ffffff; }
+  .wfm-datepicker tbody > tr > td.text-center.h6 {
+    opacity: 0.4; }
+  .wfm-datepicker .btn {
+    border-radius: 0;
+    outline: none !important; }
+  .wfm-datepicker .btn.active, .wfm-datepicker .btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .wfm-datepicker .btn-info {
+    color: black;
+    background-color: transparent;
+    border-color: transparent; }
+  .wfm-datepicker .text-info {
+    color: inherit; }
+  .wfm-datepicker .range > button {
+    background-color: #c2e085; }
 
 .wfm-date-range-picker-wrap .inline-datepicker-wrap {
   display: inline-block;
