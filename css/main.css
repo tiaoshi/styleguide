@@ -1831,7 +1831,7 @@ md-card {
   margin: 0; }
 
 .working-hours-picker .wfm-list > li > span.list-item-container.list-header, .working-hours-picker .ui-grid-menu-items > li > span.list-item-container.list-header {
-  width: 14%;
+  width: 15% !important;
   float: left;
   display: inline-block; }
 
