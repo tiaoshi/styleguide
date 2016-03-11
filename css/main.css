@@ -674,7 +674,7 @@ md-option {
 .wfm-checkbox input[type=checkbox]:checked ~ label .wfm-checkbox-toggle:after,
 .wfm-checkbox input[type=checkbox]:checked ~ .wfm-checkbox-toggle:after {
   background-color: #66c2ff;
-  content: " ✓";
+  content: "✓";
   text-align: center;
   color: #ffffff; }
 

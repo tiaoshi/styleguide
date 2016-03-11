@@ -117,6 +117,12 @@
                 ><span class="kss-nav__name">Working hours picker</span>
               </a>
             </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-8">
+                <span class="kss-nav__ref">2.8</span
+                ><span class="kss-nav__name">Numeric value</span>
+              </a>
+            </li>
         </ul>
       </li>
       <li class="kss-nav__menu-item">
@@ -503,6 +509,61 @@ $scope.getPageData = function(pageIndex) {
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;working-hours-picker class=&quot;working-hours-picker&quot; working-hours=&quot;workingHours&quot;&gt;&lt;/working-hours-picker&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-8" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink">
+          <span class="kss-title__ref">2.8</span
+          >Numeric value
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A directive for making an input[text] behave like an input[number].
+Locale-aware number strings (e.g. 1.234,01 in Swedish) entered directly into the input field are accepted as text and parsed manually with the correct ng-locale (using the correct group separator and decimal separator).
+The directive accepts the &quot;float-number&quot; tag attribute. Without it the input will only accept integer values.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+            <form name="form" class="wfm-form">
+      <label>Localized number: <input type="text" ng-model="numericValueInput" name="Example" placeholder="0 ~ 1000000" numeric-value min="0" max="1000000"/></label>
+      <p>
+            Integer: <span ng-bind="numericValueInputResult"></span>
+      </p>
+      <label>Localized float-number: <input type="text" ng-model="numericValueFloatInput" name="Example" placeholder="0 ~ 1000000" numeric-value float-number min="0" max="1000000"/></label>
+      <p>
+            Float number: <span ng-bind="numericValueFloatInputResult"></span>
+      </p>
+  </form>
+  
+        
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">  &lt;form name=&quot;form&quot; class=&quot;wfm-form&quot;&gt;
+      &lt;label&gt;Localized number: &lt;input type=&quot;text&quot; ng-model=&quot;numericValueInput&quot; name=&quot;Example&quot; placeholder=&quot;0 ~ 1000000&quot; numeric-value min=&quot;0&quot; max=&quot;1000000&quot;/&gt;&lt;/label&gt;
+      &lt;p&gt;
+            Integer: &lt;span ng-bind=&quot;numericValueInputResult&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;label&gt;Localized float-number: &lt;input type=&quot;text&quot; ng-model=&quot;numericValueFloatInput&quot; name=&quot;Example&quot; placeholder=&quot;0 ~ 1000000&quot; numeric-value float-number min=&quot;0&quot; max=&quot;1000000&quot;/&gt;&lt;/label&gt;
+      &lt;p&gt;
+            Float number: &lt;span ng-bind=&quot;numericValueFloatInputResult&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+  &lt;/form&gt;
+  
+        </code></pre>
       </div>
 
       </section>
